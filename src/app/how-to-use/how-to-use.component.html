@@ -1,0 +1,118 @@
+<div class="topImage d-flex justify-content-end">
+  <h1>
+    {{'HOW_TO_USE.how_to_use' | translate | uppercase}}
+  </h1>
+</div>
+<div class="main">
+  <h1 class="text-center" [innerHTML]="'HOW_TO_USE.headline' | translate | uppercase">
+  </h1>
+  <h2 class="text-center" [innerHTML]="'HOW_TO_USE.subhead' | translate">
+  </h2>
+  <div class="routineBox">
+    <div class="step d-flex py-5">
+      <div class="imgBox px-5">
+        <img src="../../assets/images/Cleanse.png" alt="Cleanse image">
+      </div>
+      <div>
+        <h3><span class="blueNumber">1.&nbsp;</span>{{'HOW_TO_USE.CLEANSE' | translate | uppercase}}</h3>
+        <h5 [innerHTML]="'HOW_TO_USE.CLEANSE_copy' | translate | uppercase">
+        </h5>
+      </div>
+    </div>
+    <div class="step d-flex py-5">
+      <div class="imgBox px-5">
+        <img src="../../assets/images/Apply.png" alt="Apply image">
+      </div>
+      <div>
+        <h3><span class="blueNumber">2.&nbsp;</span><span
+            [innerHTML]="'HOW_TO_USE.APPLY1' | translate | uppercase"></span>
+        </h3>
+        <h5 [innerHTML]="'HOW_TO_USE.APPLY1_copy' | translate | uppercase">
+        </h5>
+        <ul [innerHTML]="'HOW_TO_USE.APPLY1_list' | translate | uppercase">
+        </ul>
+      </div>
+    </div>
+    <div class="step d-flex py-5">
+      <div class="imgBox px-5">
+        <img src="../../assets/images/Moisturize.png" alt="Moisturize image">
+      </div>
+      <div>
+        <h3><span class="blueNumber">3.&nbsp;</span>{{'HOW_TO_USE.MOISTURIZE' | translate | uppercase}}</h3>
+        <h5 [innerHTML]="'HOW_TO_USE.MOISTURIZE_copy' | translate | uppercase">
+        </h5>
+      </div>
+    </div>
+    <div class="step d-flex py-5">
+      <div class="imgBox px-5">
+        <img src="../../assets/images/Sun Protection.png" alt="Sun Protection image">
+      </div>
+      <div>
+        <h3><span class="blueNumber">3.&nbsp;</span><span
+            [innerHTML]="'HOW_TO_USE.AVOID_SUN1' | translate | uppercase"></span></h3>
+        <h5 [innerHTML]="'HOW_TO_USE.AVOID_SUN1_copy' | translate | uppercase">
+        </h5>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="calloutBar" style="background-image: url('../../assets/images/Rectangle_1.png');">
+    <h1>
+      {{'HOW_TO_USE.callout' | translate | uppercase}}
+    </h1>
+    <div class="tipRow d-flex align-items-center">
+      <div class="imgBox px-3 pb-2">
+        <img src="../../assets/images/message_icon.png" alt="Message icon">
+      </div>
+      <h2 [innerHTML]="'HOW_TO_USE.callout_copy1' | translate | uppercase"></h2>
+    </div>
+    <div class="tipRow d-flex align-items-center">
+      <div class="imgBox px-3 pb-2">
+        <img src="../../assets/images/hand_icon.png" alt="Share hand icon">
+      </div>
+      <h2 [innerHTML]="'HOW_TO_USE.callout_copy2' | translate | uppercase"></h2>
+    </div>
+    <div class="tipRow d-flex align-items-center">
+      <div class="imgBox px-3 pb-2">
+        <img src="../../assets/images/reach_icon.png" alt="Reach icon">
+      </div>
+      <h2 [innerHTML]="'HOW_TO_USE.callout_copy3' | translate | uppercase"></h2>
+    </div>
+    <div class="tipRow d-flex align-items-center">
+      <div class="imgBox px-3 pb-2">
+        <img src="../../assets/images/moon_icon.png" alt="Moon icon">
+      </div>
+      <h2 [innerHTML]="'HOW_TO_USE.callout_copy4' | translate | uppercase"></h2>
+    </div>
+  </div>
+  <div class="navigationButton">
+    <div class="d-flex justify-content-center">
+      <a href="{{currentLanguage}}/safetyprofile">
+        <div class="backButton d-flex align-items-center">
+          <div>
+            <img src="../../assets/images/back_button_active.PNG" alt="back button">
+          </div>
+          <div>
+            <h5>
+              {{'BUTTON.back' | translate | uppercase}}
+            </h5>
+          </div>
+        </div>
+      </a>
+      <div style="width: 50px;"></div>
+      <a href="{{currentLanguage}}/managingirritation">
+        <div class="nextButton d-flex align-items-center">
+          <div>
+            <h5>
+              {{'BUTTON.next' | translate | uppercase}}
+            </h5>
+          </div>
+          <div>
+            <img src="../../assets/images/next_button_active.PNG" alt="next button">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+@import "../../styles/style.scss";
+
+footer{
+  background-color: #575756;
+  padding: 20px 0px;
+  p{
+    font-size: $footer_font_szie;
+    color: $font_white;
+    font-family: $Univers;
+  }
+}

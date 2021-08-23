@@ -1,0 +1,67 @@
+<div class="topImage d-flex justify-content-end">
+  <h1>
+    {{'SAFETY_PROFILE.safety_profile' | translate | uppercase}}
+  </h1>
+</div>
+<div class="main">
+  <h1 class="text-center" [innerHTML]="'SAFETY_PROFILE.headline' | translate | uppercase">
+  </h1>
+  <h2 class="text-center" [innerHTML]="'SAFETY_PROFILE.AKLIEF_is_well_tolerated' | translate">
+  </h2>
+  <div>
+    <img class="chartImage" src="../../assets/images/safety_profile_chart1.png" alt="safety profile chart 1">
+  </div>
+  <h5 [innerHTML]="'SAFETY_PROFILE.The_most_common_adverse_reactions' | translate">
+
+  </h5>
+  <div class="calloutBar d-flex justify-content-start align-items-center"
+    style="background-image: url('../../assets/images/Rectangle_1.png');">
+    <h1 [innerHTML]="'SAFETY_PROFILE.87_4' | translate">
+    </h1>
+    <h2 [innerHTML]="'SAFETY_PROFILE.87_4_copy' | translate">
+    </h2>
+  </div>
+  <div class="calloutBar d-flex justify-content-start align-items-center">
+    <h1 [innerHTML]="'SAFETY_PROFILE.95_3' | translate">
+    </h1>
+    <h2 [innerHTML]="'SAFETY_PROFILE.95_3_copy' | translate">
+    </h2>
+  </div>
+  <div class="calloutBar d-flex justify-content-start align-items-top"
+    style="background-image: url('../../assets/images/Rectangle_1.png');">
+    <div>
+      <img src="../../assets/images/Smiling Face.png" alt="smiling face">
+    </div>
+    <h2 [innerHTML]="'SAFETY_PROFILE.smile_face_copy' | translate">
+    </h2>
+  </div>
+  <div class="navigationButton">
+    <div class="d-flex justify-content-center">
+      <a href="{{currentLanguage}}/efficacyprofile">
+        <div class="backButton d-flex align-items-center">
+          <div>
+            <img src="../../assets/images/back_button_active.PNG" alt="back button">
+          </div>
+          <div>
+            <h5>
+              {{'BUTTON.back' | translate | uppercase}}
+            </h5>
+          </div>
+        </div>
+      </a>
+      <div style="width: 50px;"></div>
+      <a href="{{currentLanguage}}/howtouse">
+        <div class="nextButton d-flex align-items-center">
+          <div>
+            <h5>
+              {{'BUTTON.next' | translate | uppercase}}
+            </h5>
+          </div>
+          <div>
+            <img src="../../assets/images/next_button_active.PNG" alt="next button">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

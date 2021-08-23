@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "aabdeba0-fb6a-4c28-bdb1-9ef9c061a33c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -28,12 +31,18 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/web.config"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/style.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/swiper/swiper-bundle.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

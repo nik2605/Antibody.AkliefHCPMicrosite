@@ -1,0 +1,55 @@
+@import "../../styles/style.scss";
+
+.topImage {
+  background-image: url("../../assets/images/managing_irritation_background_transparent.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: cover;
+  height: 540px;
+  width: 100%;
+  padding-right: 5%;
+  padding-top: 200px;
+  h1 {
+    font-size: $title_h1_font_size;
+    color: $font_white;
+    font-family: $Oregon;
+  }
+}
+
+.main {
+  h1 {
+    color: $font_blue;
+    font-family: $Oregon;
+  }
+
+  .managing_card {
+    padding-bottom: 40px;
+    img {
+      width: 165px;
+    }
+    h5 {
+      color: $font_middleGrey;
+      font-family: $Univers;
+      padding-top: 20px;
+    }
+  }
+  .combinedImage{
+    width: 200px;
+  }
+
+  .calloutBar {
+    background-image: url("../../assets/images/Rectangle_4.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    h2 {
+      font-family: $Oregon;
+      color: $font_white;
+      font-weight: 400;
+    }
+  }
+}

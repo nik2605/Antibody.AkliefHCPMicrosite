@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  username: "test",
+  password: "test",
+  // googleAnalyticsTrackingID: 'G-C5YXX6HP5J'
 };
 
 /*

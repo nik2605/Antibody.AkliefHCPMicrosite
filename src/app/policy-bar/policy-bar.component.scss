@@ -1,0 +1,15 @@
+@import "../../styles/style.scss";
+div{
+  color: $font_blue;
+  text-align: center;
+  a{
+    font-size: 14px;
+    font-family: $Helvetica;
+    color: $font_blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+  }
+}
+
+

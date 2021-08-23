@@ -1,0 +1,71 @@
+@import "../../styles/style.scss";
+
+.topImage {
+  background-image: url("../../assets/images/efficacy_profile_background_transparent.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: cover;
+  height: 540px;
+  width: 100%;
+  padding-right: 5%;
+  padding-top: 200px;
+  h1 {
+    font-size: $title_h1_font_size;
+    color: $font_white;
+    font-family: $Oregon;
+  }
+}
+
+.main {
+  h1 {
+    color: $font_blue;
+    font-family: $Oregon;
+  }
+  h2 {
+    color: $font_darkGrey;
+  }
+  .chartImage {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+  }
+
+  .calloutBar {
+    background-image: url("../../assets/images/Rectangle_4.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    img {
+      width: 100px;
+    }
+    h2 {
+      color: $font_white;
+      font-family: $Oregon;
+      font-weight: 400;
+      padding: 10px;
+    }
+    h1 {
+      color: $font_white;
+      font-family: $Oregon;
+      font-size: 56px;
+    }
+  }
+  .subhead2 {
+    color: $font_grey;
+  }
+
+  h5 {
+    font-family: $Univers;
+    margin: 0;
+  }
+  .age_name_Box {
+    min-width: 190px;
+    p {
+      font-size: 12px;
+    }
+  }
+}

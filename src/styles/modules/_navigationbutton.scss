@@ -1,0 +1,30 @@
+.navigationButton {
+  padding: 20px 0px 50px 0px;
+  .backButton {
+    img {
+      width: 40px;
+    }
+    h5 {
+      padding-left: 10px;
+      color: $font_blue;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 0;
+    }
+  }
+  .nextButton {
+    img {
+      width: 40px;
+    }
+    h5 {
+      padding-right: 10px;
+      color: $font_blue;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 0;
+    }
+  }
+}
+a{
+  text-decoration: none;
+}

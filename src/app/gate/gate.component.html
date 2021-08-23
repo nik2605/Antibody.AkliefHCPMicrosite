@@ -1,0 +1,72 @@
+<form class="gateContainer" [formGroup]="validateForm"  (ngSubmit)="validate()">
+  <div class="main">
+    <h1 class="text-center">
+      {{'GATE.callout'|translate}}
+    </h1>
+    <h2 class="text-center">
+      {{'GATE.subhead'|translate}}
+    </h2>
+    <div class="whiteline">
+
+    </div>
+    <div class="row" style="border-top: 1px solid #ffffff;padding: 30px 0px;">
+      <div class="col text-center">
+        <p class="label">
+          {{'GATE.Licence_number'|translate}}
+        </p>
+        <div>
+          <input type="number" name="licence_number" id="licence_number">
+          <input type="text" name="province" id="province" hidden [value]="'selectedProvince'">
+        </div>
+      </div>
+      <div class="col text-center">
+        <p class="label">
+          {{'GATE.Licensing_province_territory'|translate}}
+        </p>
+        <div class="d-flex justify-content-center">
+          <div style="position: relative;">
+            <div class="selectedBox d-flex justify-content-center align-items-center">
+              {{selectedProvince}}
+            </div>
+            <div class="prvinceList" [hidden]="!isShow" (click)="selectProvince($event)">
+              <p>Alberta</p>
+              <p>British Columbia</p>
+              <p>Manitoba</p>
+              <p>New Brunswick</p>
+              <p>Newfoundland and Labrador</p>
+              <p>Northwest Territories</p>
+              <p>Nova Scotia</p>
+              <p>Nunavut</p>
+              <p>Ontario</p>
+              <p>Prince Edward Island</p>
+              <p>Quebec</p>
+              <p>Saskatchewan</p>
+              <p style="border: none;">Yukon</p>
+            </div>
+          </div>
+          <div style="padding-left: 1px;float: left;">
+            <div class="arrowBox d-flex justify-content-center align-items-center" (click)="ShowList()">
+              <img src="../../assets/images/down_arrow.png" alt="down arrow">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <p class="text-center">
+      {{'GATE.this_website_is_intended_for'|translate}}
+    </p>
+    <div class="d-flex align-items-center pt-3">
+      <div class="whiteLine"></div>
+      <div class="blue_button">
+        <a href="{{currentLanguage}}/home" class="button">
+          {{'BUTTON.enter_website' | translate | uppercase}}
+        </a>
+      </div>
+      <div class="whiteLine"></div>
+    </div>
+  </div>
+</form>
+<app-policy-bar></app-policy-bar>
+
+<!-- {{'GATE.invalid'|translate}} -->

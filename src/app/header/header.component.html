@@ -1,0 +1,125 @@
+<header>
+  <div id="mobileNav" [hidden]="!isMobileMenu">
+    <ul class="navbar-nav">
+      <li class="text-right" style="padding-bottom: 40px;">
+        <svg (click)="ShowMoilbeMenu()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-x xicon" viewBox="0 0 16 16" style="color: #ffffff;">
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="prevalence_of_acne" (click)="ShowMoilbeMenu()">
+          {{'HEADER.Prevalence_of_acne'|translate}}</a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/home'"
+          fragment="burden_of_acne" (click)="ShowMoilbeMenu()">{{'HEADER.Burden_of_acne'|
+          translate}}
+        </a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="overview" (click)="ShowMoilbeMenu()">{{'HEADER.Overview'|
+          translate}}
+        </a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/efficacyprofile'" (click)="ShowMoilbeMenu()">{{'HEADER.Efficacy_profile'|
+          translate}}
+        </a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/safetyprofile'" (click)="ShowMoilbeMenu()">{{'HEADER.Safety_profile'|
+          translate}}
+        </a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/howtouse'" (click)="ShowMoilbeMenu()">{{'HEADER.How_to_use'|
+          translate}}
+        </a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/managingirritation'" (click)="ShowMoilbeMenu()">{{'HEADER.Managing_irritation'|
+          translate}}
+        </a>
+      </li>
+      <li>
+        <a class="navText" [routerLink]="currentLanguage +'/resources'" (click)="ShowMoilbeMenu()">{{'HEADER.Resources'|
+          translate}}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="logoBar">
+    <div class="row">
+      <div class="col d-flex justify-content-start align-items-center">
+        <img src="../../assets/images/AKLIEF_LOGO_RBALL_no gradient_KO.png" alt="Aklief logo"
+          style="max-width: 240px;width:100%;height:auto;">
+      </div>
+      <div class="col d-flex justify-content-end align-items-center">
+        <img src="../../assets/images/GALDERMA_LOGO_WHITE_RGB_SMALL.png" alt="Galderma logo"
+          style="max-width: 200px;width:100%;height:auto;">
+      </div>
+      <div class="col-1 col-lg-1 d-flex justify-content-center align-items-center">
+        <div id="language_icon" (click)="switchLanguage(language_icon_text)">
+          {{ language_icon_text | uppercase}}
+        </div>
+      </div>
+      <div class="col-1 justify-content-center align-items-center togglerIcon" [hidden]="isGate">
+        <div>
+          <button class="navbar-toggler" type="button" (click)="ShowMoilbeMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" fill="#ffffff"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="desktopNav" [hidden]="isGate">
+    <div class="row align-items-center mx-0">
+      <div class="col text-center headerBorder px-0">
+        <a class="navText navBorder" [routerLink]="currentLanguage +'/home'" fragment="prevalence_of_acne">
+          {{'HEADER.Prevalence_of_acne'|translate}}</a>
+      </div>
+      <div class="col text-center headerBorder">
+        <a class="navText navBorder" [routerLink]="currentLanguage +'/home'"
+          fragment="burden_of_acne">{{'HEADER.Burden_of_acne'|
+          translate}}
+        </a>
+      </div>
+      <div class="col text-center headerBorder">
+        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="overview">{{'HEADER.Overview'|
+          translate}}
+        </a>
+      </div>
+      <div class="col text-center headerBorder">
+        <a class="navText" [routerLink]="currentLanguage +'/efficacyprofile'" [routerLinkActive]="'active'">{{'HEADER.Efficacy_profile'|
+          translate}}
+        </a>
+      </div>
+      <div class="col text-center headerBorder">
+        <a class="navText" [routerLink]="currentLanguage +'/safetyprofile'" [routerLinkActive]="'active'">{{'HEADER.Safety_profile'|
+          translate}}
+        </a>
+      </div>
+      <div class="col text-center headerBorder">
+        <a class="navText" [routerLink]="currentLanguage +'/howtouse'" [routerLinkActive]="'active'">{{'HEADER.How_to_use'|
+          translate}}
+        </a>
+      </div>
+      <div class="col text-center headerBorder">
+        <a class="navText" [routerLink]="currentLanguage +'/managingirritation'" [routerLinkActive]="'active'">{{'HEADER.Managing_irritation'|
+          translate}}
+        </a>
+      </div>
+      <div class="col text-center">
+        <a class="navText" [routerLink]="currentLanguage +'/resources'" [routerLinkActive]="'active'">{{'HEADER.Resources'|
+          translate}}
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

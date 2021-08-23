@@ -1,0 +1,92 @@
+@import "../../styles/style.scss";
+
+.topImage {
+  background-image: url("../../assets/images/safety_profile_background_transparent.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: cover;
+  height: 540px;
+  width: 100%;
+  padding-right: 5%;
+  padding-top: 200px;
+  h1 {
+    font-size: $title_h1_font_size;
+    color: $font_white;
+    font-family: $Oregon;
+  }
+}
+
+.main {
+  h1 {
+    color: $font_blue;
+    font-family: $Oregon;
+    padding: 30px 310px 20px;
+    font-weight: 400;
+  }
+  h2 {
+    color: $font_darkGrey;
+  }
+  .downloadBox {
+    border-top: 1px solid $site_blue;
+    width: 90%;
+    margin: 0 auto;
+    .step {
+      border-bottom: 1px solid $site_blue;
+      .imgBox {
+        img {
+          width: 150px;
+        }
+      }
+
+      h3 {
+        color: $font_blue;
+        font-family: $Oregon;
+        font-weight: 400;
+      }
+      h5 {
+        color: $font_middleGrey;
+        padding: 20px 0px 10px 0px;
+      }
+    }
+  }
+  .calloutBar {
+    background-image: url("../../assets/images/Rectangle_4.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    h1 {
+      color: $font_white;
+      font-size: 32px;
+      font-family: $Oregon;
+      font-weight: 400;
+      padding: 0px 50px;
+      margin-bottom: 0;
+    }
+  }
+  .blueLine{
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid $site_blue;
+  }
+  .reference{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .reference_text{
+      font-size:12px;
+      font-weight: bold;
+    }
+    ol{
+      li{
+        font-size: 10px;
+        font-weight: $Univers;
+
+      }
+    }
+  }
+}

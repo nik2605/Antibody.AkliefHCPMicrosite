@@ -1,0 +1,66 @@
+<div>
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="panel1">
+          <h1>
+            {{'HOME.prevalence_of_acne_panel1_headline' |translate| uppercase}}
+          </h1>
+          <div class="calloutBar">
+            <div>
+              <h4 style="line-height: 1;">
+                {{'HOME.prevalence_of_acne_panel1_over'|translate| uppercase}}
+              </h4>
+              <h4 [innerHTML]="'HOME.prevalence_of_acne_panel1_50'|translate" style="font-size: 50px;line-height: 1;">
+              </h4>
+            </div>
+            <div style="padding-left: 20px;">
+              <h4 [innerHTML]="'HOME.prevalence_of_acne_panel1_callout' |translate | uppercase">
+              </h4>
+            </div>
+          </div>
+          <div style="width: 100%;height: 50px;">
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="panel2">
+          <h1>
+            {{'HOME.prevalence_of_acne_panel2_headline' |translate| uppercase}}
+          </h1>
+          <div class="row">
+            <div class="col">
+              <img src="../../assets/images/Face.png" alt="face image">
+              <br>
+              <p [innerHTML]="'HOME.prevalence_of_acne_panel2_copy1' |translate| uppercase">
+              </p>
+            </div>
+            <div class="col">
+              <img src="../../assets/images/Back.png" alt="back image">
+              <br>
+              <p [innerHTML]="'HOME.prevalence_of_acne_panel2_copy2' |translate| uppercase">
+              </p>
+            </div>
+            <div class="col">
+              <img src="../../assets/images/Chest.png" alt="chest image">
+              <br>
+              <p [innerHTML]="'HOME.prevalence_of_acne_panel2_copy3' |translate| uppercase">
+              </p>
+            </div>
+          </div>
+          <div class="calloutBar">
+            <h4 [innerHTML]="'HOME.prevalence_of_acne_panel2_callout' |translate | uppercase">
+            </h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+
+
+  </swiper>
+</div>

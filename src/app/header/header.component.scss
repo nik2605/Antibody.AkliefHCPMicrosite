@@ -1,0 +1,92 @@
+@import "../../styles/style.scss";
+
+header {
+  .logoBar {
+    background: $site_blue;
+    padding: 5px 20px;
+  }
+
+  #mobileNav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.85);
+    z-index: 1;
+    padding: 5%;
+    top: 0;
+    .xicon {
+      width: 50px;
+      height: 50px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .navbar-nav {
+      padding-inline-end: 20px;
+      li {
+        border-bottom: 1px solid $site_blue;
+        .navText {
+          color: #ffffff;
+          font-size: 23px;
+          padding: 20px 0px 20px 20px;
+          width: 100%;
+          display: block;
+
+          &:hover {
+            background-color: $site_blue;
+          }
+        }
+      }
+    }
+
+    @include xs {
+      display: block;
+    }
+    @include lg {
+      display: none;
+    }
+  }
+
+  #desktopNav {
+    border-bottom: 1px solid $site_blue;
+    .headerBorder {
+      border-right: 1px solid $site_blue;
+    }
+    .col {
+      padding-left: 0px;
+      padding-right: 0px;
+      .navText {
+        font-size: $header_font_szie;
+        color: $font_blue;
+        text-decoration: none;
+        font-family: $Univers;
+        display: block;
+        padding: 5px;
+        &:hover {
+          background-image: url("../../assets/images/select_rectangle.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: right;
+          color: $font_white !important;
+        }
+      }
+      .active {
+        background-image: url("../../assets/images/select_rectangle.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        color: $font_white !important;
+      }
+    }
+  }
+  @include xs {
+    .togglerIcon {
+      display: flex;
+    }
+  }
+  @include lg {
+    .togglerIcon {
+      display: none;
+    }
+  }
+}

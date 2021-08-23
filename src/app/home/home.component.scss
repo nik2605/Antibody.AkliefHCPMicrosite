@@ -1,0 +1,284 @@
+@import "../../styles/style.scss";
+
+section {
+  position: relative;
+  // height: 100%;
+}
+
+.landing {
+  background-image: url("../../assets/images/home_background.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 480px;
+  width: 100%;
+  color: $font_white;
+  .textBox {
+    padding-right: 5%;
+    .title_h1 {
+      padding-top: 70px;
+      padding-bottom: 80px;
+      text-align: right;
+    }
+    .title_h2 {
+      font-weight: bold;
+    }
+    .title_p {
+      padding-top: 20px;
+    }
+  }
+}
+
+.prevalence_of_acne {
+  background-image: url("../../assets/images/prevalence_background_transparent.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 715px;
+  width: 100%;
+  color: $font_white;
+  .whiteContainer {
+    padding-right: 5%;
+    width: 100%;
+    height: 100%;
+    .whiteBox {
+      background-color: #ffffff;
+      width: 40%;
+      height: 48%;
+    }
+  }
+}
+
+.burden_of_acne {
+  h1 {
+    color: $font_blue;
+    font-family: $Oregon;
+    padding: 50px 0px;
+  }
+  .roundedblueBox {
+    background-color: $site_ligtblue;
+    border-radius: 60px;
+    h3 {
+      color: $font_white;
+      font-family: $Oregon;
+    }
+    h5 {
+      color: $font_white;
+      font-family: $Univers;
+      line-height: 1.5;
+    }
+  }
+  img {
+    width: 110px;
+  }
+}
+
+.efficacyprofile {
+  background-image: url("../../assets/images/efficacy_profile_background_transparent.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 715px;
+  width: 100%;
+  .whiteContainer {
+    padding-right: 5%;
+    width: 100%;
+    height: 100%;
+    .whiteBox {
+      background-color: #ffffff;
+      width: 40%;
+      padding: 30px 100px 10px;
+      h1 {
+        color: $font_blue;
+        font-family: $Oregon;
+      }
+      h2 {
+        font-family: $Oregon;
+        color: $font_grey;
+      }
+      p {
+        font-size: 14px;
+        color: $font_grey;
+        font-family: $Oregon;
+        padding: 10px 0px;
+      }
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+.safetyprofile {
+  background-image: url("../../assets/images/wallpaper_5.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 715px;
+  width: 100%;
+  .main {
+    background-color: #ffffff;
+    .scheduleBox {
+      background-image: url("../../assets/images/Rectangle_2.png");
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: top;
+      background-size: cover;
+      border-radius: 10px;
+      padding: 20px;
+      img {
+        width: 150px;
+      }
+      h2 {
+        color: $font-white;
+        padding-top: 20px;
+      }
+    }
+    .textBox {
+      h1 {
+        color: $font_blue;
+        font-family: $Oregon;
+        padding-bottom: 40px;
+      }
+      h2 {
+        font-family: $Oregon;
+        color: $font_grey;
+        padding-bottom: 40px;
+      }
+      p {
+        font-size: 14px;
+        color: $font_grey;
+        font-family: $Oregon;
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+.howtouse {
+  h1 {
+    color: $font_blue;
+    font-family: $Oregon;
+    padding-top: 50px;
+  }
+  h2 {
+    font-family: $Oregon;
+    color: $font_darkGrey;
+    padding: 20px 0px;
+  }
+  .col-3 {
+    border-right: 1px solid $border_grey;
+    h4 {
+      font-family: $Oregon;
+      color: $font_grey;
+    }
+    img {
+      width: 130px;
+    }
+  }
+}
+
+.managingirritation {
+  background-image: url("../../assets/images/managing_irritation_background_transparent.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 715px;
+  width: 100%;
+  .whiteContainer {
+    padding-right: 5%;
+    width: 100%;
+    height: 100%;
+    .whiteBox {
+      background-color: #ffffff;
+      width: 40%;
+      padding: 30px 100px 10px;
+      h1 {
+        color: $font_blue;
+        font-family: $Oregon;
+      }
+      h2 {
+        font-family: $Oregon;
+        color: $font_grey;
+        padding-bottom: 50px;
+      }
+      p {
+        font-size: 14px;
+        color: $font_grey;
+        font-family: $Oregon;
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+.resources {
+  background-image: url("../../assets/images/wallpaper_2.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 715px;
+  width: 100%;
+  .main {
+    background-color: #ffffff;
+    .downloadBox{
+      img{
+        width: 100px;
+      }
+      h5{
+        font-family: $Oregon;
+        color: $font_darkGrey;
+        padding-top:10px;
+        padding-bottom: 20px;
+      }
+    }
+    .textBox {
+      h1 {
+        color: $font_blue;
+        font-family: $Oregon;
+        padding-bottom: 10px;
+      }
+      h2 {
+        font-family: $Oregon;
+        color: $font_grey;
+        padding-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+        color: $font_grey;
+        font-family: $Oregon;
+        padding: 0px 0px 40px;
+      }
+    }
+  }
+}
+
+.backtotop{
+  width: 65px;
+  position: absolute;
+  bottom: 20px;
+  right:20px;
+  img{
+    width: 30px;
+  }
+  p{
+    font-size: 8px;
+    text-decoration: none;
+    padding-top: 5px;
+  }
+  .white_text{
+    color: $font_white;
+  }
+  .grey_text{
+    color: $font_grey;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}

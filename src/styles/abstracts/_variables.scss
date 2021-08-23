@@ -1,0 +1,63 @@
+//site color
+$site_red: #f42f56;
+$site_blue: #00accd;
+$site_transparent_blue: rgba(30, 203, 225, 0.66);
+$site_ligtblue: #5bc2c3;
+
+//border color
+$border_grey: #d8d8d8;
+
+//language button color
+$language_button_color: #58595b;
+
+//font color
+$font_grey: #9b9b9b;
+$font_white: #ffffff;
+$font_blue: #00accd;
+$font_darkblue: #008eaa;
+$font_darkGrey: #575756;
+$font_middleGrey: #58595b;
+
+//title font style
+$title_h1_font_size: 52px;
+$title_h2_font_size: 24px;
+$title_p_font_size: 14px;
+
+//font family
+$Oregon: "Oregon", Arial, sans-serif;
+$Univers_Bold: "Skolar Sans Latn", Arial, sans-serif;
+$Helvetica: "Helvetica", Arial, sans-serif;
+$Univers: "Univers", Arial, sans-serif;
+
+//page banner style
+$h1_font_size: 32px;
+$h2_font_size: 22px;
+$h3_font_size: 24px;
+$h4_font_size: 18px;
+$h5_font_size: 16px;
+$p_14_font_size: 14px;
+$p_12_font_size: 12px;
+
+//button font
+$button_font_size: 16px;
+
+//micetype font
+$micetype_font_size: 10px;
+$header_font_szie: 10px;
+$footer_font_szie: 10px;
+
+//screen size
+// small phone size
+$screen-xs-min: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
