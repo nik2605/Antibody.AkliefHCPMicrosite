@@ -10,10 +10,14 @@
   width: 100%;
   padding-right: 5%;
   padding-top: 200px;
+  text-align: center;
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
+  }
+  @include md{
+    text-align: left;
   }
 }
 

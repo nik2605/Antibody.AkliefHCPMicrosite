@@ -1,15 +1,15 @@
 <app-safetyinformation></app-safetyinformation>
 <section id="landing">
   <div class="landing d-flex justify-content-end">
-    <div class="textBox">
+    <div class="textBox d-inline-block" style="vertical-align: middle;">
       <h1 class="title_h1" [innerHTML]="'HOME.headline'|translate">
       </h1>
       <div class="d-flex justify-content-end">
-        <h2 class="title_h2" [innerHTML]="'HOME.subhead'|translate">
+        <h2 class="title_h2 w-80" [innerHTML]="'HOME.subhead'|translate">
         </h2>
       </div>
       <div class="d-flex justify-content-end">
-        <p class="title_p" [innerHTML]="'HOME.subhead_copy'|translate">
+        <p class="title_p w-80" [innerHTML]="'HOME.subhead_copy'|translate">
         </p>
       </div>
     </div>
@@ -41,11 +41,11 @@
     <h1 class="text-center">
       {{'HOME.burden_of_acne_headline'|translate | uppercase}}
     </h1>
-    <div class="roundedblueBox d-flex align-items-center">
-      <div>
-        <img src="../../assets/images/acne_back.png" alt="acne on back" style="width: 120px;">
+    <div class="row roundedblueBox p-3 pl-md-0 text-center">
+      <div class="col-12 col-md-3 imgColInBox">
+        <img src="../../assets/images/acne_back.png" alt="acne on back" style="width: 120px;" class="imgInBox">
       </div>
-      <div class="text-center w-100 px-3">
+      <div class="col-12 col-md-8">
         <h3>
           {{'HOME.burden_of_acne_subhead'|translate | uppercase}}
         </h3>
@@ -53,8 +53,20 @@
         </h5>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
+    <!-- <div class="roundedblueBox d-flex align-items-center">
+      <div>
+        <img src="../../assets/images/acne_back.png" alt="acne on back" style="width: 120px;">
+      </div>
+      <div class="text-center p-4">
+        <h3>
+          {{'HOME.burden_of_acne_subhead'|translate | uppercase}}
+        </h3>
+        <h5 [innerHTML]="'HOME.burden_of_acne_callout'|translate">
+        </h5>
+      </div>
+    </div> -->
+    <div class="row mb-5">
+      <div class="col-12 col-sm-6 col-md-3">
         <div class="text-center py-4">
           <img src="../../assets/images/burdenofacne_icon_1.png" alt="sad face">
         </div>
@@ -64,7 +76,7 @@
           </h5>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-6 col-md-3">
         <div class="text-center py-4">
           <img src="../../assets/images/burdenofacne_icon_2.png" alt="thunder">
         </div>
@@ -74,7 +86,7 @@
           </h5>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-6 col-md-3">
         <div class="text-center py-4">
           <img src="../../assets/images/burdenofacne_icon_3.png" alt="gift">
         </div>
@@ -84,7 +96,7 @@
           </h5>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-sm-6 col-md-3">
         <div class="text-center py-4">
           <img src="../../assets/images/burdenofacne_icon_4.png" alt="stairs">
         </div>
@@ -125,7 +137,7 @@
 </section>
 <section>
   <div class="efficacyprofile">
-    <div class="whiteContainer d-flex justify-content-end align-items-center">
+    <div class="whiteContainer d-flex justify-content-center justify-content-md-end align-items-center">
       <div class="whiteBox text-center">
         <h1>
           {{'HOME.efficacy_profile_headline'|translate|uppercase}}
@@ -162,7 +174,7 @@
   <div class="safetyprofile d-flex align-items-center justify-content-center">
     <div class="main px-5 pt-5 pb-3">
       <div class="row">
-        <div class="col">
+        <div class="col mb-3 mb-md-0">
           <div class="scheduleBox text-center">
             <div>
               <img src="../../assets/images/Calendar.png" alt="Calendar">
@@ -210,38 +222,30 @@
       {{'HOME.how_to_use_subhead'|translate|uppercase}}
     </h2>
     <div class="row">
-      <div class="col-3 text-center">
+      <div class="col-12 col-sm-6 col-md-3 text-center">
         <h4>
           {{'HOME.how_to_use_copy1'|translate|uppercase}}
         </h4>
+        <img class="howToUseImg" src="../../assets/images/Cleanse.png" alt="Cleanse">
       </div>
-      <div class="col-3 text-center">
+      <div class="col-12 col-sm-6 col-md-3 text-center">
         <h4>
           {{'HOME.how_to_use_copy2'|translate|uppercase}}
         </h4>
+        <img class="howToUseImg" src="../../assets/images/Apply.png" alt="Apply">
       </div>
-      <div class="col-3 text-center">
+      <div class="col-12 col-sm-6 col-md-3 text-center">
         <h4>
           {{'HOME.how_to_use_copy3'|translate|uppercase}}
         </h4>
+        <img class="howToUseImg" src="../../assets/images/Moisturize.png" alt="Moisturize">
       </div>
-      <div class="col-3 text-center">
+      <div class="col-12 col-sm-6 col-md-3 text-center">
         <h4>
           {{'HOME.how_to_use_copy4'|translate|uppercase}}
         </h4>
-      </div>
-      <div class="col-3 d-flex align-items-center justify-content-center">
-        <img src="../../assets/images/Cleanse.png" alt="Cleanse">
-      </div>
-      <div class="col-3 d-flex align-items-center justify-content-center">
-        <img src="../../assets/images/Apply.png" alt="Apply">
-      </div>
-      <div class="col-3 d-flex align-items-center justify-content-center">
-        <img src="../../assets/images/Moisturize.png" alt="Moisturize">
-      </div>
-      <div class="col-3 d-flex align-items-center justify-content-center">
-        <img src="../../assets/images/Sun Protection.png" alt="Sun Protection">
-      </div>
+        <img class="howToUseImg" src="../../assets/images/Sun Protection.png" alt="Sun Protection">
+      </div> 
     </div>
     <div class="blue_button">
       <a href="{{currentLanguage}}/howtouse" class="button">
@@ -262,7 +266,7 @@
 </section>
 <section>
   <div class="managingirritation">
-    <div class="whiteContainer d-flex justify-content-end align-items-center">
+    <div class="whiteContainer d-flex justify-content-center justify-content-md-end align-items-center">
       <div class="whiteBox text-center">
         <h1>
           {{'HOME.managing_irritation_headline'|translate|uppercase}}

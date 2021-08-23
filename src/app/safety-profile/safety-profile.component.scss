@@ -10,12 +10,30 @@
   width: 100%;
   padding-right: 5%;
   padding-top: 200px;
+  text-align: center;
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
   }
+  @include md{
+    text-align: left;
+  }
 }
+
+
+.image-icon{
+  width: 40%;
+  margin-bottom: 15px;
+  @include md{
+    width: 50%;
+    margin-bottom: 0;
+  }
+  @include lg{
+    width: 60%;
+  }
+}
+
 
 .main {
   h1 {
@@ -50,7 +68,6 @@
       font-family: $Oregon;
       color: $font_white;
       font-weight: 400;
-      padding-left: 40px;
     }
     img {
       width: 70px;

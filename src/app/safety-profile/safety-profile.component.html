@@ -3,7 +3,7 @@
     {{'SAFETY_PROFILE.safety_profile' | translate | uppercase}}
   </h1>
 </div>
-<div class="main">
+<div class="main pt-5">
   <h1 class="text-center" [innerHTML]="'SAFETY_PROFILE.headline' | translate | uppercase">
   </h1>
   <h2 class="text-center" [innerHTML]="'SAFETY_PROFILE.AKLIEF_is_well_tolerated' | translate">
@@ -14,27 +14,29 @@
   <h5 [innerHTML]="'SAFETY_PROFILE.The_most_common_adverse_reactions' | translate">
 
   </h5>
-  <div class="calloutBar d-flex justify-content-start align-items-center"
-    style="background-image: url('../../assets/images/Rectangle_1.png');">
-    <h1 [innerHTML]="'SAFETY_PROFILE.87_4' | translate">
-    </h1>
-    <h2 [innerHTML]="'SAFETY_PROFILE.87_4_copy' | translate">
-    </h2>
+
+  <div class="row text-justify calloutBar pt-4 m-4">
+    <div class="col-12 col-md-4 align-self-center"><h1 [innerHTML]="'SAFETY_PROFILE.87_4' | translate">
+    </h1></div>
+    <div class="col-12 col-md-8 align-self-center"> <h2 [innerHTML]="'SAFETY_PROFILE.87_4_copy' | translate">
+    </h2></div>
   </div>
-  <div class="calloutBar d-flex justify-content-start align-items-center">
-    <h1 [innerHTML]="'SAFETY_PROFILE.95_3' | translate">
-    </h1>
-    <h2 [innerHTML]="'SAFETY_PROFILE.95_3_copy' | translate">
-    </h2>
+
+  <div class="row text-justify calloutBar pt-4 m-4">
+    <div class="col-12 col-md-4 align-self-center"><h1 [innerHTML]="'SAFETY_PROFILE.95_3' | translate">
+    </h1></div>
+    <div class="col-12 col-md-8 align-self-center"> <h2 [innerHTML]="'SAFETY_PROFILE.95_3_copy' | translate">
+    </h2></div>
   </div>
-  <div class="calloutBar d-flex justify-content-start align-items-top"
-    style="background-image: url('../../assets/images/Rectangle_1.png');">
-    <div>
-      <img src="../../assets/images/Smiling Face.png" alt="smiling face">
-    </div>
-    <h2 [innerHTML]="'SAFETY_PROFILE.smile_face_copy' | translate">
-    </h2>
+
+
+  <div class="row text-justify calloutBar pt-4 m-4">
+    <div class="col-12 col-md-4 align-self-center"> <img src="../../assets/images/Smiling Face.png" alt="smiling face" class="image-icon"></div>
+    <div class="col-12 col-md-8 align-self-center">  <h2 [innerHTML]="'SAFETY_PROFILE.smile_face_copy' | translate">
+    </h2></div>
   </div>
+
+
   <div class="navigationButton">
     <div class="d-flex justify-content-center">
       <a href="{{currentLanguage}}/efficacyprofile">

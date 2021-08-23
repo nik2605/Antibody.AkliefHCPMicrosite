@@ -10,10 +10,14 @@
   width: 100%;
   padding-right: 5%;
   padding-top: 200px;
+  text-align: center;
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
+  }
+  @include md{
+    text-align: left;
   }
 }
 
@@ -21,11 +25,13 @@
   h1 {
     color: $font_blue;
     font-family: $Oregon;
-    padding: 30px 310px 20px;
     font-weight: 400;
   }
   h2 {
     color: $font_darkGrey;
+  }
+  .flex-text{
+    margin-left:10%;
   }
   .downloadBox {
     border-top: 1px solid $site_blue;

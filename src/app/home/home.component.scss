@@ -11,11 +11,12 @@ section {
   background-position-y: top;
   background-position-x: center;
   background-size: cover;
-  height: 480px;
   width: 100%;
+  min-height: 80vh;
+  padding-bottom: 1.5rem;
   color: $font_white;
   .textBox {
-    padding-right: 5%;
+    padding:0 5%;
     .title_h1 {
       padding-top: 70px;
       padding-bottom: 80px;
@@ -28,7 +29,17 @@ section {
       padding-top: 20px;
     }
   }
+  .w-80{
+    width: 80%;
+    @include sm{
+      width: 60%;
+    }
+    @include md{
+      width: 50%;
+    }
+  }
 }
+
 
 .prevalence_of_acne {
   background-image: url("../../assets/images/prevalence_background_transparent.png");
@@ -52,6 +63,7 @@ section {
 }
 
 .burden_of_acne {
+  padding-bottom: 5vh;
   h1 {
     color: $font_blue;
     font-family: $Oregon;
@@ -68,6 +80,17 @@ section {
       color: $font_white;
       font-family: $Univers;
       line-height: 1.5;
+    }
+    .imgInBox{
+      margin-left: auto;
+      @include md{
+        margin-left: -20px;
+      }
+    }
+    .imgColInBox{
+      @include md{
+        text-align: left;
+      }
     }
   }
   img {
@@ -89,8 +112,8 @@ section {
     height: 100%;
     .whiteBox {
       background-color: #ffffff;
-      width: 40%;
-      padding: 30px 100px 10px;
+      width: 60%;
+      padding: 7% 8%;
       h1 {
         color: $font_blue;
         font-family: $Oregon;
@@ -106,7 +129,13 @@ section {
         padding: 10px 0px;
       }
       img {
-        width: 120px;
+        width: 90px;
+      }
+      @include md{
+        width: 50%;
+        img {
+          width: 120px;
+        }
       }
     }
   }
@@ -118,8 +147,8 @@ section {
   background-position-y: top;
   background-position-x: center;
   background-size: cover;
-  height: 715px;
   width: 100%;
+  padding: 10vh 5%;
   .main {
     background-color: #ffffff;
     .scheduleBox {
@@ -157,6 +186,10 @@ section {
       }
     }
   }
+  @include md{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
 }
 
 .howtouse {
@@ -180,6 +213,14 @@ section {
       width: 130px;
     }
   }
+  .howToUseImg{
+    max-height:30vh;
+    max-width:70%;
+    margin-bottom:10vh;
+    @include md{
+      margin-bottom:0;
+    }
+  }
 }
 
 .managingirritation {
@@ -196,8 +237,8 @@ section {
     height: 100%;
     .whiteBox {
       background-color: #ffffff;
-      width: 40%;
-      padding: 30px 100px 10px;
+      width: 60%;
+      padding: 7% 8%;
       h1 {
         color: $font_blue;
         font-family: $Oregon;
@@ -213,6 +254,12 @@ section {
         font-family: $Oregon;
         padding: 10px 0px;
       }
+      @include md{
+        width: 50%;
+        img {
+          width: 120px;
+        }
+      }
     }
   }
 }
@@ -223,10 +270,13 @@ section {
   background-position-y: top;
   background-position-x: center;
   background-size: cover;
-  height: 715px;
+  height: auto;
   width: 100%;
+  padding: 10vh 5% !important;
   .main {
     background-color: #ffffff;
+    height: 100%;
+    margin:10%;
     .downloadBox{
       img{
         width: 100px;
@@ -256,6 +306,10 @@ section {
         padding: 0px 0px 40px;
       }
     }
+  }
+  @include md{
+    padding-top: 15vh !important;
+    padding-bottom: 15vh !important;
   }
 }
 
