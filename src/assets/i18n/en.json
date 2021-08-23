@@ -31,15 +31,15 @@
   "POLICY_BAR":{
     "privacy_policy":"Privacy policy",
     "cookie_policy":"Cookie policy",
-    "safety_information":"Safety inofrmation"
+    "safety_information":"Safety information"
   },
   "FOOTER":{
     "micetype":"AKLIEF<sup>&reg</sup> is a registered trademark of Galderma Canada Inc.<br>Galderma Canada Inc. Thornhill, Ontario"
   },
   "HOME":{
-    "headline":"Don’t let their<br>acne be the focus",
-    "subhead":"Help change their story—treat<br>acne on the face and beyond",
-    "subhead_copy":"AKLIEF (Trifarotene 50 mcg/g) topical cream is indicated<br>for the topical treatment of acne vulgaris of the face and/<br>or trunk in patients 12 years of age and older.<sup>1</sup>",
+    "headline":"Don’t let their acne be the focus",
+    "subhead":"Help change their story—treat acne on the face and beyond",
+    "subhead_copy":"AKLIEF (Trifarotene 50 mcg/g) topical cream is indicated for the topical treatment of acne vulgaris of the face and/or trunk in patients 12 years of age and older.<sup>1</sup>",
     "prevalence_of_acne_panel1_headline":"Prevalence of Acne",
     "prevalence_of_acne_panel1_over":"OVER",
     "prevalence_of_acne_panel1_50":"50<sub>%</sub>",
@@ -91,7 +91,7 @@
     "efficacy_profile":"EFFICACY PROFILE",
     "headline":"AKLIEF: Proven efficacy on the face and trunk",
     "subhead_1":"Results your patients can see",
-    "in_the_Pivotal_1_Study":"In&nbsp;the Pivotal&nbsp;1 Study:",
+    "in_the_Pivotal_1_Study":"In the Pivotal 1 Study:",
     "54_4":"54.4%",
     "fewer_inflammatory_lesions_44":"fewer inflammatory lesions from baseline to week 12 vs. 44.8% reduction with vehicle; P<0.0001<sup>10</sup>",
     "face_subject1":"Subject: <b>8511-004</b>",
@@ -141,7 +141,7 @@
     "87_4":"87.4<sub>%</sub>",
     "95_3":"95.3<sub>%</sub>",
     "87_4_copy":"of patients did not experience any related treatment emergent adverse effects for over 52 weeks.<sup>14</sup>",
-    "95_3_copy":"of patients had a <span class=\"text_blue\">high treatment compliance</span> for both face and trunk.<sup>14</sup><br><ul class=\"pt-2 mb-0\"><li>Previous investigations have observed this may be due in part to the <span class=\"text_blue\">treatment regimen and manageable safety profile</span>.<sup>14</sup></li></ul>",
+    "95_3_copy":"of patients had a <span class=\"text_blue\">high treatment compliance</span> for both face and trunk.<sup>14</sup><br><br>&#8226; Previous investigations have observed this may be due in part to the <span class=\"text_blue\">treatment regimen and manageable safety profile</span>.<sup>14</sup>",
     "smile_face_copy":"Patients reported <span class=\"text_blue\">a substantially improved QOL</span> during the study period, which was positively impacted by improvements in their acne. <sup>14,15</sup>"
   },
   "HOW_TO_USE":{

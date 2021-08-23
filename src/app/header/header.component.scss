@@ -57,6 +57,7 @@ header {
       padding-right: 0px;
       .navText {
         font-size: $header_font_szie;
+        text-transform: uppercase;
         color: $font_blue;
         text-decoration: none;
         font-family: $Univers;
@@ -80,11 +81,17 @@ header {
     }
   }
   @include xs {
+    #desktopNav{
+      display: none;
+    }
     .togglerIcon {
       display: flex;
     }
   }
   @include lg {
+    #desktopNav{
+      display: block;
+    }
     .togglerIcon {
       display: none;
     }
