@@ -1,8 +1,47 @@
 <div class="popup_safety" [hidden]="isShow">
-  <div class="closeIcon">
-    <img src="../../../assets/images/close_icon.png" alt="close icon" (click)="close()">
-  </div>
-  <div class="whiteBox">
+  <div class="popupBox">
+    <div class="whiteBox">
+      <div class="closeIcon">
+        <img src="../../../assets/images/close_icon.png" alt="close icon" (click)="close()">
+      </div>
+      <div class="textBox">
+        <h5 class="text_blue">
+          {{'SAFETY_INFORMATION.safety_information'|translate}}
+        </h5>
+        <p class="subhead">
+          {{'SAFETY_INFORMATION.subhead_1'|translate}}
+        </p>
+        <p [innerHTML]="'SAFETY_INFORMATION.subhead_1_copy'|translate">
+        </p>
+        <p class="subhead">
+          {{'SAFETY_INFORMATION.subhead_2'|translate}}
+        </p>
+        <ul class="li_font" [innerHTML]="'SAFETY_INFORMATION.subhead_2_copy'|translate">
 
+        </ul>
+        <p class="subhead">
+          {{'SAFETY_INFORMATION.subhead_3'|translate}}
+        </p>
+        <ul class="li_font" [innerHTML]="'SAFETY_INFORMATION.subhead_3_copy'|translate">
+
+        </ul>
+        <p class="subhead">
+          {{'SAFETY_INFORMATION.subhead_4'|translate}}
+        </p>
+        <ul class="li_font" [innerHTML]="'SAFETY_INFORMATION.subhead_4_copy'|translate">
+
+        </ul>
+        <p class="subhead">
+          {{'SAFETY_INFORMATION.subhead_5'|translate}}
+        </p>
+        <p [innerHTML]="'SAFETY_INFORMATION.subhead_5_copy'|translate">
+        </p>
+        <div class="blue_button">
+          <a class="button" (click)="close()">
+            {{'BUTTON.ok' | translate | uppercase}}
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

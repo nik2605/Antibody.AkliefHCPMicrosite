@@ -14,20 +14,24 @@ export class GateComponent implements OnInit {
   selectedProvince: string = '';
   validateForm!: FormGroup;
   loading = false;
+  isNotValid = false;
+  isInvalidShow = false;
+
+
 
 
   ShowList() {
-    this.isShow = !this.isShow;
+    this.isShow = true;
   }
   selectProvince(event: any) {
-    this.isShow = !this.isShow;
+    this.isShow = false;
     this.selectedProvince = event.target.innerText;
 
   }
 
   public currentLanguage: string;
-  constructor(public localize: LocalizeRouterService, private router: Router,private formBuilder: FormBuilder,
-    private authService : AuthService,) {
+  constructor(public localize: LocalizeRouterService, private router: Router, private formBuilder: FormBuilder,
+    private authService: AuthService,) {
     this.currentLanguage = this.localize.parser.currentLang;
   }
 
@@ -35,6 +39,9 @@ export class GateComponent implements OnInit {
   switchLanguage(event: any) {
     if (event.id == 'language_icon') {
       this.currentLanguage = event.innerText == 'EN' ? 'fr' : "en";
+    }
+    else if (event.parentNode.id != 'prvinceList' && this.isShow && event.id != 'arrowBox' && event.id != 'selectedBox') {
+      this.isShow = false;
     }
   }
 
@@ -49,11 +56,18 @@ export class GateComponent implements OnInit {
   validate() {
     if (this.validateForm.valid) {
       this.loading = true;
-      if(this.authService.validate(this.f.province.value, this.f.licence_number.value)){
-        this.router.navigate([this.currentLanguage+'/home']);
+      if (this.authService.validate(this.f.province.value, this.f.licence_number.value)) {
+        this.router.navigate([this.currentLanguage + '/home']);
       }
+      else {
+        this.isInvalidShow = true;
+      }
+    }
+    else {
+      this.isInvalidShow = true;
+    }
   }
-  else{
-  }
+  close() {
+    this.isInvalidShow = false;
   }
 }

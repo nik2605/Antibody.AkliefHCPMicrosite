@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -29,8 +29,9 @@ import { HomeprevalencesSwiperComponent } from './homeprevalences-swiper/homepre
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { HomeoverviewswiperComponent } from './homeoverviewswiper/homeoverviewswiper.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InvalidComponent } from './popup/invalid/invalid.component';
 import { SafetyinformationComponent } from './popup/safetyinformation/safetyinformation.component';
+import { FaceSwiperComponent } from './face-swiper/face-swiper.component';
+import { ChestSwiperComponent } from './chest-swiper/chest-swiper.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -55,8 +56,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     PolicyBarComponent,
     HomeprevalencesSwiperComponent,
     HomeoverviewswiperComponent,
-    InvalidComponent,
-    SafetyinformationComponent
+    SafetyinformationComponent,
+    FaceSwiperComponent,
+    ChestSwiperComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -80,7 +82,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   ],
   providers: [AuthGuard, CookieService,
     {
-      provide: {HTTP_INTERCEPTORS, SAVER},
+      provide: { HTTP_INTERCEPTORS, SAVER },
       useClass: AuthService,
       multi: true
     },

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InvalidComponent } from './invalid.component';
+import { ChestSwiperComponent } from './chest-swiper.component';
 
-describe('InvalidComponent', () => {
-  let component: InvalidComponent;
-  let fixture: ComponentFixture<InvalidComponent>;
+describe('ChestSwiperComponent', () => {
+  let component: ChestSwiperComponent;
+  let fixture: ComponentFixture<ChestSwiperComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InvalidComponent ]
+      declarations: [ ChestSwiperComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InvalidComponent);
+    fixture = TestBed.createComponent(ChestSwiperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

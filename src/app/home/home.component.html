@@ -18,9 +18,12 @@
 </section>
 <section id="prevalence_of_acne">
   <div class="prevalence_of_acne">
-    <div class="whiteContainer d-flex justify-content-end align-items-center">
-    </div>
+    <div class="whiteContainer d-flex align-items-center">
+      <div style="width:100%">
+        <app-homeprevalences-swiper></app-homeprevalences-swiper>
+      </div>
 
+    </div>
   </div>
   <div class="backtotop text-center" (click)="backtotop()">
     <div>
@@ -31,7 +34,7 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>
 <section id="burden_of_acne">
   <div class="burden_of_acne main">
@@ -103,9 +106,22 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>
 <section id="overview">
+  <div>
+    <app-homeoverviewswiper></app-homeoverviewswiper>
+  </div>
+  <div class="backtotop text-center" (click)="backtotop()">
+    <div>
+      <img src="../../assets/images/backtotop_white.PNG" alt="back to top">
+    </div>
+    <div>
+      <p class="white_text">
+        {{'BUTTON.back_to_top'|translate | uppercase}}
+      </p>
+    </div>
+  </div>
 </section>
 <section>
   <div class="efficacyprofile">
@@ -140,7 +156,7 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>
 <section>
   <div class="safetyprofile d-flex align-items-center justify-content-center">
@@ -183,7 +199,7 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>
 <section>
   <div class="howtouse main text-center">
@@ -242,7 +258,7 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>
 <section>
   <div class="managingirritation">
@@ -271,7 +287,7 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>
 <section>
   <div class="resources d-flex align-items-center justify-content-center">
@@ -341,5 +357,5 @@
         {{'BUTTON.back_to_top'|translate | uppercase}}
       </p>
     </div>
-</div>
+  </div>
 </section>

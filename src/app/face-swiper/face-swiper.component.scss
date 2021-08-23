@@ -1,48 +1,31 @@
 @import "../../styles/style.scss";
 
-.whiteSwiper {
+.faceSwiper {
   .backgroundContainer {
-    background-image: url("../../assets/images/wallpaper_2.png");
+    background-image: url("../../assets/images/wallpaper_4.png");
     background-repeat: no-repeat;
     background-position-y: top;
-    background-position-x: center;
+    background-position-x: left;
     background-size: cover;
-    height: 680px;
+    height: 550px;
     width: 100%;
     color: $font_white;
     padding: 50px 20px;
     text-align: left;
     .imgBox {
       img {
-        width: 250px;
+        width: 320px;
       }
       .micetype {
         font-size: 10px;
         font-family: $Univers;
       }
     }
-
-    h1 {
-      font-weight: $Oregon;
-    }
-    h3 {
-      font-weight: $Oregon;
-      padding: 40px 0px 20px 0px;
-    }
-    h5 {
-      font-family: $Univers;
-    }
-    .li_font {
-      font-size: $h5_font_size;
-      font-family: $Univers;
-      font-weight: 300;
-      padding-left: 50px !important;
-    }
-    .li_font_2 {
-      font-size: $h5_font_size;
-      font-family: $Univers;
-      font-weight: 300;
-      padding-left: 20px !important;
+    .textBox {
+      width: 235px;
+      h5 {
+        font-weight: bold;
+      }
     }
   }
   .swiper-wrapper {
@@ -73,14 +56,14 @@
     background-image: url(../../assets/images/white_angle_right.png);
     right: auto;
     left: 50%;
-    margin-left: 50px;
+    margin-left: 70px;
   }
 
   .swiper-button-prev {
     background-image: url(../../assets/images/white_angle_left.png);
     left: auto;
     right: 50%;
-    margin-right: 50px;
+    margin-right: 70px;
   }
 
   .swiper-button-prev::after {
@@ -94,12 +77,16 @@
   .swiper-button-next,
   .swiper-button-prev {
     top: inherit;
-    bottom: 0%;
+    bottom: 2%;
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: center;
     z-index: 11;
     opacity: 1;
+  }
+
+  .swiper-pagination-bullets {
+    bottom: 20px;
   }
 
   .swiper-pagination {

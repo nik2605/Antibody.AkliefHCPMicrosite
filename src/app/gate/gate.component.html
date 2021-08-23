@@ -1,4 +1,22 @@
-<form class="gateContainer" [formGroup]="validateForm"  (ngSubmit)="validate()">
+<div class="popup_invalid" [hidden]="!isInvalidShow">
+  <div class="popupBox">
+    <div class="whiteBox d-flex justify-content-center align-items-center">
+      <div class="closeIcon">
+        <img src="../../../assets/images/close_icon.png" alt="close icon" (click)="close()">
+      </div>
+      <div>
+        <p class="text_blue text-center pb-2" style="font-weight: bold;">
+          {{'GATE.invalid_licence'|translate}}
+        </p>
+        <p>
+          {{'GATE.invalid_licence_copy'|translate}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form class="gateContainer" [formGroup]="validateForm" (ngSubmit)="validate()">
   <div class="main">
     <h1 class="text-center">
       {{'GATE.callout'|translate}}
@@ -9,26 +27,28 @@
     <div class="whiteline">
 
     </div>
-    <div class="row" style="border-top: 1px solid #ffffff;padding: 30px 0px;">
-      <div class="col text-center">
+    <div class="row" style="border-top: 1px solid #ffffff;">
+      <div class="col text-center" style="padding: 30px 0px;">
         <p class="label">
           {{'GATE.Licence_number'|translate}}
         </p>
         <div>
-          <input type="number" name="licence_number" id="licence_number">
-          <input type="text" name="province" id="province" hidden [value]="'selectedProvince'">
+          <input type="number" name="licence_number" id="licence_number" formControlName="licence_number">
+          <input type="text" name="province" id="province" hidden [value]="'selectedProvince'"
+            formControlName="province">
         </div>
       </div>
-      <div class="col text-center">
+      <div class="col text-center" style="padding: 30px 0px;">
         <p class="label">
           {{'GATE.Licensing_province_territory'|translate}}
         </p>
         <div class="d-flex justify-content-center">
           <div style="position: relative;">
-            <div class="selectedBox d-flex justify-content-center align-items-center">
+            <div id="selectedBox" class="selectedBox d-flex justify-content-center align-items-center"
+              (click)="ShowList()">
               {{selectedProvince}}
             </div>
-            <div class="prvinceList" [hidden]="!isShow" (click)="selectProvince($event)">
+            <div id="prvinceList" class="prvinceList" [hidden]="!isShow" (click)="selectProvince($event)">
               <p>Alberta</p>
               <p>British Columbia</p>
               <p>Manitoba</p>
@@ -45,7 +65,7 @@
             </div>
           </div>
           <div style="padding-left: 1px;float: left;">
-            <div class="arrowBox d-flex justify-content-center align-items-center" (click)="ShowList()">
+            <div id="arrowBox" class="arrowBox d-flex justify-content-center align-items-center" (click)="ShowList()">
               <img src="../../assets/images/down_arrow.png" alt="down arrow">
             </div>
           </div>
@@ -59,9 +79,9 @@
     <div class="d-flex align-items-center pt-3">
       <div class="whiteLine"></div>
       <div class="blue_button">
-        <a href="{{currentLanguage}}/home" class="button">
+        <button class="button" type="submit">
           {{'BUTTON.enter_website' | translate | uppercase}}
-        </a>
+        </button>
       </div>
       <div class="whiteLine"></div>
     </div>

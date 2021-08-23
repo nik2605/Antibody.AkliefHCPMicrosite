@@ -7,7 +7,8 @@
     "back":"BACK",
     "next":"NEXT",
     "enter_website":"Enter website",
-    "back_to_top":"BACK TO TOP"
+    "back_to_top":"BACK TO TOP",
+    "ok":"OK"
   },
   "GATE":{
     "callout":"Information for healthcare providers",
@@ -15,7 +16,8 @@
     "subhead":"Review the data, access resources, view the product monograph, and more!",
     "Licence_number":"Licence number:",
     "Licensing_province_territory":"Licensing province/territory:",
-    "invalid":"Invalid licence. Please enter a valid licence number.",
+    "invalid_licence":"Invalid licence.",
+    "invalid_licence_copy":"Please enter a valid licence number.",
     "this_website_is_intended_for":"This website is intended for healthcare professionals. Regulations require you to enter your licence number in the field above to access this content."
   },
   "HEADER":{
@@ -58,12 +60,13 @@
     "burden_of_acne_copy3":"<b>52%</b> of acne sufferers have <b>skipped a social event</b> because if their acne.<sup>6</sup>",
     "burden_of_acne_copy4":"<b>42%</b> of young professionals with acne say their acne has had a <b>negative impact on their career</b>.<sup>7</sup>",
     "overview_of_aklef_headline":"Overview of AKLIEF",
-    "overview_of_aklef_subhead":"AKLIEF: 1st topical retinoid indicated for the treatment of BOTH facial and truncal acne<sup>1&dagger;</sup>",
-    "overview_of_aklef_copy1":"20x greater affinity to RAR-γ, the most common retinoic acid receptor (RAR) in the skin (over RAR-α and RAR-β).<sup>8,9&dagger;</sup>",
-    "overview_of_aklef_list1":"<li>Proven effective in reducing inflammatory lesions<sup>10</sup></li><li>Increase epidermal turnover and normalize cell growth (keratinization and desquamation)<sup>9,11</sup></li><li>Effective at low doses with low systemic exposure allowing for use on large body surface areas <sup>1,8,9</sup></li>",
+    "overview_of_aklef_subhead":"AKLIEF: 1st topical retinoid indicated for the treatment of BOTH facial and truncal acne<sup>1&#8224;</sup>",
+    "overview_of_aklef_copy1":"20x greater affinity to RAR-γ, the most common retinoic acid receptor (RAR) in the skin (over RAR-α and RAR-β).<sup>8,9&#8224;</sup>",
+    "overview_of_aklef_list1":"<li>Proven effective in reducing inflammatory lesions<sup>9</sup></li><li>Increase epidermal turnover and normalize cell growth (keratinization and desquamation)<sup>8,10</sup></li><li>Effective at low doses with low systemic exposure allowing for use on large body surface areas <sup>1,7,8</sup></li>",
     "overview_of_aklef_copy2":"Exact mode of action of trifarotene is unknown<sup>1</sup>",
     "overview_of_aklef_list2":"<li>Paraben-free, non-bleaching</li><li>non-antibiotic formulation.</li>",
-    "overview_of_aklef_micetype":"&dagger; Comparative clinical significance is unknown.",
+    "overview_of_aklef_micetype1":"&#8224; Comparative clinical significance is unknown.",
+    "overview_of_aklef_micetype2":"Exact mode of action of trifarotene is unknown<sup>1</sup>",
     "efficacy_profile_headline":"Efficacy Profile",
     "efficacy_profile_subhead":"AKLIEF: Proven efficacy on the face and trunk",
     "efficacy_profile_copy":"Results your patients can see",
@@ -220,6 +223,7 @@
     "subhead_5_copy":"Google __utmv cookie lasts \"forever\". It is a persistent cookie. It is used for segmentation, data experimentation and the __utmv works hand in hand with the   __utmz cookie to improve cookie targeting capabilities."
   },
   "SAFETY_INFORMATION":{
+    "safety_information":"Important safety information",
     "headline":"SAFETY INFORMATION",
     "subhead_1":"Indication and clinical use:",
     "subhead_1_copy":"AKLIEF<sup>&reg;</sup> (trifarotene 50 mcg/g) cream is indicated for the topical treatment of acne vulgaris of the face and/or trunk in patients 12 years of age and older.<p class=\"mb-3\"></p>Safety and effectiveness have not been established in geriatric patients (≥65 years).",

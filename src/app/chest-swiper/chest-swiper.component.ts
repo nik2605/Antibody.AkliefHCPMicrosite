@@ -1,15 +1,13 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { SwiperOptions,Pagination } from 'swiper';
-
+import { SwiperOptions, Pagination } from 'swiper';
 
 @Component({
-  selector: 'app-homeoverviewswiper',
-  templateUrl: './homeoverviewswiper.component.html',
-  styleUrls: ['./homeoverviewswiper.component.scss'],
-  encapsulation:ViewEncapsulation.None
+  selector: 'app-chest-swiper',
+  templateUrl: './chest-swiper.component.html',
+  styleUrls: ['./chest-swiper.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class HomeoverviewswiperComponent implements OnInit {
-
+export class ChestSwiperComponent implements OnInit {
   public config: SwiperOptions = {
     spaceBetween: 30,
     mousewheel: false,
@@ -22,7 +20,6 @@ export class HomeoverviewswiperComponent implements OnInit {
       prevEl: '.swiper-button-prev'
     },
   }
-
   constructor() { }
 
   ngOnInit(): void {

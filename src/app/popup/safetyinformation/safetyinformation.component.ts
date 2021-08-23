@@ -13,7 +13,7 @@ export class SafetyinformationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  close(){
-    this.isShow = !this.isShow;
+  close() {
+    this.isShow = true;
   }
 }

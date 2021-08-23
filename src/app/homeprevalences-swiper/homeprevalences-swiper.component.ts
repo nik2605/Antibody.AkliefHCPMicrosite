@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { SwiperOptions } from 'swiper';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { SwiperOptions,Pagination } from 'swiper';
 
 @Component({
   selector: 'app-homeprevalences-swiper',
   templateUrl: './homeprevalences-swiper.component.html',
-  styleUrls: ['./homeprevalences-swiper.component.scss']
+  styleUrls: ['./homeprevalences-swiper.component.scss'],
+  encapsulation:ViewEncapsulation.None
 })
 export class HomeprevalencesSwiperComponent implements OnInit {
 
@@ -13,6 +14,7 @@ export class HomeprevalencesSwiperComponent implements OnInit {
     mousewheel: false,
     autoplay: false,
     autoHeight: true,
+    centeredSlides:true,
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',

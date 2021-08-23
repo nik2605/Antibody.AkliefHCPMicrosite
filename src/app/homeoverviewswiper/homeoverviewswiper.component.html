@@ -1,1 +1,90 @@
-<p>homeoverviewswiper works!</p>
+<div class="whiteSwiper">
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="backgroundContainer d-flex align-items-center">
+          <div class="imgBox px-5">
+            <div>
+              <img src="../../assets/images/Aklief_product_box_en.png" alt="Aklief product">
+            </div>
+
+            <div>
+              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
+              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype2' |translate"></p>
+
+            </div>
+          </div>
+          <div>
+            <h1>
+              {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
+            </h1>
+            <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
+            </h3>
+            <h5 [innerHTML]="'HOME.overview_of_aklef_copy1' |translate">
+
+            </h5>
+            <ul class="li_font" [innerHTML]="'HOME.overview_of_aklef_list1' |translate">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="backgroundContainer d-flex align-items-center">
+          <div class="imgBox px-5">
+            <div>
+              <img src="../../assets/images/Aklief_product_box_en.png" alt="Aklief product">
+            </div>
+
+            <div>
+              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
+              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype2' |translate"></p>
+
+            </div>
+          </div>
+          <div>
+            <h1>
+              {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
+            </h1>
+            <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
+            </h3>
+            <h5 [innerHTML]="'HOME.overview_of_aklef_copy1' |translate">
+
+            </h5>
+            <ul class="li_font" [innerHTML]="'HOME.overview_of_aklef_list1' |translate">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="backgroundContainer d-flex align-items-center">
+          <div class="imgBox px-5">
+            <div>
+              <img src="../../assets/images/Aklief_product_box_en.png" alt="Aklief product">
+            </div>
+
+            <div>
+              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
+
+            </div>
+          </div>
+          <div>
+            <h1>
+              {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
+            </h1>
+            <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
+            </h3>
+            <h5 [innerHTML]="'HOME.overview_of_aklef_copy2' |translate" style="font-size: 20px;">
+
+            </h5>
+            <ul class="li_font_2" [innerHTML]="'HOME.overview_of_aklef_list2' |translate">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </swiper>
+</div>

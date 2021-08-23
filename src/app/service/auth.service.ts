@@ -1,7 +1,7 @@
 import { Injectable, Inject, ErrorHandler, Injector } from '@angular/core';
 import { HttpClient, HttpInterceptor, HttpRequest, HttpHandler, HttpUserEvent, HttpEvent, HttpHeaders, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError, BehaviorSubject } from "rxjs";
-import { map, catchError, throwIfEmpty, tap} from 'rxjs/operators';
+import { map, catchError, throwIfEmpty, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { RequestOptions } from '@angular/http';
 import { CookieService } from 'ngx-cookie-service';
@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 
 
 @Injectable({ providedIn: 'root' })
-export class AuthService  {
+export class AuthService {
   private currentUserSubject: BehaviorSubject<any>;
   public currentUser: Observable<any>;
 
@@ -31,34 +31,35 @@ export class AuthService  {
     this.rootUrl = baseUrl;
   }
 
-    public get currentUserValue(): any {
-      return this.currentUserSubject.value;
+  public get currentUserValue(): any {
+    return this.currentUserSubject.value;
   }
 
-    public get isAuthCookieExists(): boolean {
-      return this.cookieService.check(this.authcookie);
+  public get isAuthCookieExists(): boolean {
+    return this.cookieService.check(this.authcookie);
   }
 
-    validate(province: string, number: string): boolean {
+  validate(province: string, number: string): boolean {
 
-     //if(username == "test" && password == "test"){
-      if(province == environment.username && number == environment.password){
-      localStorage.setItem('currentUser', JSON.stringify(province+number));
-      this.currentUserSubject.next(province+number);
+    //if(username == "test" && password == "test"){
+    //if(province == environment.province && number == environment.licence_number){
+    if (number == environment.licence_number) {
+      localStorage.setItem('currentUser', JSON.stringify(province + number));
+      this.currentUserSubject.next(province + number);
       this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083);
       return true;
     }
-    else{
+    else {
       return false;
     }
   }
 
-  tryLogin(returnUrl: string){
+  tryLogin(returnUrl: string) {
 
     const currentUser = this.currentUserSubject.value;
     const authCookie = this.isAuthCookieExists;
 
-    if(authCookie && currentUser === environment.username){
+    if (authCookie && currentUser === environment.province) {
       this.router.navigate([returnUrl]);
       return;
     }
