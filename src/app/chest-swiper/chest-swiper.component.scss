@@ -7,13 +7,24 @@
     background-position-y: top;
     background-position-x: left;
     background-size: cover;
-    height: 700px;
     width: 100%;
     color: $font_white;
     padding: 50px 20px;
     text-align: left;
+    @include xs {
+      height: auto;
+    }
+    @include md {
+      height: 700px;
+    }
     .imgBox {
-      width: 31%;
+      max-width: 800px;
+      @include xs {
+        padding: 0px 30px;
+      }
+      @include lg {
+        padding: 0px 0px;
+      }
       img {
         max-width: 780px;
         width: 100%;

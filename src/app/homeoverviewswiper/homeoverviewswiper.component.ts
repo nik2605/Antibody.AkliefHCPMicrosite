@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { SwiperOptions,Pagination } from 'swiper';
+import { SwiperOptions, Pagination } from 'swiper';
 
 
 @Component({
   selector: 'app-homeoverviewswiper',
   templateUrl: './homeoverviewswiper.component.html',
   styleUrls: ['./homeoverviewswiper.component.scss'],
-  encapsulation:ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeoverviewswiperComponent implements OnInit {
 
@@ -16,6 +16,7 @@ export class HomeoverviewswiperComponent implements OnInit {
     autoplay: false,
     autoHeight: true,
     centeredSlides: true,
+    loop: true,
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',

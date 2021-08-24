@@ -7,24 +7,50 @@
     background-position-y: top;
     background-position-x: left;
     background-size: cover;
-    height: 550px;
     width: 100%;
     color: $font_white;
     padding: 50px 20px;
     text-align: left;
+    @include xs {
+      height: auto;
+    }
+    @include md {
+      height: 550px;
+    }
     .imgBox {
-      img {
-        width: 320px;
-      }
+
       .micetype {
         font-size: 10px;
         font-family: $Univers;
       }
+      @include xs {
+        text-align: center;
+        padding: 0px 20px;
+        img {
+          max-width: 576px;
+          width: 100%;
+        }
+      }
+      @include md {
+        text-align: right;
+        padding: 0px;
+        img {
+          max-width: 320px;
+          width: 100%;
+        }
+      }
     }
     .textBox {
-      width: 235px;
       h5 {
         font-weight: bold;
+      }
+      @include xs {
+        width: 100%;
+        padding: 0px 20px;
+      }
+      @include md {
+        width: 235px;
+        padding:  0px 0px 0px 20px;
       }
     }
   }

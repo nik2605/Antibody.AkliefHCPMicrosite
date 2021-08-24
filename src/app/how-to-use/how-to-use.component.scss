@@ -3,20 +3,25 @@
 .topImage {
   background-image: url("../../assets/images/safety_profile_background_transparent.png");
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position-y: top;
   background-position-x: center;
   background-size: cover;
-  height: 540px;
   width: 100%;
   padding-right: 5%;
   padding-top: 200px;
   text-align: center;
+  @include xs {
+    height: 50%;
+  }
+  @include md {
+    height: 660px;
+  }
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
   }
-  @include md{
+  @include md {
     text-align: left;
   }
 }
@@ -34,6 +39,8 @@
     .step {
       border-bottom: 1px solid $site_blue;
       .imgBox {
+        padding-bottom: 20px;
+        text-align: center;
         img {
           width: 100px;
         }
@@ -74,6 +81,7 @@
       font-family: $Oregon;
       color: $font_white;
       font-weight: 400;
+      margin-bottom: 0;
     }
     .imgBox {
       img {

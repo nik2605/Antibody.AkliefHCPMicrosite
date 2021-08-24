@@ -10,15 +10,22 @@
   <h2 class="text-center">
     {{'EFFICACY_PROFILE.subhead_1' | translate | uppercase}}
   </h2>
-  <div class="row text-center calloutBar pt-4 m-4">
-    <div class="col-12 col-md-3 col-lg-2 align-self-center"><img src="../../assets/images/face_icon.png" alt="face icon" class="image-icon"></div>
-    <div class="col-12 col-md-3 col-lg-2 align-self-center"><h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
-    </h2></div>
-    <div class="col-12 col-md-3 col-lg-2 align-self-center"><h1>
-      {{'EFFICACY_PROFILE.54_4' | translate | uppercase}}
-    </h1></div>
-    <div class="col-12 col-md-3 col-lg-6 align-self-center"> <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
-    </h2></div>
+  <div class="row text-center calloutBar py-2 m-4">
+    <div class="col-12 col-md-3 col-lg-2 align-self-center"><img src="../../assets/images/face_icon.png" alt="face icon"
+        class="image-icon"></div>
+    <div class="col-12 col-md-3 col-lg-2 align-self-center" style="text-align: left;">
+      <h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
+      </h2>
+    </div>
+    <div class="col-12 col-md-3 col-lg-2 align-self-center">
+      <h1>
+        {{'EFFICACY_PROFILE.54_4' | translate | uppercase}}
+      </h1>
+    </div>
+    <div class="col-12 col-md-3 col-lg-6 align-self-center" style="text-align: left;">
+      <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
+      </h2>
+    </div>
   </div>
 
 
@@ -35,22 +42,31 @@
     <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
     </h2>
   </div> -->
-  <div>
+  <div class="text-center my-4">
     <img class="chartImage" src="../../assets/images/efficacy_chart1.png" alt="efficacy chart 1">
   </div>
-  <div class="faceSwiper">
-
-  </div>
-
+</div>
+<div class="faceSwiper">
+  <app-face-swiper></app-face-swiper>
+</div>
+<div class="main">
   <div class="row text-center calloutBar pt-4 m-4">
-    <div class="col-12 col-md-3 col-lg-2 align-self-center"><img src="../../assets/images/trunk_icon.png" alt="face icon" class="image-icon"></div>
-    <div class="col-12 col-md-3 col-lg-2 align-self-center"><h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
-    </h2></div>
-    <div class="col-12 col-md-3 col-lg-2 align-self-center"><h1>
-      {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
-    </h1></div>
-    <div class="col-12 col-md-3 col-lg-6 align-self-center"> <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase">
-    </h2></div>
+    <div class="col-12 col-md-3 col-lg-2 align-self-center"><img src="../../assets/images/trunk_icon.png"
+        alt="face icon" class="image-icon"></div>
+    <div class="col-12 col-md-3 col-lg-2 align-self-center">
+      <h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase" style="text-align: left;">
+      </h2>
+    </div>
+    <div class="col-12 col-md-3 col-lg-2 align-self-center">
+      <h1>
+        {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
+      </h1>
+    </div>
+    <div class="col-12 col-md-3 col-lg-6 align-self-center">
+      <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase"
+        style="text-align: left;">
+      </h2>
+    </div>
   </div>
 
 
@@ -67,7 +83,7 @@
     <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase">
     </h2>
   </div> -->
-  <div>
+  <div class="text-center my-4">
     <img class="chartImage" src="../../assets/images/efficacy_chart2.png" alt="efficacy chart 2">
   </div>
 </div>
@@ -76,14 +92,14 @@
 </div>
 <div class="main">
   <div>
-    <h2 class="subhead2" [innerHTML]="'EFFICACY_PROFILE.subhead_2' | translate | uppercase">
+    <h2 class="subhead2 text-center py-5" [innerHTML]="'EFFICACY_PROFILE.subhead_2' | translate | uppercase">
     </h2>
   </div>
-  <div>
+  <div class="text-center">
     <img src="../../assets/images/acne_treatment.png" alt="treatment over 52 weeks"
       style="max-width: 800px;width:100%;height: auto;">
   </div>
-  <div class="d-flex justify-content-start align-items-center py-2">
+  <div class="d-flex justify-content-start align-items-center py-2 mx-auto" style="max-width: 800px;">
     <div class="age_name_Box">
       <p [innerHTML]="'EFFICACY_PROFILE.treatment_gender' | translate | uppercase">
       </p>

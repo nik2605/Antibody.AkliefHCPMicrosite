@@ -3,30 +3,35 @@
 .topImage {
   background-image: url("../../assets/images/managing_irritation_background_transparent.png");
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position-y: top;
   background-position-x: center;
   background-size: cover;
-  height: 540px;
   width: 100%;
   padding-right: 5%;
   padding-top: 200px;
   text-align: center;
+  @include xs {
+    height: 50%;
+  }
+  @include md {
+    height: 660px;
+  }
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
   }
-  @include md{
+  @include md {
     text-align: left;
   }
 }
 
-.image-icon{
+.image-icon {
   width: 40%;
-  @include md{
+  @include md {
     width: 50%;
   }
-  @include lg{
+  @include lg {
     width: 60%;
   }
 }
@@ -48,22 +53,42 @@
       padding-top: 20px;
     }
   }
-  .combinedImage{
-    width: 200px;
-  }
 
-  .calloutBar {
-    background-image: url("../../assets/images/Rectangle_4.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: top;
-    background-size: cover;
-    border-radius: 0px 10px 10px 0px;
-    padding: 10px;
-    h2 {
-      font-family: $Oregon;
-      color: $font_white;
-      font-weight: 400;
+  .combinedBox {
+    @include xs {
+      align-items: center;
+    }
+    @include xl {
+      align-items: baseline;
+    }
+    .combinedImage {
+      @include xs {
+        width: 200px;
+      }
+      @include md {
+        width: 100%;
+      }
+    }
+
+    .calloutBar {
+      background-image: url("../../assets/images/Rectangle_4.png");
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: top;
+      background-size: cover;
+      border-radius: 0px 10px 10px 0px;
+      padding: 10px;
+      @include xs {
+        border-radius: 10px;
+      }
+      @include md {
+        border-radius: 0px 10px 10px 0px;
+      }
+      h2 {
+        font-family: $Oregon;
+        color: $font_white;
+        font-weight: 400;
+      }
     }
   }
 }

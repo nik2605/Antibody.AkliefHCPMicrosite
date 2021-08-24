@@ -34,17 +34,16 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   { path: 'gate', component: GateComponent },
-  { path: "home", component: HomeComponent },
-  { path: 'efficacyprofile', component: EfficacyProfileComponent, },
-  { path: 'safetyprofile', component: SafetyProfileComponent },
-  { path: 'howtouse', component: HowToUseComponent },
-  { path: 'managingirritation', component: ManagingIrritationComponent },
-  { path: 'resources', component: ResourcesComponent },
+  { path: "home", component: HomeComponent,pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: 'efficacyprofile', component: EfficacyProfileComponent,pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: 'safetyprofile', component: SafetyProfileComponent,pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: 'howtouse', component: HowToUseComponent,pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: 'managingirritation', component: ManagingIrritationComponent,pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: 'resources', component: ResourcesComponent,pathMatch: 'full', canActivate: [AuthGuard] },
   { path: 'privacypolicy', component: PrivacyPolicyComponent },
   { path: 'safetyinformation', component: SafetyInformationComponent },
   { path: 'cookiepolicy', component: CookiePolicyComponent },
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'silder', component: HomeprevalencesSwiperComponent },
+  { path: '', redirectTo:"/home", pathMatch: 'full' },
   { path: '**', component: PagenotfoundComponent },
 ];
 

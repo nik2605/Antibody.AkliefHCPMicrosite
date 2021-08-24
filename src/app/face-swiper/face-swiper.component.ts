@@ -15,6 +15,7 @@ export class FaceSwiperComponent implements OnInit {
     autoplay: false,
     autoHeight: true,
     centeredSlides: true,
+    loop:true,
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',

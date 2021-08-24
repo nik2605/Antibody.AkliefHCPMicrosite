@@ -10,11 +10,13 @@ import { SwiperOptions,Pagination } from 'swiper';
 export class HomeprevalencesSwiperComponent implements OnInit {
 
   public config: SwiperOptions = {
+    //slidesPerView:'auto',
     spaceBetween: 30,
     mousewheel: false,
     autoplay: false,
     autoHeight: true,
     centeredSlides:true,
+    loop:true,
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',

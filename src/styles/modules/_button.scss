@@ -6,6 +6,8 @@
     font-weight: 500;
     text-decoration: none;
     display: flex;
+    white-space: nowrap;
+    justify-content: center;
     &:hover {
       filter: brightness(1.2);
       cursor: pointer;

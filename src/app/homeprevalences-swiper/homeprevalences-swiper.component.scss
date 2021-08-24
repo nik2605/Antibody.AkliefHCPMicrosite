@@ -1,72 +1,212 @@
 @import "../../styles/style.scss";
 
 .greySwiper {
-  .panel1 {
-    h1 {
-      color: $font_blue;
-      font-family: $Oregon;
-      padding: 30px 0px;
-    }
-    .calloutBar {
-      background-image: url("../../assets/images/Rectangle_1.png");
-      background-repeat: no-repeat;
-      background-position-x: right;
-      background-position-y: top;
-      background-size: cover;
-      border-radius: 10px;
-      display: flex;
-      margin: 0px 10%;
-      padding: 20px;
-
-      h4 {
-        color: $font_white;
+  .slide1 {
+    .panel1 {
+      background-color: #ffffff;
+      @include xs {
+        width: 75%;
+      }
+      @include sm {
+        width: 75%;
+      }
+      @include md {
+      }
+      @include lg {
+        width: 60%;
+      }
+      @include xl {
+        width: 50%;
+      }
+      h1 {
+        color: $font_blue;
         font-family: $Oregon;
-        margin: 0px;
-        text-align: left;
+        padding: 30px 5px;
+      }
+      .calloutBar {
+        background-image: url("../../assets/images/Rectangle_1.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: cover;
+        border-radius: 10px;
+        display: flex;
+        margin: 0px 10%;
+        padding: 20px;
+
+        h4 {
+          color: $font_white;
+          font-family: $Oregon;
+          margin: 0px;
+          text-align: left;
+        }
+      }
+    }
+    .blankSpace {
+      @include xs {
+      }
+      @include sm {
+      }
+      @include md {
+      }
+      @include lg {
+        width: 300px;
+      }
+      @include xl {
+        width: 400px;
+      }
+    }
+    .swiper-button-next {
+      @include xs {
+      }
+      @include sm {
+      }
+      @include md {
+      }
+      @include lg {
+        margin-left: 180px;
+      }
+      @include xl {
+        margin-left: 230px;
+      }
+    }
+
+    .swiper-button-prev {
+      @include xs {
+      }
+      @include sm {
+      }
+      @include md {
+      }
+      @include lg {
+        margin-right: -120px;
+      }
+      @include xl {
+        margin-right: -170px;
+      }
+    }
+    .swiper-pagination-bullets {
+      @include xs {
+      }
+      @include sm {
+      }
+      @include md {
+      }
+      @include lg {
+        margin-left: 305px;
+      }
+      @include xl {
+        margin-left: 405px;
       }
     }
   }
-  .panel2 {
-    img {
-      width: 200px;
-    }
-    p {
-      font-size: 28px;
-      font-family: $Oregon;
-      color: $font_blue;
-    }
-    h1 {
-      color: $font_blue;
-      font-family: $Oregon;
-      padding: 30px 0px;
-    }
-    .calloutBar {
-      background-image: url("../../assets/images/Rectangle_3.png");
-      background-repeat: no-repeat;
-      background-position-x: right;
-      background-position-y: top;
-      background-size: cover;
-      border-radius: 10px;
-      margin: 0px 10%;
-      padding: 20px;
 
-      h4 {
-        color: $font_white;
+  .slide2 {
+    .panel2 {
+      background-color: #ffffff;
+      padding: 0px 30px;
+      @include xs {
+        padding: 0px 2px;
+      }
+      @include sm {
+      }
+      @include md {
+        padding: 0px 2px;
+      }
+      @include lg {
+        padding: 0px 30px;
+      }
+      @include xl {
+      }
+
+      img {
+        @include xs {
+          width: 150px;
+        }
+        @include sm {
+        }
+        @include md {
+          width: 150px;
+        }
+        @include lg {
+          width: 200px;
+        }
+        @include xl {
+        }
+      }
+      p {
+        font-size: 28px;
         font-family: $Oregon;
-        margin: 0px;
-        text-align: left;
+        color: $font_blue;
+      }
+      h1 {
+        color: $font_blue;
+        font-family: $Oregon;
+        padding: 30px 5px;
+        @include xs {
+          font-size: 28px;
+        }
+        @include sm {
+        }
+        @include md {
+          font-size: 28px;
+        }
+        @include lg {
+          font-size: $h1_font_size;
+        }
+        @include xl {
+        }
+      }
+      .calloutBar {
+        background-image: url("../../assets/images/Rectangle_3.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: cover;
+        border-radius: 10px;
+        margin: 0px 10%;
+        padding: 20px;
+
+        h4 {
+          color: $font_white;
+          font-family: $Oregon;
+          margin: 0px;
+          text-align: left;
+        }
+      }
+    }
+    .swiper-button-next {
+      margin-left: 30px;
+    }
+
+    .swiper-button-prev {
+      margin-right: 30px;
+    }
+    .swiper-pagination-bullets {
+      @include xs {
+        bottom: 17px;
+      }
+      @include sm {
+      }
+      @include md {
+        bottom: 12px;
+      }
+      @include lg {
+      }
+      @include xl {
       }
     }
   }
 
   .swiper-wrapper {
     align-items: center;
-    background-color: #ffffff;
+    //background-color: #ffffff;
   }
 
   .swiper-slide {
     text-align: center;
-    background: #fff;
+    //width: 80%;
+    //background: #fff;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -108,7 +248,7 @@
   .swiper-button-next,
   .swiper-button-prev {
     top: inherit;
-    bottom: 0%;
+    bottom: 1%;
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: center;
@@ -116,12 +256,16 @@
     opacity: 1;
   }
 
+  .swiper-pagination-bullets {
+    bottom: 12px;
+  }
+
   .swiper-pagination {
     .swiper-pagination-bullet {
       width: 15px;
       height: 15px;
       padding: 0px 2px;
-      background: #d8d8d8;
+      background: $font_darkGrey;
       margin: 0px 10px !important;
     }
 
