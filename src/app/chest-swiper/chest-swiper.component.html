@@ -4,8 +4,20 @@
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center">
           <div class="imgBox">
-            <div>
-              <img src="../../assets/images/patient_neck_1.PNG" alt="patient neck 1">
+            <div class="chestBox d-flex">
+              <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+                <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                  <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest1_baseline_en.png"
+                    alt="chest 1 baseline">
+                  <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest1_baseline_fr.png"
+                    alt="chest 1 baseline">
+                </div>
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest1_week12_en.png"
+                  alt="chest 1 week12">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest1_week12_fr.png"
+                  alt="chest 1 week12">
+                <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
+              </div>
             </div>
             <div class="textBox row pt-3">
               <div class="col-3">
@@ -28,8 +40,20 @@
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center">
           <div class="imgBox">
-            <div>
-              <img src="../../assets/images/patient_neck_2.PNG" alt="patient neck 2">
+            <div class="chestBox d-flex">
+              <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+                <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                  <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest2_baseline_en.png"
+                    alt="chest 2 baseline">
+                  <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest2_baseline_fr.png"
+                    alt="chest 2 baseline">
+                </div>
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest2_week12_en.png"
+                  alt="chest 2 week12">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest2_week12_fr.png"
+                  alt="chest 2 week12">
+                <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
+              </div>
             </div>
             <div class="textBox row pt-3">
               <div class="col-3">
@@ -52,8 +76,20 @@
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center">
           <div class="imgBox">
-            <div>
-              <img src="../../assets/images/patient_neck_3.PNG" alt="patient neck 3">
+            <div class="chestBox d-flex">
+              <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+                <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                  <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest3_baseline_en.png"
+                    alt="chest 3 baseline">
+                  <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest3_baseline_fr.png"
+                    alt="chest 3 baseline">
+                </div>
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest3_week12_en.png"
+                  alt="chest 3 week12">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest3_week12_fr.png"
+                  alt="chest 3 week12">
+                <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
+              </div>
             </div>
             <div class="textBox row pt-3">
               <div class="col-3">
@@ -76,8 +112,20 @@
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center">
           <div class="imgBox">
-            <div>
-              <img src="../../assets/images/patient_neck_4.PNG" alt="patient neck 4">
+            <div class="chestBox d-flex">
+              <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+                <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                  <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest4_baseline_en.png"
+                    alt="chest 4 baseline">
+                  <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest4_baseline_fr.png"
+                    alt="chest 4 baseline">
+                </div>
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest4_week12_en.png"
+                  alt="chest 4 week12">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest4_week12_fr.png"
+                  alt="chest 4 week12">
+                <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
+              </div>
             </div>
             <div class="textBox row pt-3">
               <div class="col-3">
@@ -98,8 +146,8 @@
         </div>
       </div>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev" (click)="resetLine()"></div>
+    <div class="swiper-button-next" (click)="resetLine()"></div>
+    <div class="swiper-pagination" (click)="resetLine()"></div>
   </swiper>
 </div>

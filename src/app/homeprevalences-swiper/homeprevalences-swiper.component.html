@@ -31,8 +31,7 @@
       </div>
       <div class="swiper-slide slide2">
         <div class="panel2">
-          <h1>
-            {{'HOME.prevalence_of_acne_panel2_headline' |translate| uppercase}}
+          <h1 [innerHTML]="'HOME.prevalence_of_acne_panel2_headline' |translate| uppercase">
           </h1>
           <div class="row">
             <div class="col-md-4 col-12">
@@ -57,6 +56,9 @@
           <div class="calloutBar my-3">
             <h4 class="text-center" [innerHTML]="'HOME.prevalence_of_acne_panel2_callout' |translate | uppercase">
             </h4>
+          </div>
+          <div>
+            <p class="micetype" [innerHTML]="'HOME.prevalence_of_acne_panel2_micetype' |translate"></p>
           </div>
           <div style="width: 100%;height: 50px;">
 

@@ -27,7 +27,7 @@
     <div class="whiteline">
 
     </div>
-    <div class="row" style="border-top: 1px solid #ffffff;">
+    <div class="row" style="border-top: 1px solid #ffffff;align-items: flex-end;">
       <div class="col text-center" style="padding: 30px 0px;">
         <p class="label">
           {{'GATE.Licence_number'|translate}}
@@ -87,6 +87,14 @@
     </div>
   </div>
 </form>
-<app-policy-bar></app-policy-bar>
+<div class="policy_bar">
+  <a href="{{currentLanguage}}/privacypolicy">{{'POLICY_BAR.privacy_policy'|
+    translate}}
+  </a>
+  |
+  <a href="{{currentLanguage}}/cookiepolicy">{{'POLICY_BAR.cookie_policy'|
+    translate}}
+  </a>
+</div>
 
 <!-- {{'GATE.invalid'|translate}} -->

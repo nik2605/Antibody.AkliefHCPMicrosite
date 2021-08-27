@@ -17,11 +17,18 @@ section {
   .textBox {
     padding: 0 5%;
     .title_h1 {
-      padding-top: 70px;
-      padding-bottom: 80px;
       text-align: right;
+      @include xs {
+        font-size: 40px;
+        padding-left: 25%;
+        padding-top: 110px;
+        padding-bottom: 25px;
+      }
       @include sm {
-        padding-left: 34%;
+        font-size: $title_h1_font_size;
+        padding-left: 41%;
+        padding-top: 70px;
+        padding-bottom: 80px;
       }
       @include md {
         padding-left: 48%;
@@ -61,6 +68,27 @@ section {
     }
     @include md {
       width: 50%;
+    }
+  }
+}
+
+.policy_bar {
+  color: $font_blue;
+  text-align: center;
+  a {
+    font-size: 14px;
+    font-family: $Helvetica;
+    color: $font_blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    @include xs {
+      font-size: 12px;
+    }
+    @include sm {
+      font-size: 14px;
+    }
+    @include lg {
     }
   }
 }
@@ -118,6 +146,7 @@ section {
     color: $font_blue;
     font-family: $Oregon;
     padding: 50px 0px 30px 0px;
+    font-weight: 400;
   }
   .roundedblueBox {
     background-color: $site_ligtblue;
@@ -125,11 +154,13 @@ section {
     h3 {
       color: $font_white;
       font-family: $Oregon;
+      margin-bottom: 0;
     }
     h5 {
       color: $font_white;
       font-family: $Univers;
       line-height: 1.5;
+      margin-bottom: 0;
     }
     .imgInBox {
       margin-left: auto;
@@ -153,6 +184,69 @@ section {
   }
 }
 
+.overview {
+  background-image: url("../../assets/images/wallpaper_2.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  height: 680px;
+  width: 100%;
+  color: $font_white;
+  padding: 50px 20px;
+  text-align: left;
+  @include xs {
+    height: auto;
+  }
+  @include md {
+    height: 680px;
+  }
+  .imgBox {
+    text-align: center;
+    img {
+      max-width: 250px;
+      min-width: 150px;
+      width: 100%;
+    }
+    .micetype {
+      font-size: 10px;
+      font-family: $Univers;
+      @include xs {
+        font-size: 8px;
+      }
+      @include md {
+        font-size: 10px;
+      }
+    }
+  }
+
+  h1 {
+    font-family: $Oregon;
+    @include xs {
+      font-size: 30px;
+      padding-top: 20px;
+      text-align: center;
+    }
+    @include sm {
+      text-align: left;
+    }
+    @include md {
+      font-size: $h1_font_size;
+    }
+  }
+  h3 {
+    font-family: $Oregon;
+    padding: 40px 0px 20px 0px;
+    font-weight: 400;
+    @include sm {
+      font-size: 20px;
+    }
+    @include md {
+      font-size: $h3_font_size;
+    }
+  }
+}
+
 .efficacyprofile {
   background-image: url("../../assets/images/efficacy_profile_background_transparent.png");
   background-repeat: no-repeat;
@@ -165,26 +259,24 @@ section {
     padding-right: 5%;
     width: 100%;
     height: 100%;
-    // @include xs {
-    //   padding-left: 5%;
-    // }
-    // @include sm {
-    //   padding-left: 0%;
-    // }
     .whiteBox {
       background-color: #ffffff;
-
       @include xs {
-        padding: 7% 8%;
+        padding: 5% 10px;
         width: 60%;
       }
+      @include md {
+        padding: 5% 10px;
+        width: 50%;
+      }
       @include lg {
-        padding: 2% 3%;
-        width: auto;
+        padding: 5% 10px;
+        width: 40%;
       }
       h1 {
         color: $font_blue;
         font-family: $Oregon;
+        font-weight: 400;
       }
       h2 {
         font-family: $Oregon;
@@ -244,12 +336,13 @@ section {
       h1 {
         color: $font_blue;
         font-family: $Oregon;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
+        font-weight: 400;
       }
       h2 {
         font-family: $Oregon;
         color: $font_grey;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
       }
       p {
         font-size: 14px;
@@ -270,6 +363,7 @@ section {
     color: $font_blue;
     font-family: $Oregon;
     padding-top: 50px;
+    font-weight: 400;
   }
   h2 {
     font-family: $Oregon;
@@ -321,6 +415,17 @@ section {
       margin-bottom: 0;
     }
   }
+  .sunProtectImage {
+    max-height: 30vh;
+    margin-bottom: 10vh;
+    @include xs {
+      max-width: 30%;
+    }
+    @include sm {
+      margin-bottom: 0;
+      max-width: 70%;
+    }
+  }
 }
 
 .managingirritation {
@@ -338,21 +443,27 @@ section {
     .whiteBox {
       background-color: #ffffff;
       @include xs {
-        padding: 7% 8%;
+        padding: 5% 10px;
         width: 60%;
       }
+      @include md {
+        padding: 5% 10px;
+        width: 50%;
+      }
       @include lg {
-        padding: 2% 3%;
-        width: auto;
+        padding: 5% 30px;
+        width: 40%;
       }
       h1 {
         color: $font_blue;
         font-family: $Oregon;
+        font-weight: 400;
       }
       h2 {
         font-family: $Oregon;
         color: $font_grey;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
       }
       p {
         font-size: 14px;
@@ -399,6 +510,7 @@ section {
         color: $font_blue;
         font-family: $Oregon;
         padding-bottom: 10px;
+        font-weight: 400;
       }
       h2 {
         font-family: $Oregon;

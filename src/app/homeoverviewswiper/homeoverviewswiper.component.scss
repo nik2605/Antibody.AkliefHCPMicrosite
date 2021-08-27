@@ -1,65 +1,13 @@
 @import "../../styles/style.scss";
 
 .whiteSwiper {
-  .backgroundContainer {
-    background-image: url("../../assets/images/wallpaper_2.png");
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: center;
-    background-size: cover;
-    height: 680px;
-    width: 100%;
-    color: $font_white;
-    padding: 50px 20px;
-    text-align: left;
+  .overviewContainer {
+    min-height: 300px;
     @include xs {
       height: auto;
     }
-    @include sm {
-      height: 680px;
-    }
-    .imgBox {
-      text-align: center;
-      img {
-        max-width: 250px;
-        min-width: 150px;
-        width: 100%;
-      }
-      .micetype {
-        font-size: 10px;
-        font-family: $Univers;
-        @include xs {
-          font-size: 8px;
-        }
-        @include md {
-          font-size: 10px;
-        }
-      }
-    }
-
-    h1 {
-      font-weight: $Oregon;
-      @include xs {
-        font-size: 30px;
-        padding-top: 20px;
-        text-align: center;
-      }
-      @include sm {
-        text-align: left;
-      }
-      @include md {
-        font-size: $h1_font_size;
-      }
-    }
-    h3 {
-      font-weight: $Oregon;
-      padding: 40px 0px 20px 0px;
-      @include sm {
-        font-size: 20px;
-      }
-      @include md {
-        font-size: $h3_font_size;
-      }
+    @include lg {
+      height: 100%;
     }
     h5 {
       font-family: $Univers;
@@ -69,6 +17,7 @@
       font-family: $Univers;
       font-weight: 300;
       padding-left: 50px !important;
+      line-height: 2;
       @include xs {
         padding-bottom: 30px;
       }
@@ -81,34 +30,56 @@
       font-family: $Univers;
       font-weight: 300;
       padding-left: 20px !important;
+      list-style-type: none;
       @include xs {
         padding-bottom: 30px;
       }
       @include md {
         padding-bottom: 0px;
       }
+      li {
+        padding-top: 7px;
+        padding-left: 44px;
+        background-image: url("../../assets/images/No_Smoking_Symbol.png");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: top;
+        background-size: contain;
+        margin-bottom: 20px;
+      }
+    }
+    .creamDropimgBox {
+      .creamDropImg {
+        width: 160px;
+      }
+      @include xs {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      @include lg {
+        text-align: left;
+      }
     }
   }
+
   .swiper-wrapper {
     align-items: center;
-    background-color: #ffffff;
   }
 
   .swiper-slide {
-    text-align: center;
-    background: #fff;
+    text-align: left;
 
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     -webkit-align-items: center;
     align-items: center;
   }
@@ -138,7 +109,7 @@
   .swiper-button-next,
   .swiper-button-prev {
     top: inherit;
-    bottom: 1%;
+    bottom: -9px;
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: center;
@@ -147,7 +118,7 @@
   }
 
   .swiper-pagination-bullets {
-    bottom: 16px;
+    bottom: 0px;
   }
 
   .swiper-pagination {

@@ -2,84 +2,42 @@
   <swiper [config]="config">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex align-items-center row">
-          <div class="imgBox px-5 col-lg-3 col-sm-5 col-12">
-            <div>
-              <img src="../../assets/images/Aklief_product_box_en.png" alt="Aklief product">
-            </div>
+        <div class="overviewContainer" style="text-align: left;">
+          <h5 [innerHTML]="'HOME.overview_of_aklef_copy1' |translate">
 
-            <div>
-              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
-              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype2' |translate"></p>
-
-            </div>
-          </div>
-          <div class="col-lg-9 col-sm-7 col-12">
-            <h1>
-              {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
-            </h1>
-            <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
-            </h3>
-            <h5 [innerHTML]="'HOME.overview_of_aklef_copy1' |translate">
-
-            </h5>
-            <ul class="li_font" [innerHTML]="'HOME.overview_of_aklef_list1' |translate">
-            </ul>
-          </div>
+          </h5>
+          <ul class="li_font" [innerHTML]="'HOME.overview_of_aklef_list1' |translate">
+          </ul>
         </div>
+
       </div>
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex align-items-center row">
-          <div class="imgBox px-5 col-lg-3 col-sm-5 col-12">
-            <div>
-              <img src="../../assets/images/Aklief_product_box_en.png" alt="Aklief product">
-            </div>
 
-            <div>
-              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
-              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype2' |translate"></p>
-
-            </div>
-          </div>
-          <div class="col-lg-9 col-sm-7 col-12">
-            <h1>
-              {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
-            </h1>
-            <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
-            </h3>
-            <h5 [innerHTML]="'HOME.overview_of_aklef_copy1' |translate">
+        <div class="row overviewContainer" style="text-align: left;">
+          <div class="col-12 col-lg-8 order-2 order-lg-1">
+            <h5 [innerHTML]="'HOME.overview_of_aklef_copy2_1' |translate">
 
             </h5>
-            <ul class="li_font" [innerHTML]="'HOME.overview_of_aklef_list1' |translate">
+            <h5 [innerHTML]="'HOME.overview_of_aklef_copy2_2' |translate">
+
+            </h5>
+            <ul class="li_font" [innerHTML]="'HOME.overview_of_aklef_list2' |translate">
             </ul>
           </div>
+          <div class="creamDropimgBox col-12 col-lg-4 order-1 order-lg-2">
+            <img class="creamDropImg" src="../../assets/images/cream drop.png" alt="cream drop">
+          </div>
         </div>
+
+        <div style="height: 40px;"></div>
+
       </div>
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex align-items-center row">
-          <div class="imgBox px-5 col-lg-3 col-sm-5 col-12">
-            <div>
-              <img src="../../assets/images/Aklief_product_box_en.png" alt="Aklief product">
-            </div>
-
-            <div>
-              <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
-
-            </div>
-          </div>
-          <div class="col-lg-9 col-sm-7 col-12">
-            <h1>
-              {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
-            </h1>
-            <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
-            </h3>
-            <h5 [innerHTML]="'HOME.overview_of_aklef_copy2' |translate" style="font-size: 20px;">
-
-            </h5>
-            <ul class="li_font_2" [innerHTML]="'HOME.overview_of_aklef_list2' |translate">
-            </ul>
-          </div>
+        <div class="overviewContainer" style="text-align: left;">
+          <ul class="li_font_2" [innerHTML]="'HOME.overview_of_aklef_list3' |translate">
+          </ul>
         </div>
+
       </div>
 
     </div>

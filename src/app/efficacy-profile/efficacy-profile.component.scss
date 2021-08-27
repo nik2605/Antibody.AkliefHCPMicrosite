@@ -7,9 +7,7 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-right: 5%;
   padding-top: 200px;
-  text-align: center;
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
@@ -62,7 +60,7 @@
       color: $font_white;
       font-family: $Oregon;
       font-weight: 400;
-      padding: 10px;
+      padding: 0px 10px;
     }
     h1 {
       color: $font_white;
@@ -75,7 +73,7 @@
   }
 
   h5 {
-    font-family: $Univers;
+    font-family: $Univers_Bold;
     margin: 0;
   }
   .age_name_Box {

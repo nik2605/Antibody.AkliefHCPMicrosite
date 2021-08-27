@@ -1,4 +1,4 @@
-<header>
+<header [ngStyle]="{'top':topValue}">
   <div id="mobileNav" [hidden]="!isMobileMenu">
     <ul class="navbar-nav">
       <li class="text-right" style="padding-bottom: 40px;">
@@ -9,27 +9,31 @@
         </svg>
       </li>
       <li>
-        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="prevalence_of_acne" (click)="ShowMoilbeMenu()">
+        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="prevalence_of_acne"
+          (click)="ShowMoilbeMenu()">
           {{'HEADER.Prevalence_of_acne'|translate}}</a>
       </li>
       <li>
-        <a class="navText" [routerLink]="currentLanguage +'/home'"
-          fragment="burden_of_acne" (click)="ShowMoilbeMenu()">{{'HEADER.Burden_of_acne'|
+        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="burden_of_acne"
+          (click)="ShowMoilbeMenu()">{{'HEADER.Burden_of_acne'|
           translate}}
         </a>
       </li>
       <li>
-        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="overview" (click)="ShowMoilbeMenu()">{{'HEADER.Overview'|
+        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="overview"
+          (click)="ShowMoilbeMenu()">{{'HEADER.Overview'|
           translate}}
         </a>
       </li>
       <li>
-        <a class="navText" [routerLink]="currentLanguage +'/efficacyprofile'" (click)="ShowMoilbeMenu()">{{'HEADER.Efficacy_profile'|
+        <a class="navText" [routerLink]="currentLanguage +'/efficacyprofile'"
+          (click)="ShowMoilbeMenu()">{{'HEADER.Efficacy_profile'|
           translate}}
         </a>
       </li>
       <li>
-        <a class="navText" [routerLink]="currentLanguage +'/safetyprofile'" (click)="ShowMoilbeMenu()">{{'HEADER.Safety_profile'|
+        <a class="navText" [routerLink]="currentLanguage +'/safetyprofile'"
+          (click)="ShowMoilbeMenu()">{{'HEADER.Safety_profile'|
           translate}}
         </a>
       </li>
@@ -39,7 +43,8 @@
         </a>
       </li>
       <li>
-        <a class="navText" [routerLink]="currentLanguage +'/managingirritation'" (click)="ShowMoilbeMenu()">{{'HEADER.Managing_irritation'|
+        <a class="navText" [routerLink]="currentLanguage +'/managingirritation'"
+          (click)="ShowMoilbeMenu()">{{'HEADER.Managing_irritation'|
           translate}}
         </a>
       </li>
@@ -52,20 +57,24 @@
   </div>
   <div class="logoBar">
     <div class="row">
-      <div class="col d-flex justify-content-start align-items-center">
-        <a [routerLink]="currentLanguage +'/home'"><img src="../../assets/images/AKLIEF_LOGO_RBALL_no gradient_KO.png" alt="Aklief logo"
-          style="max-width: 240px;width:100%;height:auto;"></a>
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-start align-items-center">
+        <a [routerLink]="currentLanguage +'/home'">
+          <img src="../../assets/images/AKLIEF_LOGO_RBALL_no gradient_KO.png" alt="Aklief logo"
+            style="max-width: 240px;width:100%;height:auto;">
+        </a>
       </div>
-      <div class="col d-flex justify-content-end align-items-center">
+      <div class="col-md-6 col-lg-7 d-flex justify-content-end align-items-center"
+        [ngClass]="isGate?'col-5 col-sm-6':'col-4 col-sm-5'">
         <img src="../../assets/images/GALDERMA_LOGO_WHITE_RGB_SMALL.png" alt="Galderma logo"
           style="max-width: 200px;width:100%;height:auto;">
       </div>
-      <div class="col-1 col-lg-1 d-flex justify-content-center align-items-center">
+      <div class="col-3 col-sm-2 col-md-1 col-lg-1 d-flex justify-content-center align-items-center">
         <div id="language_icon" (click)="switchLanguage(language_icon_text)">
           {{ language_icon_text | uppercase}}
         </div>
       </div>
-      <div class="col-1 justify-content-center align-items-center togglerIcon" [hidden]="isGate">
+      <div class=" col-md-1 col-lg-0 justify-content-center align-items-center togglerIcon" [hidden]="isGate"
+        [ngClass]="isGate?'col-sm-0 col-0':'col-1 col-sm-1'">
         <div>
           <button class="navbar-toggler" type="button" (click)="ShowMoilbeMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
@@ -79,47 +88,56 @@
     </div>
   </div>
   <div id="desktopNav" [hidden]="isGate">
-    <div class="row align-items-center mx-0">
-      <div class="col text-center headerBorder px-0">
-        <a class="navText navBorder" [routerLink]="currentLanguage +'/home'" fragment="prevalence_of_acne">
+    <div class="row align-items-center mx-0 w-100">
+      <div class="col headerBorder px-0">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/home'" fragment="prevalence_of_acne">
           {{'HEADER.Prevalence_of_acne'|translate}}</a>
       </div>
-      <div class="col text-center headerBorder">
-        <a class="navText navBorder" [routerLink]="currentLanguage +'/home'"
-          fragment="burden_of_acne">{{'HEADER.Burden_of_acne'|
+      <div class="col headerBorder">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/home'" fragment="burden_of_acne">{{'HEADER.Burden_of_acne'|
           translate}}
         </a>
       </div>
-      <div class="col text-center headerBorder">
-        <a class="navText" [routerLink]="currentLanguage +'/home'" fragment="overview">{{'HEADER.Overview'|
+      <div class="col headerBorder">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/home'" fragment="overview">{{'HEADER.Overview'|
           translate}}
         </a>
       </div>
-      <div class="col text-center headerBorder">
-        <a class="navText" [routerLink]="currentLanguage +'/efficacyprofile'" [routerLinkActive]="'active'">{{'HEADER.Efficacy_profile'|
+      <div class="col headerBorder">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/efficacyprofile'" [routerLinkActive]="'active'">{{'HEADER.Efficacy_profile'|
           translate}}
         </a>
       </div>
-      <div class="col text-center headerBorder">
-        <a class="navText" [routerLink]="currentLanguage +'/safetyprofile'" [routerLinkActive]="'active'">{{'HEADER.Safety_profile'|
+      <div class="col headerBorder">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/safetyprofile'" [routerLinkActive]="'active'">{{'HEADER.Safety_profile'|
           translate}}
         </a>
       </div>
-      <div class="col text-center headerBorder">
-        <a class="navText" [routerLink]="currentLanguage +'/howtouse'" [routerLinkActive]="'active'">{{'HEADER.How_to_use'|
+      <div class="col headerBorder">
+        <a class="navText d-flex align-items-center justify-content-center" [routerLink]="currentLanguage +'/howtouse'"
+          [routerLinkActive]="'active'">{{'HEADER.How_to_use'|
           translate}}
         </a>
       </div>
-      <div class="col text-center headerBorder">
-        <a class="navText" [routerLink]="currentLanguage +'/managingirritation'" [routerLinkActive]="'active'">{{'HEADER.Managing_irritation'|
+      <div class="col headerBorder">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/managingirritation'"
+          [routerLinkActive]="'active'">{{'HEADER.Managing_irritation'|
           translate}}
         </a>
       </div>
-      <div class="col text-center">
-        <a class="navText" [routerLink]="currentLanguage +'/resources'" [routerLinkActive]="'active'">{{'HEADER.Resources'|
+      <div class="col">
+        <a class="navText d-flex align-items-center justify-content-center text-center"
+          [routerLink]="currentLanguage +'/resources'" [routerLinkActive]="'active'">{{'HEADER.Resources'|
           translate}}
         </a>
       </div>
     </div>
   </div>
 </header>
+<div [ngStyle]="{'height':blankHeight}" [ngClass]="isGate?'gateBlankSpace':'mainBlackspace'"></div>

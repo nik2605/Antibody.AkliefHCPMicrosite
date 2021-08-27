@@ -18,8 +18,6 @@ export class GateComponent implements OnInit {
   isInvalidShow = false;
 
 
-
-
   ShowList() {
     this.isShow = true;
   }

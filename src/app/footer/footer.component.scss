@@ -1,11 +1,24 @@
 @import "../../styles/style.scss";
 
-footer{
+footer {
   background-color: #575756;
   padding: 20px 0px;
-  p{
+  p {
     font-size: $footer_font_szie;
     color: $font_white;
     font-family: $Univers;
+    padding-left: 40px;
+  }
+  .imgBox {
+    @include xs {
+      padding-right: 0px;
+      padding-top: 30px;
+      justify-content: center;
+    }
+    @include md {
+      padding-right: 30px;
+      padding-top: 0px;
+      justify-content: flex-end;
+    }
   }
 }

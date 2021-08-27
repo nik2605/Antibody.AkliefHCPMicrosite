@@ -17,40 +17,67 @@
     @include md {
       height: 550px;
     }
-    .imgBox {
-
-      .micetype {
-        font-size: 10px;
-        font-family: $Univers;
-      }
+    .faceBox {
       @include xs {
-        text-align: center;
-        padding: 0px 20px;
-        img {
-          max-width: 576px;
-          width: 100%;
-        }
+        justify-content: center;
       }
       @include md {
-        text-align: right;
-        padding: 0px;
-        img {
-          max-width: 320px;
-          width: 100%;
+        justify-content: flex-end;
+      }
+      .face {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        .baselineBox {
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+          height: 100%;
+        }
+        .face_drag {
+          background: hsla(0, 0%, 100%, 0.25);
+          width: 1px;
+          overflow: visible;
+          margin-left: -1px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          cursor: ew-resize;
+          left: 50%;
+          &:before {
+            background: url("../../assets/images/circle_arrows.png") no-repeat 50%;
+            background-size: cover;
+            border: 0;
+            content: "";
+            height: 50px;
+            left: 50%;
+            margin-left: -25px;
+            margin-top: 35px;
+            position: absolute;
+            top: 50%;
+            width: 50px;
+          }
         }
       }
     }
+
     .textBox {
       h5 {
-        font-weight: bold;
+        font-weight: 400;
       }
       @include xs {
         width: 100%;
-        padding: 0px 20px;
+        padding: 10px 20px 0px 20px;
       }
       @include md {
-        width: 235px;
-        padding:  0px 0px 0px 20px;
+        width: 240px;
+        padding: 0px 0px 0px 20px;
       }
     }
   }
@@ -103,12 +130,18 @@
   .swiper-button-next,
   .swiper-button-prev {
     top: inherit;
-    bottom: 2%;
+
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: center;
     z-index: 11;
     opacity: 1;
+    @include xs {
+      bottom: 13px;
+    }
+    @include md {
+      bottom: 2%;
+    }
   }
 
   .swiper-pagination-bullets {

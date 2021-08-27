@@ -1,4 +1,7 @@
-<app-safetyinformation></app-safetyinformation>
+<div [hidden]="accessed">
+  <app-safetyinformation></app-safetyinformation>
+</div>
+
 <section id="landing">
   <div class="landing d-flex justify-content-end">
     <div class="textBox d-inline-block" style="vertical-align: middle;">
@@ -14,14 +17,27 @@
       </div>
     </div>
   </div>
-  <app-policy-bar></app-policy-bar>
+  <div class="policy_bar">
+    <a href="{{currentLanguage}}/privacypolicy">{{'POLICY_BAR.privacy_policy'|
+      translate}}
+    </a>
+    |
+    <a href="{{currentLanguage}}/cookiepolicy">{{'POLICY_BAR.cookie_policy'|
+      translate}}
+    </a>
+    |
+    <a href="{{currentLanguage}}/safetyinformation">{{'POLICY_BAR.safety_information'|
+      translate}}
+    </a>
+  </div>
+
 </section>
 <section id="prevalence_of_acne">
   <div class="prevalence_of_acne">
     <div class="whiteContainer d-flex align-items-center">
 
       <div style="width:100%">
-          <app-homeprevalences-swiper></app-homeprevalences-swiper>
+        <app-homeprevalences-swiper></app-homeprevalences-swiper>
       </div>
 
     </div>
@@ -122,8 +138,32 @@
   </div>
 </section>
 <section id="overview">
-  <div>
-    <app-homeoverviewswiper></app-homeoverviewswiper>
+  <div class="overview d-flex align-items-center row mx-0">
+    <div class="imgBox px-5 col-lg-3 col-sm-5 col-12">
+      <div>
+        <img *ngIf="currentLanguage == 'en'" src="../../assets/images/Aklief_product_box_en.png"
+          alt="Aklief product in English">
+        <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/Aklief_product_box_fr.png"
+          alt="Aklief product in French">
+      </div>
+
+      <div>
+        <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype1' |translate"></p>
+        <p class="micetype" [innerHTML]="'HOME.overview_of_aklef_micetype2' |translate"></p>
+
+      </div>
+    </div>
+    <div class="col-lg-9 col-sm-7 col-12">
+      <h1>
+        {{'HOME.overview_of_aklef_headline' |translate| uppercase}}
+      </h1>
+      <h3 [innerHTML]="'HOME.overview_of_aklef_subhead' |translate| uppercase">
+      </h3>
+      <div>
+        <app-homeoverviewswiper></app-homeoverviewswiper>
+      </div>
+    </div>
+
   </div>
   <div class="backtotop text-center" (click)="backtotop()">
     <div>
@@ -138,7 +178,7 @@
 </section>
 <section>
   <div class="efficacyprofile">
-    <div class="whiteContainer d-flex justify-content-center justify-content-md-end align-items-center">
+    <div class="whiteContainer row justify-content-center justify-content-md-end align-items-center">
       <div class="whiteBox text-center">
         <h1>
           {{'HOME.efficacy_profile_headline'|translate|uppercase}}
@@ -192,8 +232,10 @@
           <p>
             {{'HOME.safety_profile_eyebrown'|translate|uppercase}}
           </p>
+
           <h2 [innerHTML]="'HOME.safety_profile_subhead'|translate|uppercase">
           </h2>
+
           <div class="blue_button">
             <a href="{{currentLanguage}}/safetyprofile" class="button">
               {{'BUTTON.learn_more' | translate | uppercase}}
@@ -246,7 +288,7 @@
           {{'HOME.how_to_use_copy4'|translate|uppercase}}
         </h4>
         <div class="d-flex align-items-center justify-content-center h-100">
-          <img class="howToUseImg" src="../../assets/images/Sun Protection.png" alt="Sun Protection">
+          <img class="sunProtectImage" src="../../assets/images/Sun Protection.png" alt="Sun Protection">
         </div>
       </div>
     </div>
@@ -317,33 +359,49 @@
         </div>
         <div class="col-12 col-md-6">
           <div class="downloadBox row">
-            <div class="col-6 text-center">
+            <div class="col-12 col-sm-6 text-center">
               <div>
-                <img src="../../assets/images/download_icon.PNG" alt="download icon">
+                <img *ngIf="currentLanguage=='en'" src="../../assets/images/Resource_download_icon1_en.png"
+                  alt="Acne Assessment Tool icon in English">
+                <img *ngIf="currentLanguage=='fr'" src="../../assets/images/Resource_download_icon1_fr.png"
+                  alt="Acne Assessment Tool icon in French">
+
               </div>
               <h5>
                 {{'HOME.resources_download_subhead1' | translate | uppercase}}
               </h5>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-12 col-sm-6  text-center">
               <div>
-                <img src="../../assets/images/download_icon.PNG" alt="download icon">
+                <img *ngIf="currentLanguage=='en'" src="../../assets/images/Resource_download_icon2_en.png"
+                  alt="AKLIEF Patient Info Sheet icon in English">
+                <img *ngIf="currentLanguage=='fr'" src="../../assets/images/Resource_download_icon2_fr.png"
+                  alt="AKLIEF Patient Info Sheet icon in French">
+
               </div>
               <h5>
                 {{'HOME.resources_download_subhead2' | translate | uppercase}}
               </h5>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-12 col-sm-6  text-center">
               <div>
-                <img src="../../assets/images/download_icon.PNG" alt="download icon">
+                <img *ngIf="currentLanguage=='en'" src="../../assets/images/Resource_download_icon3_en.png"
+                  alt="AKLIEF Patient Brochure icon in English">
+                <img *ngIf="currentLanguage=='fr'" src="../../assets/images/Resource_download_icon3_fr.png"
+                  alt="AKLIEF Patient Brochure icon in French">
+
               </div>
               <h5>
                 {{'HOME.resources_download_subhead3' | translate | uppercase}}
               </h5>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-12 col-sm-6 text-center">
               <div>
-                <img src="../../assets/images/download_icon.PNG" alt="download icon">
+                <img *ngIf="currentLanguage=='en'" src="../../assets/images/Resource_download_icon4_en.png"
+                  alt="AKLIEF Product Monograph icon in English">
+                <img *ngIf="currentLanguage=='fr'" src="../../assets/images/Resource_download_icon4_fr.png"
+                  alt="AKLIEF Product Monograph icon in French">
+
               </div>
               <h5>
                 {{'HOME.resources_download_subhead4' | translate | uppercase}}

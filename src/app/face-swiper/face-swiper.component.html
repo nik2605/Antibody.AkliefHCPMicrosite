@@ -3,9 +3,16 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="backgroundContainer justify-content-center align-items-center row">
-          <div class="col-12 col-sm-12 col-md-6 imgBox">
-            <div>
-              <img src="../../assets/images/patient_face_1.png" alt="patient face 1">
+          <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
+            <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+              <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face1_baseline_en.png" alt="face 1 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face1_baseline_fr.png" alt="face 1 baseline">
+
+              </div>
+              <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face1_week12_en.png" alt="face 1 week12">
+              <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face1_week12_fr.png" alt="face 1 week12">
+              <span class="face_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6">
@@ -24,9 +31,16 @@
       </div>
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center row">
-          <div class="imgBox col-12 col-sm-12 col-md-6 ">
-            <div>
-              <img src="../../assets/images/patient_face_2.png" alt="patient face 2">
+          <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
+            <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+              <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face2_baseline_en.png" alt="face 2 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face2_baseline_fr.png" alt="face 2 baseline">
+
+              </div>
+              <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face2_week12_en.png" alt="face 2 week12">
+              <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face2_week12_fr.png" alt="face 2 week12">
+              <span class="face_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6">
@@ -46,9 +60,15 @@
       </div>
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center row">
-          <div class="imgBox col-12 col-sm-12 col-md-6 ">
-            <div>
-              <img src="../../assets/images/patient_face_3.png" alt="patient face 3">
+          <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
+            <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+              <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face3_baseline_en.png" alt="face 3 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face3_baseline_fr.png" alt="face 3 baseline">
+              </div>
+              <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face3_week12_en.png" alt="face 3 week12">
+              <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face3_week12_fr.png" alt="face 3 week12">
+              <span class="face_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6">
@@ -68,9 +88,15 @@
       </div>
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center row">
-          <div class="imgBox col-12 col-sm-12 col-md-6 ">
-            <div>
-              <img src="../../assets/images/patient_face_4.png" alt="patient face 4">
+          <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
+            <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
+              <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face4_baseline_en.png" alt="face 4 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face4_baseline_fr.png" alt="face 4 baseline">
+              </div>
+              <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face4_week12_en.png" alt="face 4 week12">
+              <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face4_week12_fr.png" alt="face 4 week12">
+              <span class="face_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6">
@@ -91,8 +117,8 @@
 
 
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev" (click)="resetLine()"></div>
+    <div class="swiper-button-next" (click)="resetLine()"></div>
+    <div class="swiper-pagination" (click)="resetLine()"></div>
   </swiper>
 </div>

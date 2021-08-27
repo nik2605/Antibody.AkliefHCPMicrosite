@@ -7,9 +7,7 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-right: 5%;
   padding-top: 200px;
-  text-align: center;
   @include xs {
     height: 50%;
   }
@@ -47,7 +45,10 @@
       padding: 0px;
     }
     @include lg {
-      padding: 0px 200px;
+      padding: 0px 25px;
+    }
+    @include xl {
+      padding: 0px 12%;
     }
   }
   h5 {
@@ -83,7 +84,7 @@
     h2 {
       font-family: $Oregon;
       color: $font_white;
-      font-weight: 400;
+      font-weight: 200;
       margin-bottom: 0px;
     }
     img {

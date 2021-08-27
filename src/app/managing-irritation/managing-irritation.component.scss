@@ -7,9 +7,7 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-right: 5%;
   padding-top: 200px;
-  text-align: center;
   @include xs {
     height: 50%;
   }
@@ -77,7 +75,7 @@
       background-position-y: top;
       background-size: cover;
       border-radius: 0px 10px 10px 0px;
-      padding: 10px;
+      padding: 10px 1rem;
       @include xs {
         border-radius: 10px;
       }

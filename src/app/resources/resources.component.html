@@ -1,7 +1,11 @@
-<div class="topImage d-flex justify-content-end">
-  <h1>
-    {{'RESOURCES.resources' | translate | uppercase}}
-  </h1>
+<div class="topImage row mx-0">
+  <div class="col"></div>
+  <div class="col">
+    <h1>
+      {{'RESOURCES.resources' | translate | uppercase}}
+    </h1>
+  </div>
+
 </div>
 <div class="main">
   <h1 class="text-center title" [innerHTML]="'RESOURCES.headline' | translate | uppercase">
@@ -9,11 +13,14 @@
   <div class="downloadBox">
     <div class="step row py-5">
       <div class="imgBox col-12 col-sm-4 col-md-3 text-center">
-        <img src="../../assets/images/Resource_download_icon1.png" alt="download 1 image">
+        <img *ngIf="currentLanguage == 'en'" src="../../assets/images/Resource_download_icon1_en.png"
+          alt="download 1 image in english">
+        <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/Resource_download_icon1_fr.png"
+          alt="download 1 image in french">
       </div>
       <div class="textBox col-12 col-sm-8 col-md-9">
         <h3>{{'RESOURCES.download1_headline' | translate | uppercase}}</h3>
-        <h5 [innerHTML]="'RESOURCES.download1_copy' | translate | uppercase">
+        <h5 [innerHTML]="'RESOURCES.download1_copy' | translate">
         </h5>
         <div class="blue_button">
           <a href="#" class="button">
@@ -24,11 +31,14 @@
     </div>
     <div class="step row py-5">
       <div class="imgBox col-12 col-sm-4 col-md-3 text-center">
-        <img src="../../assets/images/Resource_download_icon2.png" alt="download 2 image">
+        <img *ngIf="currentLanguage == 'en'" src="../../assets/images/Resource_download_icon2_en.png"
+          alt="download 2 image in english">
+        <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/Resource_download_icon2_fr.png"
+          alt="download 2 image in french">
       </div>
       <div class="textBox col-12 col-sm-8 col-md-9">
         <h3>{{'RESOURCES.download2_headline' | translate | uppercase}}</h3>
-        <h5 [innerHTML]="'RESOURCES.download2_copy' | translate | uppercase">
+        <h5 [innerHTML]="'RESOURCES.download2_copy' | translate">
         </h5>
         <div class="blue_button">
           <a href="#" class="button">
@@ -39,11 +49,14 @@
     </div>
     <div class="step row py-5">
       <div class="imgBox col-12 col-sm-4 col-md-3 text-center">
-        <img src="../../assets/images/Resource_download_icon3.png" alt="download 3 image">
+        <img *ngIf="currentLanguage == 'en'" src="../../assets/images/Resource_download_icon3_en.png"
+          alt="download 3 image in english">
+        <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/Resource_download_icon3_fr.png"
+          alt="download 3 image in french">
       </div>
       <div class="textBox col-12 col-sm-8 col-md-9">
         <h3>{{'RESOURCES.download3_headline' | translate | uppercase}}</h3>
-        <h5 [innerHTML]="'RESOURCES.download3_copy' | translate | uppercase">
+        <h5 [innerHTML]="'RESOURCES.download3_copy' | translate">
         </h5>
         <div class="blue_button">
           <a href="#" class="button">
@@ -54,7 +67,10 @@
     </div>
     <div class="step row py-5">
       <div class="imgBox col-12 col-sm-4 col-md-3 text-center">
-        <img src="../../assets/images/Resource_download_icon4.png" alt="download 4 image">
+        <img *ngIf="currentLanguage == 'en'" src="../../assets/images/Resource_download_icon4_en.png"
+          alt="download 4 image in english">
+        <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/Resource_download_icon4_fr.png"
+          alt="download 4 image in french">
       </div>
       <div class="textBox col-12 col-sm-8 col-md-9">
         <h3>{{'RESOURCES.download4_headline' | translate | uppercase}}</h3>
@@ -103,10 +119,13 @@
   <div class="blueLine">
 
   </div>
+  <div>
+    <img src="../../assets/images/reference_bottom.png" alt="patients in group" style="width: 100%;">
+  </div>
   <div class="reference">
     <p class="reference_text">
       {{'RESOURCES.reference' | translate | uppercase}}
     </p>
-    <ol [innerHTML]="'RESOURCES.reference_list' | translate"></ol>
+    <ol class="ol_li_font" [innerHTML]="'RESOURCES.reference_list' | translate"></ol>
   </div>
 </div>

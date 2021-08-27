@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
+import { NavigationEnd, NavigationError, NavigationStart, Router, Event } from '@angular/router';
 import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 
 @Component({
@@ -10,6 +10,7 @@ import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 export class PolicyBarComponent implements OnInit {
 
   public currentLanguage: string;
+  isGate = false;
   constructor(public localize: LocalizeRouterService, private router: Router) {
     this.currentLanguage = this.localize.parser.currentLang;
   }
@@ -22,5 +23,7 @@ export class PolicyBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+
   }
 }

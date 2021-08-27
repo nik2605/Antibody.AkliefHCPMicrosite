@@ -1,7 +1,9 @@
-<div class="topImage d-flex justify-content-end">
-  <h1>
+<div class="topImage row mx-0">
+  <div class="col"></div>
+  <div class="col"> <h1>
     {{'MANAGING_IRRITATION.managing_irritation' | translate | uppercase}}
-  </h1>
+  </h1></div>
+
 </div>
 <div class="main pt-5">
   <h1 class="text-center" [innerHTML]="'MANAGING_IRRITATION.headline' | translate | uppercase">
@@ -34,8 +36,7 @@
           <img src="../../assets/images/manage_irritation_icon3.png" alt="message icon" class="image-icon">
         </div>
         <div class="text-center">
-          <h5>
-            {{'MANAGING_IRRITATION.copy3' | translate}}
+          <h5 [innerHTML]="'MANAGING_IRRITATION.copy3' | translate">
           </h5>
         </div>
       </div>
@@ -54,8 +55,7 @@
           <img src="../../assets/images/manage_irritation_icon5.png" alt="message icon" class="image-icon">
         </div>
         <div class="text-center">
-          <h5>
-            {{'MANAGING_IRRITATION.copy5' | translate}}
+          <h5 [innerHTML]="'MANAGING_IRRITATION.copy5' | translate">
           </h5>
         </div>
       </div>

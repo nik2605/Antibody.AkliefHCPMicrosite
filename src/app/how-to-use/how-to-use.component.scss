@@ -1,15 +1,13 @@
 @import "../../styles/style.scss";
 
 .topImage {
-  background-image: url("../../assets/images/safety_profile_background_transparent.png");
+  background-image: url("../../assets/images/how_to_use_background_transparent.png");
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-right: 5%;
   padding-top: 200px;
-  text-align: center;
   @include xs {
     height: 50%;
   }
@@ -48,15 +46,17 @@
 
       h3 {
         color: $font_middleGrey;
+        font-family: $Oregon;
         .blueNumber {
           color: $font_blue;
           font-size: 40px;
-          font-family: $Oregon;
+
           font-weight: 400;
         }
       }
       h5 {
         color: $font_middleGrey;
+        font-family: $Univers;
       }
     }
   }
@@ -75,7 +75,7 @@
       font-size: 32px;
       font-family: $Oregon;
       font-weight: 400;
-      padding-left: 45px;
+      text-align: center;
     }
     h2 {
       font-family: $Oregon;
