@@ -23,7 +23,11 @@ export class FaceSwiperComponent implements OnInit {
     centeredSlides: true,
     allowTouchMove: false,
     loop: true,
-    pagination: { el: '.swiper-pagination', clickable: true },
+    pagination: {
+      el: '.swiper-pagination', clickable: true, renderBullet: function (index, className) {
+        return '<span class="' + className + '"><img src="../../assets/images/face' + index + '_icon.png"></span>';
+      }
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'

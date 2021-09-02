@@ -9,7 +9,7 @@
   }
   h5 {
     font-weight: bold;
-    font-family: $Univers_Bold;
+    font-family: $Univers;
     color: $font_middleGrey;
     padding: 15px 0px 10px 0px;
   }
@@ -17,10 +17,12 @@
     font-size: 16px;
     font-family: $Univers;
     color: $font_middleGrey;
+    font-weight: 200;
   }
   .li_font {
     font-size: 16px;
     font-family: $Univers;
     color: $font_middleGrey;
+    font-weight: 200;
   }
 }

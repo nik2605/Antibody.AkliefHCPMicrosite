@@ -2,26 +2,22 @@
 
 .faceSwiper {
   .backgroundContainer {
-    background-image: url("../../assets/images/wallpaper_4.png");
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: left;
-    background-size: cover;
     width: 100%;
     color: $font_white;
-    padding: 50px 20px;
     text-align: left;
-    @include xs {
-      height: auto;
-    }
-    @include md {
-      height: 550px;
+    p {
+      font-size: 16px;
+      color: $font_middleGrey;
+      font-family: $Univers;
+      font-weight: 200;
+      margin-top: 20px;
+      text-align: center;
     }
     .faceBox {
       @include xs {
         justify-content: center;
       }
-      @include md {
+      @include lg {
         justify-content: flex-end;
       }
       .face {
@@ -39,6 +35,14 @@
           overflow: hidden;
           top: 0;
           height: 100%;
+        }
+        img {
+          @include xs {
+            width: 280px;
+          }
+          @include sm {
+            width: 460px;
+          }
         }
         .face_drag {
           background: hsla(0, 0%, 100%, 0.25);
@@ -66,29 +70,42 @@
         }
       }
     }
-
     .textBox {
+
       h5 {
-        font-weight: 400;
+        font-weight: 200;
+        font-family: $Univers;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      p {
+        color: $font_white;
+        font-size: 12px;
+        text-align: left;
+        margin-top: 0;
+      }
+      .copy {
+        font-size: 16px;
+        margin-top: 30px;
       }
       @include xs {
         width: 100%;
         padding: 10px 20px 0px 20px;
+        margin-bottom: 50px;
       }
-      @include md {
-        width: 240px;
+      @include lg {
+        width: 375px;
         padding: 0px 0px 0px 20px;
+        margin-bottom: 120px;
       }
     }
   }
   .swiper-wrapper {
     align-items: center;
-    background-color: #ffffff;
   }
 
   .swiper-slide {
     text-align: center;
-    background: #fff;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -108,15 +125,15 @@
   .swiper-button-next {
     background-image: url(../../assets/images/white_angle_right.png);
     right: auto;
-    left: 50%;
-    margin-left: 70px;
+    //left: 50%;
+    //margin-left: 70px;
   }
 
   .swiper-button-prev {
     background-image: url(../../assets/images/white_angle_left.png);
     left: auto;
-    right: 50%;
-    margin-right: 70px;
+    //right: 50%;
+    //margin-right: 70px;
   }
 
   .swiper-button-prev::after {
@@ -129,37 +146,84 @@
 
   .swiper-button-next,
   .swiper-button-prev {
+    position: inherit;
     top: inherit;
-
     background-repeat: no-repeat;
-    background-size: 60% auto;
     background-position: center;
     z-index: 11;
     opacity: 1;
     @include xs {
-      bottom: 13px;
+      //bottom: 13px;
+      margin: 8px 0px 0px;
+      background-size: 50% auto;
+    }
+    @include sm {
+      background-size: 60% auto;
+      margin: 10px 0px;
     }
     @include md {
-      bottom: 2%;
+      //bottom: 2%;
     }
   }
 
   .swiper-pagination-bullets {
-    bottom: 20px;
+    //bottom: 20px;
+    @include xs {
+      margin: 0px 5px;
+    }
+    @include sm {
+      margin: 0px 15px;
+    }
   }
 
   .swiper-pagination {
+    text-align: left;
+    position: inherit;
+    @include xs {
+      align-self: center;
+    }
+    @include sm {
+      align-self: auto;
+    }
     .swiper-pagination-bullet {
-      width: 15px;
-      height: 15px;
-      padding: 0px 2px;
-      background: #ffffff;
-      margin: 0px 10px !important;
+      // width: 15px;
+      // height: 15px;
+      // padding: 0px 2px;
+      // background: #ffffff;
+      // margin: 0px 10px !important;
+      // opacity: 1;
       opacity: 1;
+      margin: 0px 5px;
+
+      @include xs {
+        width: 35px;
+        img {
+          width: 35px;
+        }
+      }
+      @include sm {
+        width: 60px;
+        img {
+          width: 60px;
+        }
+      }
     }
 
     .swiper-pagination-bullet-active {
-      background: #00accd;
+      // background: #00accd;
+      img {
+        border: 5px solid #00accd;
+      }
     }
+  }
+}
+
+.toggleBox {
+  @include xs {
+    justify-content: center;
+  }
+  @include lg {
+    justify-content: inherit;
+    margin-left: 20px;
   }
 }

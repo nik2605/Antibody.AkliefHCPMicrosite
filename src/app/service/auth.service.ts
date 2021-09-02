@@ -18,7 +18,7 @@ export class AuthService {
 
 
   rootUrl;
-  readonly authcookie = 'Antibody.ObesityCare.Auth';
+  readonly authcookie = 'Aklief.Auth';
 
   constructor(private router: Router,
     private http: HttpClient,
@@ -43,10 +43,10 @@ export class AuthService {
 
     //if(username == "test" && password == "test"){
     //if(province == environment.province && number == environment.licence_number){
-    if (number == environment.licence_number) {
+    if (number.length > 4 && province.length > 0) {
       localStorage.setItem('currentUser', JSON.stringify(province + number));
       this.currentUserSubject.next(province + number);
-      this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083);
+      this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083,'','',true);
       return true;
     }
     else {

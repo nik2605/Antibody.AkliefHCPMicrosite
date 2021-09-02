@@ -46,8 +46,7 @@ sub {
 }
 
 b {
-  font-family: $Univers_Bold;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 //font size
@@ -84,7 +83,7 @@ p {
 }
 .title_h2 {
   font-size: $title_h2_font_size;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $Univers;
 }
 .title_p {
   font-size: $title_p_font_size;
@@ -101,13 +100,19 @@ ul {
   font-size: 30px;
   color: $font_white;
 }
+.TEXT-NOWRAP {
+  white-space: nowrap;
+}
 
 .text_blue {
   color: $font_blue;
 }
+.text_yellow {
+  color: $font_yellow;
+}
 .text_itals {
   // font-family: Arial, Helvetica, sans-serif;
-  font-family: $Univers_light_itals;
+  //font-family: $Univers_light_itals;
   font-style: italic;
 }
 .TEXT_ARIAL {

@@ -2,7 +2,7 @@
   <swiper [config]="config">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex justify-content-center align-items-center">
+        <div class="backgroundContainer d-flex justify-content-center">
           <div class="imgBox">
             <div class="chestBox d-flex">
               <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
@@ -19,26 +19,27 @@
                 <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
               </div>
             </div>
-            <div class="textBox row pt-3">
-              <div class="col-3">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_subject1'|translate">
+            <div class="textBox row pt-4">
+              <div class="col-12 col-md-3 mb-1">
+                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_study1'|translate">
                 </h5>
+                <p [innerHTML]="'EFFICACY_PROFILE.chest_subject1'|translate">
+                </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_age1'|translate">
                 </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_gender1'|translate">
                 </p>
               </div>
-              <div class="col-9">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_copy1'|translate" style="font-weight: 300;">
-                </h5>
+              <div class="col-12 col-md-9">
+                <p class="copy" [innerHTML]="'EFFICACY_PROFILE.chest_copy1'|translate">
+                </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex justify-content-center align-items-center">
+        <div class="backgroundContainer d-flex justify-content-center">
           <div class="imgBox">
             <div class="chestBox d-flex">
               <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
@@ -55,18 +56,20 @@
                 <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
               </div>
             </div>
-            <div class="textBox row pt-3">
-              <div class="col-3">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_subject2'|translate">
+            <div class="textBox row pt-4">
+              <div class="col-12 col-md-3 mb-1">
+                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_study2'|translate">
                 </h5>
+                <p [innerHTML]="'EFFICACY_PROFILE.chest_subject2'|translate">
+                </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_age2'|translate">
                 </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_gender2'|translate">
                 </p>
               </div>
-              <div class="col-9">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_copy2'|translate" style="font-weight: 300;">
-                </h5>
+              <div class="col-12 col-md-9">
+                <p class="copy" [innerHTML]="'EFFICACY_PROFILE.chest_copy2'|translate">
+                </p>
               </div>
             </div>
           </div>
@@ -74,7 +77,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex justify-content-center align-items-center">
+        <div class="backgroundContainer d-flex justify-content-center">
           <div class="imgBox">
             <div class="chestBox d-flex">
               <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
@@ -91,18 +94,20 @@
                 <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
               </div>
             </div>
-            <div class="textBox row pt-3">
-              <div class="col-3">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_subject3'|translate">
+            <div class="textBox row pt-4">
+              <div class="col-12 col-md-3 mb-1">
+                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_study3'|translate">
                 </h5>
+                <p [innerHTML]="'EFFICACY_PROFILE.chest_subject3'|translate">
+                </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_age3'|translate">
                 </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_gender3'|translate">
                 </p>
               </div>
-              <div class="col-9">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_copy3'|translate" style="font-weight: 300;">
-                </h5>
+              <div class="col-12 col-md-9">
+                <p class="copy" [innerHTML]="'EFFICACY_PROFILE.chest_copy3'|translate">
+                </p>
               </div>
             </div>
           </div>
@@ -110,7 +115,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="backgroundContainer d-flex justify-content-center align-items-center">
+        <div class="backgroundContainer d-flex justify-content-center">
           <div class="imgBox">
             <div class="chestBox d-flex">
               <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
@@ -127,18 +132,20 @@
                 <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
               </div>
             </div>
-            <div class="textBox row pt-3">
-              <div class="col-3">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_subject4'|translate">
+            <div class="textBox row pt-4">
+              <div class="col-12 col-md-3 mb-1">
+                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_study4'|translate">
                 </h5>
+                <p [innerHTML]="'EFFICACY_PROFILE.chest_subject4'|translate">
+                </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_age4'|translate">
                 </p>
                 <p [innerHTML]="'EFFICACY_PROFILE.chest_gender4'|translate">
                 </p>
               </div>
-              <div class="col-9">
-                <h5 [innerHTML]="'EFFICACY_PROFILE.chest_copy4'|translate" style="font-weight: 300;">
-                </h5>
+              <div class="col-12 col-md-9">
+                <p class="copy" [innerHTML]="'EFFICACY_PROFILE.chest_copy4'|translate">
+                </p>
               </div>
             </div>
           </div>
@@ -146,8 +153,19 @@
         </div>
       </div>
     </div>
-    <div class="swiper-button-prev" (click)="resetLine()"></div>
-    <div class="swiper-button-next" (click)="resetLine()"></div>
-    <div class="swiper-pagination" (click)="resetLine()"></div>
+    <div class="toggleBox">
+      <div>
+        <div class="d-flex justify-content-center">
+          <div class="swiper-button-prev" (click)="resetLine()"></div>
+          <div class="swiper-pagination" (click)="resetLine()"></div>
+          <div class="swiper-button-next" (click)="resetLine()"></div>
+        </div>
+      </div>
+
+      <p>
+        {{'EFFICACY_PROFILE.select_skin_type'|translate}}
+      </p>
+    </div>
+
   </swiper>
 </div>

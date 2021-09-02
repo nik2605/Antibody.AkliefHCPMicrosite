@@ -59,8 +59,10 @@
     <div class="row">
       <div class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-start align-items-center">
         <a [routerLink]="currentLanguage +'/home'">
-          <img src="../../assets/images/AKLIEF_LOGO_RBALL_no gradient_KO.png" alt="Aklief logo"
-            style="max-width: 240px;width:100%;height:auto;">
+          <img *ngIf="currentLanguage=='en'" src="../../assets/images/AKLIEF_LOGO_RBALL_no gradient_KO_en.png"
+            alt="Aklief English logo" style="max-width: 240px;width:100%;height:auto;">
+          <img *ngIf="currentLanguage=='fr'" src="../../assets/images/AKLIEF_LOGO_RBALL_no gradient_KO_fr.png"
+            alt="Aklief French logo" style="max-width: 240px;width:100%;height:auto;">
         </a>
       </div>
       <div class="col-md-6 col-lg-7 d-flex justify-content-end align-items-center"

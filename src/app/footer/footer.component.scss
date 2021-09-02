@@ -7,7 +7,15 @@ footer {
     font-size: $footer_font_szie;
     color: $font_white;
     font-family: $Univers;
-    padding-left: 40px;
+    padding-left: 30px;
+    @include xs {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    @include lg {
+      text-align: left;
+      padding-bottom: 0px;
+    }
   }
   .imgBox {
     @include xs {
@@ -15,10 +23,12 @@ footer {
       padding-top: 30px;
       justify-content: center;
     }
-    @include md {
+    @include lg {
       padding-right: 30px;
       padding-top: 0px;
       justify-content: flex-end;
+    }
+    @include xl {
     }
   }
 }

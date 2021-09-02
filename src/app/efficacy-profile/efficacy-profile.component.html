@@ -14,18 +14,25 @@
   <h2 class="text-center">
     {{'EFFICACY_PROFILE.subhead_1' | translate | uppercase}}
   </h2>
-  <div class="row text-center calloutBar py-2 m-4">
-    <div class="col-12 col-md-2 align-self-center">
-      <img src="../../assets/images/face_icon.png" alt="face icon" class="image-icon">
+  <div class="row calloutBar py-2 m-4">
+    <div class="col-12 col-md-2 align-self-center text-center">
+      <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face_icon_en.png" alt="english face icon"
+        class="image-icon">
+      <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face_icon_fr.png" alt="french face icon"
+        class="image-icon">
     </div>
-    <div class="col-12 col-md-3 align-self-center">
-      <h1>
-        {{'EFFICACY_PROFILE.54_4' | translate | uppercase}}
-      </h1>
+    <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+      <div>
+        <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
+        </h5>
+
+        <h1>
+          {{'EFFICACY_PROFILE.54_4' | translate | uppercase}}
+        </h1>
+      </div>
+
     </div>
-    <div class="col-12 col-md-7 align-self-center" style="text-align: left;margin-top: 10px;">
-      <h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
-      </h2>
+    <div class="col-12 col-md-7 d-flex align-items-center">
       <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
       </h2>
     </div>
@@ -37,43 +44,37 @@
       alt="efficacy chart 1">
   </div>
 </div>
-<div class="faceSwiper">
+<div class="faceImageSwiper">
+  <h2 class="text-center">
+    {{'EFFICACY_PROFILE.subhead_1' | translate | uppercase}}
+  </h2>
   <app-face-swiper></app-face-swiper>
 </div>
 <div class="main">
-  <div class="row text-center calloutBar pt-4 m-4">
-    <div class="col-12 col-md-2 align-self-center">
-      <img src="../../assets/images/trunk_icon.png" alt="face icon" class="image-icon">
+  <div class="row calloutBar py-2 m-4">
+    <div class="col-12 col-md-2 align-self-center text-center">
+      <img *ngIf="currentLanguage == 'en'" src="../../assets/images/trunk_icon_en.png" alt="english truck icon"
+        class="image-icon">
+      <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/trunk_icon_fr.png" alt="french truck icon"
+        class="image-icon">
     </div>
-    <div class="col-12 col-md-3 align-self-center">
-      <h1>
-        {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
-      </h1>
+    <div class="col-12 col-md-3  d-flex align-items-center justify-content-center">
+      <div>
+        <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase"
+          style="text-align: left;margin-top: 10px;">
+        </h5>
+        <h1>
+          {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
+        </h1>
+      </div>
+
     </div>
-    <div class="col-12 col-md-7 align-self-center">
-      <h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase"
-        style="text-align: left;margin-top: 10px;">
-      </h2>
+    <div class="col-12 col-md-7  d-flex align-items-center">
       <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase"
         style="text-align: left;">
       </h2>
     </div>
   </div>
-
-
-
-  <!-- <div class="calloutBar d-flex justify-content-start align-items-center">
-    <div>
-      <img src="../../assets/images/trunk_icon.png" alt="trunk icon">
-    </div>
-    <h2 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
-    </h2>
-    <h1>
-      {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
-    </h1>
-    <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase">
-    </h2>
-  </div> -->
   <div class="text-center my-4">
     <img *ngIf="currentLanguage == 'en'" class="chartImage" src="../../assets/images/efficacy_chart2_en.png"
       alt="efficacy chart 2">
@@ -82,7 +83,10 @@
 
   </div>
 </div>
-<div>
+<div class="chestImageSwiper">
+  <h2 class="text-center">
+    {{'EFFICACY_PROFILE.subhead_1' | translate | uppercase}}
+  </h2>
   <app-chest-swiper></app-chest-swiper>
 </div>
 <div class="main">
@@ -96,7 +100,7 @@
     <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/acne_treatment_fr.jpg" alt="treatment over 52 weeks"
       style="max-width: 800px;width:100%;height: auto;">
   </div>
-  <div class="d-flex justify-content-start align-items-center py-2 mx-auto" style="max-width: 800px;">
+  <div class="d-flex justify-content-start align-items-center py-4 mx-auto" style="max-width: 800px;">
     <div class="age_name_Box">
       <p [innerHTML]="'EFFICACY_PROFILE.treatment_gender' | translate">
       </p>

@@ -1,9 +1,14 @@
 <footer>
   <div class="row mx-0">
-    <div class="col-12 col-md-6">
-      <p [innerHTML]="'FOOTER.micetype'|translate"></p>
+    <div [ngClass]="isGate?'col-12 col-md-6':'col-12 col-xl-4 col-lg-4'">
+      <p *ngIf="isGate" [innerHTML]="'FOOTER.pre_gate_micetype'|translate"></p>
+      <p *ngIf="!isGate" [innerHTML]="'FOOTER.post_gate_micetype'|translate"></p>
     </div>
-    <div class="imgBox col-12 col-md-6 d-flex align-items-center">
+
+    <div [hidden]="isGate" [ngClass]="isGate?'':'col-12 col-xl-4 col-lg-5'">
+      <app-policy-bar></app-policy-bar>
+    </div>
+    <div class="imgBox d-flex align-items-center" [ngClass]="isGate?'col-12 col-md-6':'col-12 col-xl-4 col-lg-3'">
       <img src="../../assets/images/GALDERMA_LOGO_WHITE_RGB_SMALL.png" alt="Galderma logo"
         style="max-width: 200px;width:100%;height:auto;">
     </div>

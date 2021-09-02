@@ -1,702 +1,698 @@
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../../assets/fonts/Helvetica.eot');
-  src: url('../../assets/fonts/Helvetica.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Helvetica.woff') format('woff'),
-      url('../../assets/fonts/Helvetica.ttf') format('truetype'),
-      url('../../assets/fonts/Helvetica.svg#Helvetica') format('svg');
+  font-family: "Helvetica";
+  src: url("../../assets/fonts/Helvetica.eot");
+  src: url("../../assets/fonts/Helvetica.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Helvetica.woff") format("woff"), url("../../assets/fonts/Helvetica.ttf") format("truetype"),
+    url("../../assets/fonts/Helvetica.svg#Helvetica") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../../assets/fonts/Helvetica-Light.eot');
-  src: url('../../assets/fonts/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Helvetica-Light.woff') format('woff'),
-      url('../../assets/fonts/Helvetica-Light.ttf') format('truetype'),
-      url('../../assets/fonts/Helvetica-Light.svg#Helvetica-Light') format('svg');
+  font-family: "Helvetica";
+  src: url("../../assets/fonts/Helvetica-Light.eot");
+  src: url("../../assets/fonts/Helvetica-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Helvetica-Light.woff") format("woff"),
+    url("../../assets/fonts/Helvetica-Light.ttf") format("truetype"),
+    url("../../assets/fonts/Helvetica-Light.svg#Helvetica-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../../assets/fonts/Helvetica-BoldOblique.eot');
-  src: url('../../assets/fonts/Helvetica-BoldOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Helvetica-BoldOblique.woff') format('woff'),
-      url('../../assets/fonts/Helvetica-BoldOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Helvetica-BoldOblique.svg#Helvetica-BoldOblique') format('svg');
+  font-family: "Helvetica";
+  src: url("../../assets/fonts/Helvetica-BoldOblique.eot");
+  src: url("../../assets/fonts/Helvetica-BoldOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Helvetica-BoldOblique.woff") format("woff"),
+    url("../../assets/fonts/Helvetica-BoldOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Helvetica-BoldOblique.svg#Helvetica-BoldOblique") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../../assets/fonts/Helvetica-LightOblique.eot');
-  src: url('../../assets/fonts/Helvetica-LightOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Helvetica-LightOblique.woff') format('woff'),
-      url('../../assets/fonts/Helvetica-LightOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Helvetica-LightOblique.svg#Helvetica-LightOblique') format('svg');
+  font-family: "Helvetica";
+  src: url("../../assets/fonts/Helvetica-LightOblique.eot");
+  src: url("../../assets/fonts/Helvetica-LightOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Helvetica-LightOblique.woff") format("woff"),
+    url("../../assets/fonts/Helvetica-LightOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Helvetica-LightOblique.svg#Helvetica-LightOblique") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../../assets/fonts/Helvetica-Bold.eot');
-  src: url('../../assets/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Helvetica-Bold.woff') format('woff'),
-      url('../../assets/fonts/Helvetica-Bold.ttf') format('truetype'),
-      url('../../assets/fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+  font-family: "Helvetica";
+  src: url("../../assets/fonts/Helvetica-Bold.eot");
+  src: url("../../assets/fonts/Helvetica-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Helvetica-Bold.woff") format("woff"),
+    url("../../assets/fonts/Helvetica-Bold.ttf") format("truetype"),
+    url("../../assets/fonts/Helvetica-Bold.svg#Helvetica-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue UltraLigExt';
-  src: url('../../assets/fonts/HelveticaNeue-UltraLightExt.eot');
-  src: url('../../assets/fonts/HelveticaNeue-UltraLightExt.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/HelveticaNeue-UltraLightExt.woff') format('woff'),
-      url('../../assets/fonts/HelveticaNeue-UltraLightExt.ttf') format('truetype'),
-      url('../../assets/fonts/HelveticaNeue-UltraLightExt.svg#HelveticaNeue-UltraLightExt') format('svg');
+  font-family: "HelveticaNeue UltraLigExt";
+  src: url("../../assets/fonts/HelveticaNeue-UltraLightExt.eot");
+  src: url("../../assets/fonts/HelveticaNeue-UltraLightExt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/HelveticaNeue-UltraLightExt.woff") format("woff"),
+    url("../../assets/fonts/HelveticaNeue-UltraLightExt.ttf") format("truetype"),
+    url("../../assets/fonts/HelveticaNeue-UltraLightExt.svg#HelveticaNeue-UltraLightExt") format("svg");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('../../assets/fonts/Helvetica-Oblique.eot');
-  src: url('../../assets/fonts/Helvetica-Oblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Helvetica-Oblique.woff') format('woff'),
-      url('../../assets/fonts/Helvetica-Oblique.ttf') format('truetype'),
-      url('../../assets/fonts/Helvetica-Oblique.svg#Helvetica-Oblique') format('svg');
+  font-family: "Helvetica";
+  src: url("../../assets/fonts/Helvetica-Oblique.eot");
+  src: url("../../assets/fonts/Helvetica-Oblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Helvetica-Oblique.woff") format("woff"),
+    url("../../assets/fonts/Helvetica-Oblique.ttf") format("truetype"),
+    url("../../assets/fonts/Helvetica-Oblique.svg#Helvetica-Oblique") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Univers';
-  src: url('../../assets/fonts/Univers-LightOblique.eot');
-  src: url('../../assets/fonts/Univers-LightOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-LightOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-LightOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-LightOblique.svg#Univers-LightOblique') format('svg');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "Univers";
+//   src: url("../../assets/fonts/Univers-LightOblique.eot");
+//   src: url("../../assets/fonts/Univers-LightOblique.eot?#iefix") format("embedded-opentype"),
+//     url("../../assets/fonts/Univers-LightOblique.woff") format("woff"),
+//     url("../../assets/fonts/Univers-LightOblique.ttf") format("truetype"),
+//     url("../../assets/fonts/Univers-LightOblique.svg#Univers-LightOblique") format("svg");
+//   font-weight: 300;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Univers";
+//   src: url("../../assets/fonts/Univers-LightOblique_1.eot");
+//   src: url("../../assets/fonts/Univers-LightOblique_1.eot?#iefix") format("embedded-opentype"),
+//     url("../../assets/fonts/Univers-LightOblique_1.woff") format("woff"),
+//     url("../../assets/fonts/Univers-LightOblique_1.ttf") format("truetype"),
+//     url("../../assets/fonts/Univers-LightOblique_1.svg#Univers-LightOblique") format("svg");
+//   font-weight: 300;
+//   font-style: italic;
+//   font-display: swap;
+// }
 
 @font-face {
-  font-family: 'Univers';
-  src: url('../../assets/fonts/Univers-LightOblique_1.eot');
-  src: url('../../assets/fonts/Univers-LightOblique_1.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-LightOblique_1.woff') format('woff'),
-      url('../../assets/fonts/Univers-LightOblique_1.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-LightOblique_1.svg#Univers-LightOblique') format('svg');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Oregon';
-  src: url('../../assets/fonts/Oregon.eot');
-  src: url('../../assets/fonts/Oregon.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Oregon.woff') format('woff'),
-      url('../../assets/fonts/Oregon.ttf') format('truetype'),
-      url('../../assets/fonts/Oregon.svg#Oregon') format('svg');
+  font-family: "Oregon";
+  src: url("../../assets/fonts/Oregon.eot");
+  src: url("../../assets/fonts/Oregon.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Oregon.woff") format("woff"), url("../../assets/fonts/Oregon.ttf") format("truetype"),
+    url("../../assets/fonts/Oregon.svg#Oregon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Skolar Sans Latn';
-  src: url('../../assets/fonts/SkolarSansLatn-BdIt.eot');
-  src: url('../../assets/fonts/SkolarSansLatn-BdIt.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/SkolarSansLatn-BdIt.woff') format('woff'),
-      url('../../assets/fonts/SkolarSansLatn-BdIt.ttf') format('truetype'),
-      url('../../assets/fonts/SkolarSansLatn-BdIt.svg#SkolarSansLatn-BdIt') format('svg');
+  font-family: "Skolar Sans Latn";
+  src: url("../../assets/fonts/SkolarSansLatn-BdIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-BdIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.svg#SkolarSansLatn-BdIt") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers';
-  src: url('../../assets/fonts/Univers-BlackOblique.eot');
-  src: url('../../assets/fonts/Univers-BlackOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BlackOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-BlackOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BlackOblique.svg#Univers-BlackOblique') format('svg');
+  font-family: "Univers";
+  src: url("../../assets/fonts/Univers-BlackOblique.eot");
+  src: url("../../assets/fonts/Univers-BlackOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BlackOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-BlackOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BlackOblique.svg#Univers-BlackOblique") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CBO Univers 67 CondBoldObl';
-  src: url('../../assets/fonts/Univers-CondensedBoldOblique.eot');
-  src: url('../../assets/fonts/Univers-CondensedBoldOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-CondensedBoldOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-CondensedBoldOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-CondensedBoldOblique.svg#Univers-CondensedBoldOblique') format('svg');
+  font-family: "CBO Univers 67 CondBoldObl";
+  src: url("../../assets/fonts/Univers-CondensedBoldOblique.eot");
+  src: url("../../assets/fonts/Univers-CondensedBoldOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-CondensedBoldOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-CondensedBoldOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-CondensedBoldOblique.svg#Univers-CondensedBoldOblique") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CL Univers 47 CondensedLight';
-  src: url('../../assets/fonts/Univers-CondensedLight.eot');
-  src: url('../../assets/fonts/Univers-CondensedLight.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-CondensedLight.woff') format('woff'),
-      url('../../assets/fonts/Univers-CondensedLight.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-CondensedLight.svg#Univers-CondensedLight') format('svg');
+  font-family: "CL Univers 47 CondensedLight";
+  src: url("../../assets/fonts/Univers-CondensedLight.eot");
+  src: url("../../assets/fonts/Univers-CondensedLight.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-CondensedLight.woff") format("woff"),
+    url("../../assets/fonts/Univers-CondensedLight.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-CondensedLight.svg#Univers-CondensedLight") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'L Univers 45';
-  src: url('../../assets/fonts/Univers-Light.eot');
-  src: url('../../assets/fonts/Univers-Light.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-Light.woff') format('woff'),
-      url('../../assets/fonts/Univers-Light.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-Light.svg#Univers-Light') format('svg');
+  font-family: "Univers";
+  src: url("../../assets/fonts/Univers-Light.eot");
+  src: url("../../assets/fonts/Univers-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-Light.woff") format("woff"),
+    url("../../assets/fonts/Univers-Light.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-Light.svg#Univers-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'LO Univers 45 LightOblique';
-  src: url('../../assets/fonts/Univers-LightOblique.eot');
-  src: url('../../assets/fonts/Univers-LightOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-LightOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-LightOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-LightOblique.svg#Univers-LightOblique') format('svg');
+  font-family: "Univers";
+  src: url("../../assets/fonts/Univers-LightOblique.eot");
+  src: url("../../assets/fonts/Univers-LightOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-LightOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-LightOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-LightOblique.svg#Univers-LightOblique") format("svg");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CLO Univers 47 CondLightObl';
-  src: url('../../assets/fonts/Univers-CondensedLightOblique.eot');
-  src: url('../../assets/fonts/Univers-CondensedLightOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-CondensedLightOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-CondensedLightOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-CondensedLightOblique.svg#Univers-CondensedLightOblique') format('svg');
+  font-family: "CLO Univers 47 CondLightObl";
+  src: url("../../assets/fonts/Univers-CondensedLightOblique.eot");
+  src: url("../../assets/fonts/Univers-CondensedLightOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-CondensedLightOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-CondensedLightOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-CondensedLightOblique.svg#Univers-CondensedLightOblique") format("svg");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers ExtendedObl';
-  src: url('../../assets/fonts/Univers-ExtendedObl.eot');
-  src: url('../../assets/fonts/Univers-ExtendedObl.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-ExtendedObl.woff') format('woff'),
-      url('../../assets/fonts/Univers-ExtendedObl.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-ExtendedObl.svg#Univers-ExtendedObl') format('svg');
+  font-family: "Univers ExtendedObl";
+  src: url("../../assets/fonts/Univers-ExtendedObl.eot");
+  src: url("../../assets/fonts/Univers-ExtendedObl.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-ExtendedObl.woff") format("woff"),
+    url("../../assets/fonts/Univers-ExtendedObl.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-ExtendedObl.svg#Univers-ExtendedObl") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers ExtraBlackExtObl';
-  src: url('../../assets/fonts/Univers-ExtraBlackExtObl.eot');
-  src: url('../../assets/fonts/Univers-ExtraBlackExtObl.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-ExtraBlackExtObl.woff') format('woff'),
-      url('../../assets/fonts/Univers-ExtraBlackExtObl.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-ExtraBlackExtObl.svg#Univers-ExtraBlackExtObl') format('svg');
+  font-family: "Univers ExtraBlackExtObl";
+  src: url("../../assets/fonts/Univers-ExtraBlackExtObl.eot");
+  src: url("../../assets/fonts/Univers-ExtraBlackExtObl.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-ExtraBlackExtObl.woff") format("woff"),
+    url("../../assets/fonts/Univers-ExtraBlackExtObl.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-ExtraBlackExtObl.svg#Univers-ExtraBlackExtObl") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers ExtraBlack';
-  src: url('../../assets/fonts/Univers-ExtraBlack.eot');
-  src: url('../../assets/fonts/Univers-ExtraBlack.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-ExtraBlack.woff') format('woff'),
-      url('../../assets/fonts/Univers-ExtraBlack.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-ExtraBlack.svg#Univers-ExtraBlack') format('svg');
+  font-family: "Univers ExtraBlack";
+  src: url("../../assets/fonts/Univers-ExtraBlack.eot");
+  src: url("../../assets/fonts/Univers-ExtraBlack.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-ExtraBlack.woff") format("woff"),
+    url("../../assets/fonts/Univers-ExtraBlack.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-ExtraBlack.svg#Univers-ExtraBlack") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers LightUltraCondensed';
-  src: url('../../assets/fonts/Univers-LightUltraCondensed.eot');
-  src: url('../../assets/fonts/Univers-LightUltraCondensed.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-LightUltraCondensed.woff') format('woff'),
-      url('../../assets/fonts/Univers-LightUltraCondensed.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-LightUltraCondensed.svg#Univers-LightUltraCondensed') format('svg');
+  font-family: "Univers LightUltraCondensed";
+  src: url("../../assets/fonts/Univers-LightUltraCondensed.eot");
+  src: url("../../assets/fonts/Univers-LightUltraCondensed.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-LightUltraCondensed.woff") format("woff"),
+    url("../../assets/fonts/Univers-LightUltraCondensed.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-LightUltraCondensed.svg#Univers-LightUltraCondensed") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers Extended';
-  src: url('../../assets/fonts/Univers-Extended.eot');
-  src: url('../../assets/fonts/Univers-Extended.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-Extended.woff') format('woff'),
-      url('../../assets/fonts/Univers-Extended.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-Extended.svg#Univers-Extended') format('svg');
+  font-family: "Univers Extended";
+  src: url("../../assets/fonts/Univers-Extended.eot");
+  src: url("../../assets/fonts/Univers-Extended.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-Extended.woff") format("woff"),
+    url("../../assets/fonts/Univers-Extended.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-Extended.svg#Univers-Extended") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers ExtraBlackExt';
-  src: url('../../assets/fonts/Univers-ExtraBlackExt.eot');
-  src: url('../../assets/fonts/Univers-ExtraBlackExt.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-ExtraBlackExt.woff') format('woff'),
-      url('../../assets/fonts/Univers-ExtraBlackExt.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-ExtraBlackExt.svg#Univers-ExtraBlackExt') format('svg');
+  font-family: "Univers ExtraBlackExt";
+  src: url("../../assets/fonts/Univers-ExtraBlackExt.eot");
+  src: url("../../assets/fonts/Univers-ExtraBlackExt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-ExtraBlackExt.woff") format("woff"),
+    url("../../assets/fonts/Univers-ExtraBlackExt.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-ExtraBlackExt.svg#Univers-ExtraBlackExt") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CO Univers 57 CondOblique';
-  src: url('../../assets/fonts/Univers-CondensedOblique.eot');
-  src: url('../../assets/fonts/Univers-CondensedOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-CondensedOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-CondensedOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-CondensedOblique.svg#Univers-CondensedOblique') format('svg');
+  font-family: "CO Univers 57 CondOblique";
+  src: url("../../assets/fonts/Univers-CondensedOblique.eot");
+  src: url("../../assets/fonts/Univers-CondensedOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-CondensedOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-CondensedOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-CondensedOblique.svg#Univers-CondensedOblique") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers ExtraBlackObl';
-  src: url('../../assets/fonts/Univers-ExtraBlackObl.eot');
-  src: url('../../assets/fonts/Univers-ExtraBlackObl.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-ExtraBlackObl.woff') format('woff'),
-      url('../../assets/fonts/Univers-ExtraBlackObl.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-ExtraBlackObl.svg#Univers-ExtraBlackObl') format('svg');
+  font-family: "Univers ExtraBlackObl";
+  src: url("../../assets/fonts/Univers-ExtraBlackObl.eot");
+  src: url("../../assets/fonts/Univers-ExtraBlackObl.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-ExtraBlackObl.woff") format("woff"),
+    url("../../assets/fonts/Univers-ExtraBlackObl.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-ExtraBlackObl.svg#Univers-ExtraBlackObl") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers BlackExtObl';
-  src: url('../../assets/fonts/Univers-BlackExtObl.eot');
-  src: url('../../assets/fonts/Univers-BlackExtObl.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BlackExtObl.woff') format('woff'),
-      url('../../assets/fonts/Univers-BlackExtObl.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BlackExtObl.svg#Univers-BlackExtObl') format('svg');
+  font-family: "Univers BlackExtObl";
+  src: url("../../assets/fonts/Univers-BlackExtObl.eot");
+  src: url("../../assets/fonts/Univers-BlackExtObl.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BlackExtObl.woff") format("woff"),
+    url("../../assets/fonts/Univers-BlackExtObl.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BlackExtObl.svg#Univers-BlackExtObl") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'BO Univers 65 BoldOblique';
-  src: url('../../assets/fonts/Univers-BoldOblique.eot');
-  src: url('../../assets/fonts/Univers-BoldOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BoldOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-BoldOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BoldOblique.svg#Univers-BoldOblique') format('svg');
+  font-family: "BO Univers 65 BoldOblique";
+  src: url("../../assets/fonts/Univers-BoldOblique.eot");
+  src: url("../../assets/fonts/Univers-BoldOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BoldOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-BoldOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BoldOblique.svg#Univers-BoldOblique") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'O Univers 55 Oblique';
-  src: url('../../assets/fonts/Univers-Oblique.eot');
-  src: url('../../assets/fonts/Univers-Oblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-Oblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-Oblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-Oblique.svg#Univers-Oblique') format('svg');
+  font-family: "O Univers 55 Oblique";
+  src: url("../../assets/fonts/Univers-Oblique.eot");
+  src: url("../../assets/fonts/Univers-Oblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-Oblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-Oblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-Oblique.svg#Univers-Oblique") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers BoldExtObl';
-  src: url('../../assets/fonts/Univers-BoldExtObl.eot');
-  src: url('../../assets/fonts/Univers-BoldExtObl.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BoldExtObl.woff') format('woff'),
-      url('../../assets/fonts/Univers-BoldExtObl.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BoldExtObl.svg#Univers-BoldExtObl') format('svg');
+  font-family: "Univers BoldExtObl";
+  src: url("../../assets/fonts/Univers-BoldExtObl.eot");
+  src: url("../../assets/fonts/Univers-BoldExtObl.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BoldExtObl.woff") format("woff"),
+    url("../../assets/fonts/Univers-BoldExtObl.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BoldExtObl.svg#Univers-BoldExtObl") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers ThinUltraCondensed';
-  src: url('../../assets/fonts/Univers-ThinUltraCondensed.eot');
-  src: url('../../assets/fonts/Univers-ThinUltraCondensed.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-ThinUltraCondensed.woff') format('woff'),
-      url('../../assets/fonts/Univers-ThinUltraCondensed.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-ThinUltraCondensed.svg#Univers-ThinUltraCondensed') format('svg');
+  font-family: "Univers ThinUltraCondensed";
+  src: url("../../assets/fonts/Univers-ThinUltraCondensed.eot");
+  src: url("../../assets/fonts/Univers-ThinUltraCondensed.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-ThinUltraCondensed.woff") format("woff"),
+    url("../../assets/fonts/Univers-ThinUltraCondensed.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-ThinUltraCondensed.svg#Univers-ThinUltraCondensed") format("svg");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers BlackExt';
-  src: url('../../assets/fonts/Univers-BlackExt.eot');
-  src: url('../../assets/fonts/Univers-BlackExt.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BlackExt.woff') format('woff'),
-      url('../../assets/fonts/Univers-BlackExt.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BlackExt.svg#Univers-BlackExt') format('svg');
+  font-family: "Univers BlackExt";
+  src: url("../../assets/fonts/Univers-BlackExt.eot");
+  src: url("../../assets/fonts/Univers-BlackExt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BlackExt.woff") format("woff"),
+    url("../../assets/fonts/Univers-BlackExt.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BlackExt.svg#Univers-BlackExt") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers 55';
-  src: url('../../assets/fonts/Univers.eot');
-  src: url('../../assets/fonts/Univers.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers.woff') format('woff'),
-      url('../../assets/fonts/Univers.ttf') format('truetype'),
-      url('../../assets/fonts/Univers.svg#Univers') format('svg');
+  font-family: "Univers";
+  src: url("../../assets/fonts/Univers.eot");
+  src: url("../../assets/fonts/Univers.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers.woff") format("woff"), url("../../assets/fonts/Univers.ttf") format("truetype"),
+    url("../../assets/fonts/Univers.svg#Univers") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers BoldExt';
-  src: url('../../assets/fonts/Univers-BoldExt.eot');
-  src: url('../../assets/fonts/Univers-BoldExt.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BoldExt.woff') format('woff'),
-      url('../../assets/fonts/Univers-BoldExt.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BoldExt.svg#Univers-BoldExt') format('svg');
+  font-family: "Univers BoldExt";
+  src: url("../../assets/fonts/Univers-BoldExt.eot");
+  src: url("../../assets/fonts/Univers-BoldExt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BoldExt.woff") format("woff"),
+    url("../../assets/fonts/Univers-BoldExt.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BoldExt.svg#Univers-BoldExt") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'BlkO Univers 75 BlackOblique';
-  src: url('../../assets/fonts/Univers-BlackOblique.eot');
-  src: url('../../assets/fonts/Univers-BlackOblique.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-BlackOblique.woff') format('woff'),
-      url('../../assets/fonts/Univers-BlackOblique.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-BlackOblique.svg#Univers-BlackOblique') format('svg');
+  font-family: "BlkO Univers 75 BlackOblique";
+  src: url("../../assets/fonts/Univers-BlackOblique.eot");
+  src: url("../../assets/fonts/Univers-BlackOblique.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-BlackOblique.woff") format("woff"),
+    url("../../assets/fonts/Univers-BlackOblique.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-BlackOblique.svg#Univers-BlackOblique") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'B Univers 65';
-  src: url('../../assets/fonts/Univers-Bold.eot');
-  src: url('../../assets/fonts/Univers-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-Bold.woff') format('woff'),
-      url('../../assets/fonts/Univers-Bold.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-Bold.svg#Univers-Bold') format('svg');
+  font-family: "Univers";
+  src: url("../../assets/fonts/Univers-Bold.eot");
+  src: url("../../assets/fonts/Univers-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-Bold.woff") format("woff"),
+    url("../../assets/fonts/Univers-Bold.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-Bold.svg#Univers-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Univers UltraCondensed';
-  src: url('../../assets/fonts/Univers-UltraCondensed.eot');
-  src: url('../../assets/fonts/Univers-UltraCondensed.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-UltraCondensed.woff') format('woff'),
-      url('../../assets/fonts/Univers-UltraCondensed.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-UltraCondensed.svg#Univers-UltraCondensed') format('svg');
+  font-family: "Univers UltraCondensed";
+  src: url("../../assets/fonts/Univers-UltraCondensed.eot");
+  src: url("../../assets/fonts/Univers-UltraCondensed.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-UltraCondensed.woff") format("woff"),
+    url("../../assets/fonts/Univers-UltraCondensed.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-UltraCondensed.svg#Univers-UltraCondensed") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Blk Univers 75';
-  src: url('../../assets/fonts/Univers-Black.eot');
-  src: url('../../assets/fonts/Univers-Black.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-Black.woff') format('woff'),
-      url('../../assets/fonts/Univers-Black.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-Black.svg#Univers-Black') format('svg');
+  font-family: "Blk Univers 75";
+  src: url("../../assets/fonts/Univers-Black.eot");
+  src: url("../../assets/fonts/Univers-Black.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-Black.woff") format("woff"),
+    url("../../assets/fonts/Univers-Black.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-Black.svg#Univers-Black") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'C Univers 57 Condensed';
-  src: url('../../assets/fonts/Univers-Condensed.eot');
-  src: url('../../assets/fonts/Univers-Condensed.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-Condensed.woff') format('woff'),
-      url('../../assets/fonts/Univers-Condensed.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-Condensed.svg#Univers-Condensed') format('svg');
+  font-family: "C Univers 57 Condensed";
+  src: url("../../assets/fonts/Univers-Condensed.eot");
+  src: url("../../assets/fonts/Univers-Condensed.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-Condensed.woff") format("woff"),
+    url("../../assets/fonts/Univers-Condensed.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-Condensed.svg#Univers-Condensed") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CB Univers 67 CondensedBold';
-  src: url('../../assets/fonts/Univers-CondensedBold.eot');
-  src: url('../../assets/fonts/Univers-CondensedBold.eot?#iefix') format('embedded-opentype'),
-      url('../../assets/fonts/Univers-CondensedBold.woff') format('woff'),
-      url('../../assets/fonts/Univers-CondensedBold.ttf') format('truetype'),
-      url('../../assets/fonts/Univers-CondensedBold.svg#Univers-CondensedBold') format('svg');
+  font-family: "CB Univers 67 CondensedBold";
+  src: url("../../assets/fonts/Univers-CondensedBold.eot");
+  src: url("../../assets/fonts/Univers-CondensedBold.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Univers-CondensedBold.woff") format("woff"),
+    url("../../assets/fonts/Univers-CondensedBold.ttf") format("truetype"),
+    url("../../assets/fonts/Univers-CondensedBold.svg#Univers-CondensedBold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Me';
-    src: url('../../assets/fonts/SkolarSansLatn-Me.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Me.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Me.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Me.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Me.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Me.svg#SkolarSansLatn-Me') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Me";
+  src: url("../../assets/fonts/SkolarSansLatn-Me.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Me.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Me.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Me.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Me.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Me.svg#SkolarSansLatn-Me") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn';
-    src: url('../../assets/fonts/SkolarSansLatn-It.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-It.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-It.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-It.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-It.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-It.svg#SkolarSansLatn-It') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn";
+  src: url("../../assets/fonts/SkolarSansLatn-It.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-It.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-It.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-It.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-It.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-It.svg#SkolarSansLatn-It") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Lt';
-    src: url('../../assets/fonts/SkolarSansLatn-Lt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Lt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Lt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Lt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Lt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Lt.svg#SkolarSansLatn-Lt') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Lt";
+  src: url("../../assets/fonts/SkolarSansLatn-Lt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Lt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Lt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Lt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Lt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Lt.svg#SkolarSansLatn-Lt") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Lt';
-    src: url('../../assets/fonts/SkolarSansLatn-LtIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-LtIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-LtIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-LtIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-LtIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-LtIt.svg#SkolarSansLatn-LtIt') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Lt";
+  src: url("../../assets/fonts/SkolarSansLatn-LtIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-LtIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-LtIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-LtIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-LtIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-LtIt.svg#SkolarSansLatn-LtIt") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn El';
-    src: url('../../assets/fonts/SkolarSansLatn-ElIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-ElIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-ElIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-ElIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-ElIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-ElIt.svg#SkolarSansLatn-ElIt') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn El";
+  src: url("../../assets/fonts/SkolarSansLatn-ElIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-ElIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-ElIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-ElIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-ElIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-ElIt.svg#SkolarSansLatn-ElIt") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Bl';
-    src: url('../../assets/fonts/SkolarSansLatn-BlIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-BlIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-BlIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-BlIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-BlIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-BlIt.svg#SkolarSansLatn-BlIt') format('svg');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Bl";
+  src: url("../../assets/fonts/SkolarSansLatn-BlIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-BlIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-BlIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-BlIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-BlIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-BlIt.svg#SkolarSansLatn-BlIt") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn';
-    src: url('../../assets/fonts/SkolarSansLatn-Bd.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Bd.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Bd.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Bd.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Bd.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Bd.svg#SkolarSansLatn-Bd') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn";
+  src: url("../../assets/fonts/SkolarSansLatn-Bd.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Bd.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Bd.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Bd.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Bd.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Bd.svg#SkolarSansLatn-Bd") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Sb';
-    src: url('../../assets/fonts/SkolarSansLatn-SbIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-SbIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-SbIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-SbIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-SbIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-SbIt.svg#SkolarSansLatn-SbIt') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Sb";
+  src: url("../../assets/fonts/SkolarSansLatn-SbIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-SbIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-SbIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-SbIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-SbIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-SbIt.svg#SkolarSansLatn-SbIt") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Bl';
-    src: url('../../assets/fonts/SkolarSansLatn-Bl.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Bl.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Bl.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Bl.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Bl.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Bl.svg#SkolarSansLatn-Bl') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Bl";
+  src: url("../../assets/fonts/SkolarSansLatn-Bl.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Bl.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Bl.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Bl.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Bl.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Bl.svg#SkolarSansLatn-Bl") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn';
-    src: url('../../assets/fonts/SkolarSansLatn-Rg.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Rg.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Rg.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Rg.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Rg.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Rg.svg#SkolarSansLatn-Rg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn";
+  src: url("../../assets/fonts/SkolarSansLatn-Rg.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Rg.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Rg.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Rg.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Rg.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Rg.svg#SkolarSansLatn-Rg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn';
-    src: url('../../assets/fonts/SkolarSansLatn-BdIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-BdIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-BdIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-BdIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-BdIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-BdIt.svg#SkolarSansLatn-BdIt') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn";
+  src: url("../../assets/fonts/SkolarSansLatn-BdIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-BdIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-BdIt.svg#SkolarSansLatn-BdIt") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Th';
-    src: url('../../assets/fonts/SkolarSansLatn-Th.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Th.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Th.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Th.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Th.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Th.svg#SkolarSansLatn-Th') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Th";
+  src: url("../../assets/fonts/SkolarSansLatn-Th.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Th.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Th.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Th.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Th.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Th.svg#SkolarSansLatn-Th") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Eb';
-    src: url('../../assets/fonts/SkolarSansLatn-Eb.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Eb.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Eb.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Eb.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Eb.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Eb.svg#SkolarSansLatn-Eb') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Eb";
+  src: url("../../assets/fonts/SkolarSansLatn-Eb.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Eb.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Eb.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Eb.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Eb.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Eb.svg#SkolarSansLatn-Eb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn El';
-    src: url('../../assets/fonts/SkolarSansLatn-El.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-El.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-El.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-El.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-El.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-El.svg#SkolarSansLatn-El') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn El";
+  src: url("../../assets/fonts/SkolarSansLatn-El.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-El.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-El.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-El.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-El.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-El.svg#SkolarSansLatn-El") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Eb';
-    src: url('../../assets/fonts/SkolarSansLatn-EbIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-EbIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-EbIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-EbIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-EbIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-EbIt.svg#SkolarSansLatn-EbIt') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Eb";
+  src: url("../../assets/fonts/SkolarSansLatn-EbIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-EbIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-EbIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-EbIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-EbIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-EbIt.svg#SkolarSansLatn-EbIt") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Me';
-    src: url('../../assets/fonts/SkolarSansLatn-MeIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-MeIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-MeIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-MeIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-MeIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-MeIt.svg#SkolarSansLatn-MeIt') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Me";
+  src: url("../../assets/fonts/SkolarSansLatn-MeIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-MeIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-MeIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-MeIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-MeIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-MeIt.svg#SkolarSansLatn-MeIt") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Th';
-    src: url('../../assets/fonts/SkolarSansLatn-ThIt.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-ThIt.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-ThIt.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-ThIt.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-ThIt.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-ThIt.svg#SkolarSansLatn-ThIt') format('svg');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Th";
+  src: url("../../assets/fonts/SkolarSansLatn-ThIt.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-ThIt.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-ThIt.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-ThIt.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-ThIt.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-ThIt.svg#SkolarSansLatn-ThIt") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skolar Sans Latn Sb';
-    src: url('../../assets/fonts/SkolarSansLatn-Sb.eot');
-    src: url('../../assets/fonts/SkolarSansLatn-Sb.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/SkolarSansLatn-Sb.woff2') format('woff2'),
-        url('../../assets/fonts/SkolarSansLatn-Sb.woff') format('woff'),
-        url('../../assets/fonts/SkolarSansLatn-Sb.ttf') format('truetype'),
-        url('../../assets/fonts/SkolarSansLatn-Sb.svg#SkolarSansLatn-Sb') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Skolar Sans Latn Sb";
+  src: url("../../assets/fonts/SkolarSansLatn-Sb.eot");
+  src: url("../../assets/fonts/SkolarSansLatn-Sb.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/SkolarSansLatn-Sb.woff2") format("woff2"),
+    url("../../assets/fonts/SkolarSansLatn-Sb.woff") format("woff"),
+    url("../../assets/fonts/SkolarSansLatn-Sb.ttf") format("truetype"),
+    url("../../assets/fonts/SkolarSansLatn-Sb.svg#SkolarSansLatn-Sb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-

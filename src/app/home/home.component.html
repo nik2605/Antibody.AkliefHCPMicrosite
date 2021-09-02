@@ -17,7 +17,7 @@
       </div>
     </div>
   </div>
-  <div class="policy_bar">
+  <div class="policy_bar" hidden>
     <a href="{{currentLanguage}}/privacypolicy">{{'POLICY_BAR.privacy_policy'|
       translate}}
     </a>
@@ -70,18 +70,6 @@
         </h5>
       </div>
     </div>
-    <!-- <div class="roundedblueBox d-flex align-items-center">
-      <div>
-        <img src="../../assets/images/acne_back.png" alt="acne on back" style="width: 120px;">
-      </div>
-      <div class="text-center p-4">
-        <h3>
-          {{'HOME.burden_of_acne_subhead'|translate | uppercase}}
-        </h3>
-        <h5 [innerHTML]="'HOME.burden_of_acne_callout'|translate">
-        </h5>
-      </div>
-    </div> -->
     <div class="row mb-5">
       <div class="col-12 col-sm-6 col-md-3">
         <div class="text-center py-4">
@@ -224,23 +212,25 @@
               {{'HOME.safety_profile_callout'|translate|uppercase}}
             </h2>
           </div>
-        </div>
-        <div class="col text-center textBox">
-          <h1>
-            {{'HOME.safety_profile_headline'|translate|uppercase}}
-          </h1>
-          <p>
+          <p class="text-center">
             {{'HOME.safety_profile_eyebrown'|translate|uppercase}}
           </p>
+        </div>
+        <div class="col text-center textBox">
+          <div>
+            <h1>
+              {{'HOME.safety_profile_headline'|translate|uppercase}}
+            </h1>
+            <h2 [innerHTML]="'HOME.safety_profile_subhead'|translate|uppercase">
+            </h2>
 
-          <h2 [innerHTML]="'HOME.safety_profile_subhead'|translate|uppercase">
-          </h2>
-
-          <div class="blue_button">
-            <a href="{{currentLanguage}}/safetyprofile" class="button">
-              {{'BUTTON.learn_more' | translate | uppercase}}
-            </a>
+            <div class="blue_button">
+              <a href="{{currentLanguage}}/safetyprofile" class="button">
+                {{'BUTTON.learn_more' | translate | uppercase}}
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -346,8 +336,7 @@
           <h1>
             {{'HOME.resources_headline'|translate|uppercase}}
           </h1>
-          <h2>
-            {{'HOME.resources_subhead'|translate|uppercase}}
+          <h2 [innerHTML]="'HOME.resources_subhead'|translate|uppercase">
           </h2>
           <p [innerHTML]="'HOME.resources_copy'|translate|uppercase">
           </p>

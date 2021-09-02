@@ -11,13 +11,14 @@ section {
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   padding-bottom: 1.5rem;
   color: $font_white;
   .textBox {
     padding: 0 5%;
     .title_h1 {
       text-align: right;
+      font-weight: 400;
       @include xs {
         font-size: 40px;
         padding-left: 25%;
@@ -177,6 +178,7 @@ section {
   .row {
     h5 {
       line-height: 1.5;
+      font-family: $Univers;
     }
   }
   img {
@@ -279,14 +281,16 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Oregon;
+        font-family: $Univers;
         color: $font_grey;
+        font-weight: bold;
       }
       p {
         font-size: 14px;
         color: $font_grey;
-        font-family: $Oregon;
+        font-family: $Univers;
         padding: 10px 0px;
+        font-weight: bold;
       }
       img {
         width: 90px;
@@ -311,6 +315,12 @@ section {
   padding: 10vh 5%;
   .main {
     background-color: #ffffff;
+    p {
+      font-size: 14px;
+      color: $font_grey;
+      font-family: $Univers;
+      padding: 10px 0px;
+    }
     .scheduleBox {
       background-image: url("../../assets/images/Rectangle_2.png");
       background-repeat: no-repeat;
@@ -333,6 +343,8 @@ section {
       }
     }
     .textBox {
+      display: flex;
+      align-items: center;
       h1 {
         color: $font_blue;
         font-family: $Oregon;
@@ -340,15 +352,9 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Oregon;
+        font-family: $Univers;
         color: $font_grey;
         padding-bottom: 20px;
-      }
-      p {
-        font-size: 14px;
-        color: $font_grey;
-        font-family: $Oregon;
-        padding: 10px 0px;
       }
     }
   }
@@ -366,20 +372,19 @@ section {
     font-weight: 400;
   }
   h2 {
-    font-family: $Oregon;
+    font-family: $Univers;
     color: $font_darkGrey;
     padding: 20px 0px;
   }
-  // .col-3 {
-  //   border-right: 1px solid $border_grey;
-  //   h4 {
-  //     font-family: $Oregon;
-  //     color: $font_grey;
-  //   }
-  //   img {
-  //     width: 130px;
-  //   }
-  // }
+
+  .row {
+    h4 {
+      font-weight: bold;
+      font-family: $Univers;
+      color: $font_grey;
+      padding: 30px;
+    }
+  }
 
   @include xs {
     .clearBorder {
@@ -460,19 +465,13 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Oregon;
+        font-family: $Univers;
         color: $font_grey;
         padding-top: 20px;
         padding-bottom: 40px;
       }
-      p {
-        font-size: 14px;
-        color: $font_grey;
-        font-family: $Oregon;
-        padding: 10px 0px;
-      }
+
       @include md {
-        //width: 50%;
         img {
           width: 120px;
         }
@@ -499,10 +498,11 @@ section {
         width: 100px;
       }
       h5 {
-        font-family: $Oregon;
-        color: $font_darkGrey;
+        font-family: $Univers;
+        color: $font_middleGrey;
         padding-top: 10px;
         padding-bottom: 20px;
+        font-weight: bold;
       }
     }
     .textBox {
@@ -513,15 +513,16 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Oregon;
+        font-family: $Univers;
         color: $font_grey;
         padding-bottom: 20px;
       }
       p {
         font-size: 14px;
         color: $font_grey;
-        font-family: $Oregon;
+        font-family: $Univers;
         padding: 0px 0px 40px;
+        font-weight: bold;
       }
     }
   }

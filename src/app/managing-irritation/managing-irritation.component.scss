@@ -8,6 +8,7 @@
   background-size: cover;
   width: 100%;
   padding-top: 200px;
+
   @include xs {
     height: 50%;
   }
@@ -18,6 +19,7 @@
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
+    font-weight: 400;
   }
   @include md {
     text-align: left;
@@ -38,18 +40,13 @@
   h1 {
     color: $font_blue;
     font-family: $Oregon;
+    font-weight: 400;
   }
 
-  .managing_card {
-    padding-bottom: 40px;
-    img {
-      width: 165px;
-    }
-    h5 {
-      color: $font_middleGrey;
-      font-family: $Univers;
-      padding-top: 20px;
-    }
+  h5 {
+    color: $font_middleGrey;
+    font-family: $Univers;
+    padding-top: 20px;
   }
 
   .combinedBox {

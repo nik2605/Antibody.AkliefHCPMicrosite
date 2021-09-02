@@ -1,5 +1,6 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit, HostListener } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 import { AuthService } from '../service/auth.service';
@@ -16,10 +17,12 @@ export class GateComponent implements OnInit {
   loading = false;
   isNotValid = false;
   isInvalidShow = false;
+  // unamePattern = "^[0-9]*$";
 
+  formattedlicence_number: string = '';
 
   ShowList() {
-    this.isShow = true;
+    this.isShow = !this.isShow;
   }
   selectProvince(event: any) {
     this.isShow = false;
@@ -33,33 +36,62 @@ export class GateComponent implements OnInit {
     this.currentLanguage = this.localize.parser.currentLang;
   }
 
+  // formatLicenseNumber(event: any) {
+  //   this.formattedlicence_number = '';
+  //   const licence_number = this.validateForm.get('licence_number')!.value.trim();
+  //   for (let i = 0; i < licence_number.length; i++) {
+  //     const element = licence_number[i];
+  //     if (this.isdigit(element)) {
+  //       this.formattedlicence_number += element;
+  //     }
+  //   }
+  // }
+
   @HostListener("document:click", ['$event.target'])
   switchLanguage(event: any) {
     if (event.id == 'language_icon') {
       this.currentLanguage = event.innerText == 'EN' ? 'fr' : "en";
     }
-    else if (event.parentNode.id != 'prvinceList' && this.isShow && event.id != 'arrowBox' && event.id != 'selectedBox') {
-      this.isShow = false;
-    }
+    // else if (event.parentNode.id != 'prvinceList' && this.isShow && event.id != 'arrowBox' && event.id != 'selectedBox') {
+    //   this.isShow = false;
+    // }
   }
 
   ngOnInit(): void {
     this.validateForm = this.formBuilder.group({
       province: [''],
+      //licence_number: ['', Validators.pattern(this.unamePattern)]
       licence_number: ['']
     });
   }
 
+
   get f() { return this.validateForm.controls; }
   validate() {
     if (this.validateForm.valid) {
-      this.loading = true;
-      if (this.authService.validate(this.f.province.value, this.f.licence_number.value)) {
-        this.router.navigate([this.currentLanguage + '/home']);
+      let province: string = this.selectedProvince;
+      let licence_number: string = this.f.licence_number.value;
+      let hasLetter: boolean = false;
+      for (let i = 0; i < licence_number.length; i++) {
+        const element = licence_number[i];
+        if (!this.isdigit(element)) {
+          hasLetter = true;
+          break;
+        }
+      }
+      if (!hasLetter) {
+        this.loading = true;
+        if (this.authService.validate(province, licence_number)) {
+          this.router.navigate([this.currentLanguage + '/home']);
+        }
+        else {
+          this.isInvalidShow = true;
+        }
       }
       else {
         this.isInvalidShow = true;
       }
+
     }
     else {
       this.isInvalidShow = true;
@@ -68,4 +100,10 @@ export class GateComponent implements OnInit {
   close() {
     this.isInvalidShow = false;
   }
+
+  isdigit(str: string) {
+    return str && !/[^\d]/.test(str);
+  }
+
+
 }

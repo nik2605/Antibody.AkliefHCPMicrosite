@@ -21,6 +21,10 @@
       font-family: $Oregon;
       color: $font_white;
       font-weight: 400;
+      padding-bottom: 20px;
+    }
+    .headline{
+      font-size: 20px;
     }
     h2 {
       font-size: 14px;
@@ -39,7 +43,7 @@
       font-family: $Univers;
       color: $font_white;
     }
-    input[type="number"],
+    input[type="text"],
     select {
       width: 100%;
       display: inline-block;

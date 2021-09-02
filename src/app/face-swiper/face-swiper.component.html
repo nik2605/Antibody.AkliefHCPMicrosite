@@ -3,11 +3,13 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="backgroundContainer justify-content-center align-items-center row">
-          <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
+          <div class="faceBox col-12 col-sm-12 col-lg-6 d-flex">
             <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
               <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
-                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face1_baseline_en.png" alt="face 1 baseline">
-                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face1_baseline_fr.png" alt="face 1 baseline">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face1_baseline_en.png"
+                  alt="face 1 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face1_baseline_fr.png"
+                  alt="face 1 baseline">
 
               </div>
               <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face1_week12_en.png" alt="face 1 week12">
@@ -15,27 +17,44 @@
               <span class="face_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6">
+          <div class="col-12 col-sm-12 col-lg-6">
             <div class="textBox">
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_subject1'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_age1'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_gender1'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_copy1'|translate" style="font-weight: 300;">
-              </h5>
+              <h5 [innerHTML]="'EFFICACY_PROFILE.face_study1'|translate"></h5>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_subject1'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_age1'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_gender1'|translate">
+              </p>
+              <p class="copy" [innerHTML]="'EFFICACY_PROFILE.face_copy1'|translate">
+              </p>
+
+            </div>
+            <div class="toggleBox d-flex">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-button-prev" (click)="resetLine()"></div>
+                  <div class="swiper-pagination" (click)="resetLine()"></div>
+                  <div class="swiper-button-next" (click)="resetLine()"></div>
+                </div>
+                <p>
+                  {{'EFFICACY_PROFILE.select_skin_type'|translate}}
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
       <div class="swiper-slide">
         <div class="backgroundContainer d-flex justify-content-center align-items-center row">
           <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
             <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
               <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
-                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face2_baseline_en.png" alt="face 2 baseline">
-                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face2_baseline_fr.png" alt="face 2 baseline">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face2_baseline_en.png"
+                  alt="face 2 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face2_baseline_fr.png"
+                  alt="face 2 baseline">
 
               </div>
               <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face2_week12_en.png" alt="face 2 week12">
@@ -45,14 +64,27 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6">
             <div class="textBox">
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_subject2'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_age2'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_gender2'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_copy2'|translate" style="font-weight: 300;">
-              </h5>
+              <h5 [innerHTML]="'EFFICACY_PROFILE.face_study2'|translate"></h5>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_subject2'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_age2'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_gender2'|translate">
+              </p>
+              <p class="copy" [innerHTML]="'EFFICACY_PROFILE.face_copy2'|translate">
+              </p>
+            </div>
+            <div class="toggleBox d-flex">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-button-prev" (click)="resetLine()"></div>
+                  <div class="swiper-pagination" (click)="resetLine()"></div>
+                  <div class="swiper-button-next" (click)="resetLine()"></div>
+                </div>
+                <p>
+                  {{'EFFICACY_PROFILE.select_skin_type'|translate}}
+                </p>
+              </div>
             </div>
           </div>
 
@@ -63,8 +95,10 @@
           <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
             <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
               <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
-                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face3_baseline_en.png" alt="face 3 baseline">
-                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face3_baseline_fr.png" alt="face 3 baseline">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face3_baseline_en.png"
+                  alt="face 3 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face3_baseline_fr.png"
+                  alt="face 3 baseline">
               </div>
               <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face3_week12_en.png" alt="face 3 week12">
               <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face3_week12_fr.png" alt="face 3 week12">
@@ -73,14 +107,27 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6">
             <div class="textBox">
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_subject3'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_age3'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_gender3'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_copy3'|translate" style="font-weight: 300;">
-              </h5>
+              <h5 [innerHTML]="'EFFICACY_PROFILE.face_study3'|translate"></h5>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_subject3'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_age3'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_gender3'|translate">
+              </p>
+              <p class="copy" [innerHTML]="'EFFICACY_PROFILE.face_copy3'|translate">
+              </p>
+            </div>
+            <div class="toggleBox d-flex">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-button-prev" (click)="resetLine()"></div>
+                  <div class="swiper-pagination" (click)="resetLine()"></div>
+                  <div class="swiper-button-next" (click)="resetLine()"></div>
+                </div>
+                <p>
+                  {{'EFFICACY_PROFILE.select_skin_type'|translate}}
+                </p>
+              </div>
             </div>
           </div>
 
@@ -91,8 +138,10 @@
           <div class="faceBox col-12 col-sm-12 col-md-6 d-flex">
             <div class="face" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
               <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
-                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face4_baseline_en.png" alt="face 4 baseline">
-                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face4_baseline_fr.png" alt="face 4 baseline">
+                <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face4_baseline_en.png"
+                  alt="face 4 baseline">
+                <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face4_baseline_fr.png"
+                  alt="face 4 baseline">
               </div>
               <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face4_week12_en.png" alt="face 4 week12">
               <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face4_week12_fr.png" alt="face 4 week12">
@@ -101,24 +150,31 @@
           </div>
           <div class="col-12 col-sm-12 col-md-6">
             <div class="textBox">
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_subject4'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_age4'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_gender4'|translate">
-              </h5>
-              <h5 [innerHTML]="'EFFICACY_PROFILE.face_copy4'|translate" style="font-weight: 300;">
-              </h5>
+              <h5 [innerHTML]="'EFFICACY_PROFILE.face_study4'|translate"></h5>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_subject4'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_age4'|translate">
+              </p>
+              <p [innerHTML]="'EFFICACY_PROFILE.face_gender4'|translate">
+              </p>
+              <p class="copy" [innerHTML]="'EFFICACY_PROFILE.face_copy4'|translate">
+              </p>
+            </div>
+            <div class="toggleBox d-flex">
+              <div>
+                <div class="d-flex justify-content-center">
+                  <div class="swiper-button-prev" (click)="resetLine()"></div>
+                  <div class="swiper-pagination" (click)="resetLine()"></div>
+                  <div class="swiper-button-next" (click)="resetLine()"></div>
+                </div>
+                <p>
+                  {{'EFFICACY_PROFILE.select_skin_type'|translate}}
+                </p>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-
-
     </div>
-    <div class="swiper-button-prev" (click)="resetLine()"></div>
-    <div class="swiper-button-next" (click)="resetLine()"></div>
-    <div class="swiper-pagination" (click)="resetLine()"></div>
   </swiper>
 </div>

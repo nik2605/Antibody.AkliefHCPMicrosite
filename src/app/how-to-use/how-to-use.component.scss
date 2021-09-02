@@ -7,20 +7,55 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-top: 200px;
+
   @include xs {
     height: 50%;
   }
   @include md {
     height: 660px;
-  }
-  h1 {
-    font-size: $title_h1_font_size;
-    color: $font_white;
-    font-family: $Oregon;
-  }
-  @include md {
     text-align: left;
+  }
+  @include lg {
+  }
+  .textBox {
+    h1 {
+      font-size: $title_h1_font_size;
+      color: $font_white;
+      font-family: $Oregon;
+      font-weight: 400;
+      @include xs {
+        padding-top: 50px;
+      }
+      @include md {
+        padding-top: 150px;
+      }
+      @include lg {
+        padding-top: 200px;
+      }
+    }
+  }
+
+  .imgBox {
+    @include xs {
+      text-align: center;
+    }
+
+    @include lg {
+      text-align: left;
+    }
+    img {
+      @include xs {
+        width: 80px;
+      }
+      @include sm {
+        width: 105px;
+      }
+      @include md {
+        width: 200px;
+      }
+      @include lg {
+      }
+    }
   }
 }
 
@@ -28,6 +63,7 @@
   h1 {
     color: $font_blue;
     font-family: $Oregon;
+    font-weight: 400;
   }
   h2 {
     color: $font_darkGrey;
@@ -57,6 +93,10 @@
       h5 {
         color: $font_middleGrey;
         font-family: $Univers;
+      }
+      .li_font {
+        font-family: $Univers;
+        font-weight: 200;
       }
     }
   }

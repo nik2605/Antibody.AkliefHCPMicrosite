@@ -1,11 +1,18 @@
 <div class="topImage row mx-0">
   <div class="col"></div>
-  <div class="col">
-    <h1>
-      {{'HOW_TO_USE.how_to_use' | translate | uppercase}}
-    </h1>
+  <div class="row col">
+    <div class="textBox col-12 col-lg-6 col-xl-7">
+      <h1>
+        {{'HOW_TO_USE.how_to_use' | translate | uppercase}}
+      </h1>
+    </div>
+    <div class="imgBox col-12 col-lg-6 col-xl-5 align-self-center">
+      <img *ngIf="currentLanguage=='en'" src="../../assets/images/Aklief_product_box_en.png"
+        alt="English Aklief package shot">
+      <img *ngIf="currentLanguage=='fr'" src="../../assets/images/Aklief_product_box_fr.png"
+        alt="French Aklief package shot">
+    </div>
   </div>
-
 </div>
 <div class="main pt-5">
   <h1 class="text-center" [innerHTML]="'HOW_TO_USE.headline' | translate | uppercase">
@@ -32,7 +39,7 @@
         </h3>
         <h5 [innerHTML]="'HOW_TO_USE.APPLY1_copy' | translate">
         </h5>
-        <ul [innerHTML]="'HOW_TO_USE.APPLY1_list' | translate">
+        <ul class="li_font" [innerHTML]="'HOW_TO_USE.APPLY1_list' | translate">
         </ul>
       </div>
     </div>

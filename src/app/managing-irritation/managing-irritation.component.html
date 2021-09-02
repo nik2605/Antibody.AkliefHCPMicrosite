@@ -1,8 +1,9 @@
 <div class="topImage row mx-0">
   <div class="col"></div>
-  <div class="col"> <h1>
-    {{'MANAGING_IRRITATION.managing_irritation' | translate | uppercase}}
-  </h1></div>
+  <div class="col">
+    <h1 [innerHTML]="'MANAGING_IRRITATION.managing_irritation' | translate | uppercase">
+    </h1>
+  </div>
 
 </div>
 <div class="main pt-5">
@@ -74,10 +75,13 @@
 
 
   <div class="combinedBox d-flex pt-5 mb-5 row">
-    <div class="col-12 col-md-4 col-xl-3 px-0 text-center">
-      <img class="combinedImage" src="../../assets/images/combined.png" alt="cetaphil and Aklief">
+    <div class="col-12 px-0 text-center" [ngClass]="currentLanguage == 'en'?'col-md-4 col-xl-3':'col-md-3 col-xl-2'">
+      <img *ngIf="currentLanguage == 'en'" class="combinedImage" src="../../assets/images/combined_en.png"
+        alt="cetaphil and Aklief in english">
+      <img *ngIf="currentLanguage == 'fr'" class="combinedImage" src="../../assets/images/combined_fr.png"
+        alt="cetaphil and Aklief in french">
     </div>
-    <div class="col-12 col-md-8 col-xl-9 px-0">
+    <div class="col-12  px-0" [ngClass]="currentLanguage == 'en'?'col-md-8 col-xl-9':'col-md-9 col-xl-10'">
       <div class="calloutBar">
         <h2>
           {{'MANAGING_IRRITATION.callout' | translate}}

@@ -2,21 +2,6 @@
 
 .chestSwiper {
   .backgroundContainer {
-    background-image: url("../../assets/images/wallpaper_3.png");
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: left;
-    background-size: cover;
-    width: 100%;
-    color: $font_white;
-    padding: 50px 20px;
-    text-align: left;
-    @include xs {
-      height: auto;
-    }
-    @include md {
-      height: 700px;
-    }
     .imgBox {
       max-width: 800px;
       @include xs {
@@ -30,7 +15,10 @@
         @include xs {
           justify-content: center;
         }
-        @include md {
+        @include sm {
+          justify-content: flex-start;
+        }
+        @include lg {
           justify-content: flex-end;
         }
         .chest {
@@ -48,12 +36,20 @@
             overflow: hidden;
             top: 0;
             height: 100%;
-            img {
-              width: 780px;
-            }
           }
           img {
-            width: 780px;
+            @include xs {
+              width: 280px;
+            }
+            @include sm {
+              width: 520px;
+            }
+            @include md {
+              width: 700px;
+            }
+            @include lg {
+              width: 780px;
+            }
           }
           .chest_drag {
             background: hsla(0, 0%, 100%, 0.25);
@@ -73,34 +69,52 @@
               height: 50px;
               left: 50%;
               margin-left: -25px;
-              margin-top: 35px;
+
               position: absolute;
               top: 50%;
               width: 50px;
+              @include xs {
+                margin-top: 0px;
+              }
+              @include sm {
+                margin-top: 35px;
+              }
             }
           }
         }
       }
 
       .textBox {
+        text-align: left;
         h5 {
-          font-weight: 400;
+          font-weight: 200;
+          font-family: $Univers;
+          color: $font_white;
         }
         p {
           font-size: 12px;
-          font-weight: bold;
+          font-family: $Univers;
+          color: $font_white;
+        }
+        .copy {
+          font-size: 16px;
+        }
+        @include xs {
+          margin-bottom: 20px;
+        }
+        @include lg {
+          margin-bottom: 50px;
+          width: 780px;
         }
       }
     }
   }
   .swiper-wrapper {
     align-items: center;
-    background-color: #ffffff;
   }
 
   .swiper-slide {
     text-align: center;
-    background: #fff;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -120,15 +134,15 @@
   .swiper-button-next {
     background-image: url(../../assets/images/white_angle_right.png);
     right: auto;
-    left: 50%;
-    margin-left: 70px;
+    // left: 50%;
+    // margin-left: 70px;
   }
 
   .swiper-button-prev {
     background-image: url(../../assets/images/white_angle_left.png);
     left: auto;
-    right: 50%;
-    margin-right: 70px;
+    // right: 50%;
+    // margin-right: 70px;
   }
 
   .swiper-button-prev::after {
@@ -141,6 +155,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
+    position: inherit;
     top: inherit;
     background-repeat: no-repeat;
     background-size: 60% auto;
@@ -148,26 +163,74 @@
     z-index: 11;
     opacity: 1;
     @include xs {
-      bottom: 13px;
+      //bottom: 13px;
+      margin: 8px 0px 0px;
+      background-size: 50% auto;
+    }
+    @include sm {
+      background-size: 60% auto;
+      margin: 10px 0px;
     }
   }
 
   .swiper-pagination-bullets {
-    bottom: 20px;
+    //bottom: 20px;
+    @include xs {
+      margin: 0px 5px;
+    }
+    @include sm {
+      margin: 0px 15px;
+    }
   }
 
   .swiper-pagination {
+    position: inherit;
+    @include xs {
+      align-self: center;
+    }
+    @include sm {
+      align-self: auto;
+    }
     .swiper-pagination-bullet {
-      width: 15px;
-      height: 15px;
-      padding: 0px 2px;
-      background: #ffffff;
-      margin: 0px 10px !important;
+      // width: 15px;
+      // height: 15px;
+      // padding: 0px 2px;
+      // background: #ffffff;
+      // margin: 0px 10px !important;
+      // opacity: 1;
       opacity: 1;
+      @include xs {
+        width: 35px;
+        margin: 0px 5px;
+        img {
+          width: 35px;
+        }
+      }
+      @include sm {
+        width: 60px;
+        margin: 0px 10px;
+        img {
+          width: 60px;
+        }
+      }
     }
 
     .swiper-pagination-bullet-active {
-      background: #00accd;
+      // background: #00accd;
+      img {
+        border: 5px solid #00accd;
+      }
     }
+  }
+}
+
+.toggleBox {
+  p {
+    font-size: 16px;
+    color: $font_middleGrey;
+    font-family: $Univers;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
   }
 }

@@ -8,6 +8,7 @@
   background-size: cover;
   width: 100%;
   padding-top: 200px;
+  font-weight: 400;
   @include xs {
     height: 50%;
   }
@@ -18,6 +19,7 @@
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
+    font-weight: 400;
   }
   @include md {
     text-align: left;
@@ -40,7 +42,7 @@
   .title {
     color: $font_blue;
     font-family: $Oregon;
-
+    font-weight: 400;
     @include xs {
       padding: 0px;
     }
@@ -53,10 +55,17 @@
   }
   h5 {
     color: $font_middleGrey;
+    font-family: $Univers;
+    font-weight: 200;
     padding: 40px 0px;
   }
   .most_common {
-    padding: 40px 80px;
+    @include xs {
+      padding: 40px;
+    }
+    @include md {
+      padding: 40px 80px;
+    }
   }
   .chartImage {
     max-width: 800px;
@@ -64,31 +73,69 @@
     height: auto;
     line-height: 1.5;
   }
-  .calloutBar {
-    background-image: url("../../assets/images/Rectangle_4.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: top;
-    background-size: cover;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 25px;
-    h1 {
-      color: $font_white;
-      font-size: 56px;
-      line-height: 1;
-      font-family: $Oregon;
-      font-weight: 400;
-      margin-bottom: 0px;
-    }
-    h2 {
-      font-family: $Oregon;
-      color: $font_white;
-      font-weight: 200;
-      margin-bottom: 0px;
-    }
-    img {
-      width: 70px;
+  .blueColumn {
+    padding: 0px;
+    .calloutBar {
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: top;
+      background-size: cover;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 25px;
+      @include xs {
+        background-image: url("../../assets/images/Rectangle_4.png");
+      }
+      @include lg {
+        background-image: url("../../assets/images/Rectangle_5.png");
+      }
+      h1 {
+        color: $font_white;
+        font-size: 56px;
+        line-height: 1;
+        font-family: $Oregon;
+        font-weight: 400;
+        margin-bottom: 0px;
+      }
+      h2 {
+        font-family: $Oregon;
+        color: $font_white;
+        font-weight: 200;
+        margin-bottom: 0px;
+        @include xs {
+          font-size: $h2_font_size;
+        }
+        @include lg {
+          font-size: 19px;
+        }
+        @include xl {
+          font-size: $h2_font_size;
+        }
+      }
+      .li_font {
+        font-family: $Oregon;
+        color: $font_white;
+        font-weight: 200;
+        font-size: $h2_font_size;
+        padding-top: 20px;
+        @include xs {
+          font-size: $h2_font_size;
+        }
+        @include lg {
+          font-size: 19px;
+        }
+        @include xl {
+          font-size: $h2_font_size;
+        }
+        li {
+          &:before {
+            color: #ffffff;
+          }
+        }
+      }
+      img {
+        width: 60px;
+      }
     }
   }
 }

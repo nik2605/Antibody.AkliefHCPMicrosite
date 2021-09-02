@@ -21,6 +21,9 @@
     <h1 class="text-center">
       {{'GATE.callout'|translate}}
     </h1>
+    <h2 class="text-center headline">
+      {{'GATE.headline' | translate}}
+    </h2>
     <h2 class="text-center">
       {{'GATE.subhead'|translate}}
     </h2>
@@ -33,9 +36,7 @@
           {{'GATE.Licence_number'|translate}}
         </p>
         <div>
-          <input type="number" name="licence_number" id="licence_number" formControlName="licence_number">
-          <input type="text" name="province" id="province" hidden [value]="'selectedProvince'"
-            formControlName="province">
+          <input type="text" name="licence_number" id="licence_number" formControlName="licence_number">
         </div>
       </div>
       <div class="col text-center" style="padding: 30px 0px;">
@@ -49,19 +50,19 @@
               {{selectedProvince}}
             </div>
             <div id="prvinceList" class="prvinceList" [hidden]="!isShow" (click)="selectProvince($event)">
-              <p>Alberta</p>
-              <p>British Columbia</p>
-              <p>Manitoba</p>
-              <p>New Brunswick</p>
-              <p>Newfoundland and Labrador</p>
-              <p>Northwest Territories</p>
-              <p>Nova Scotia</p>
-              <p>Nunavut</p>
-              <p>Ontario</p>
-              <p>Prince Edward Island</p>
-              <p>Quebec</p>
-              <p>Saskatchewan</p>
-              <p style="border: none;">Yukon</p>
+              <p>{{'GATE.Alberta'|translate}}</p>
+              <p>{{'GATE.British_Columbia'|translate}}</p>
+              <p>{{'GATE.Manitoba'|translate}}</p>
+              <p>{{'GATE.New_Brunswick'|translate}}</p>
+              <p>{{'GATE.Newfoundland_and_Labrador'|translate}}</p>
+              <p>{{'GATE.Northwest_Territories'|translate}}</p>
+              <p>{{'GATE.Nova_Scotia'|translate}}</p>
+              <p>{{'GATE.Nunavut'|translate}}</p>
+              <p>{{'GATE.Ontario'|translate}}</p>
+              <p>{{'GATE.Prince_Edward_Island'|translate}}</p>
+              <p>{{'GATE.Quebec'|translate}}</p>
+              <p>{{'GATE.Saskatchewan'|translate}}</p>
+              <p style="border: none;">{{'GATE.Yukon'|translate}}</p>
             </div>
           </div>
           <div style="padding-left: 1px;float: left;">

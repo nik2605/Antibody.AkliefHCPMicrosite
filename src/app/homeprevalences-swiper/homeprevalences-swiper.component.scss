@@ -1,6 +1,14 @@
 @import "../../styles/style.scss";
 
 .greySwiper {
+  .toggleBox {
+    p {
+      font-family: $Univers;
+      color: $font_darkGrey;
+      line-height: 0;
+      margin-top: 2px;
+    }
+  }
   .slide1 {
     .panel1 {
       background-color: #ffffff;
@@ -58,49 +66,52 @@
         width: 400px;
       }
     }
-    .swiper-button-next {
-      @include xs {
-      }
-      @include sm {
-      }
-      @include md {
-      }
-      @include lg {
-        margin-left: 180px;
-      }
-      @include xl {
-        margin-left: 230px;
-      }
-    }
+    // .swiper-button-next {
+    //   @include xs {
+    //   }
+    //   @include sm {
+    //   }
+    //   @include md {
+    //   }
+    //   @include lg {
+    //     margin-left: 180px;
+    //   }
+    //   @include xl {
+    //     margin-left: 230px;
+    //   }
+    // }
 
-    .swiper-button-prev {
-      @include xs {
-      }
-      @include sm {
-      }
-      @include md {
-      }
-      @include lg {
-        margin-right: -120px;
-      }
-      @include xl {
-        margin-right: -170px;
-      }
-    }
-    .swiper-pagination-bullets {
-      @include xs {
-      }
-      @include sm {
-      }
-      @include md {
-      }
-      @include lg {
-        margin-left: 305px;
-      }
-      @include xl {
-        margin-left: 405px;
-      }
-    }
+    // .swiper-button-prev {
+    //   @include xs {
+    //     padding-right: 30px;
+    //   }
+    //   @include sm {
+    //     //padding-right: 45px;
+    //   }
+    //   @include md {
+    //     //padding-right: 30px;
+    //   }
+    //   @include lg {
+    //     margin-right: -135px;
+    //   }
+    //   @include xl {
+    //     margin-right: -185px;
+    //   }
+    // }
+    // .swiper-pagination-bullets {
+    //   @include xs {
+    //   }
+    //   @include sm {
+    //   }
+    //   @include md {
+    //   }
+    //   @include lg {
+    //     margin-left: 305px;
+    //   }
+    //   @include xl {
+    //     margin-left: 405px;
+    //   }
+    // }
   }
 
   .slide2 {
@@ -136,7 +147,7 @@
         @include xl {
         }
       }
-      p {
+      .copy {
         font-size: 28px;
         font-family: $Oregon;
         color: $font_blue;
@@ -191,27 +202,27 @@
         padding-left: 5px;
       }
     }
-    .swiper-button-next {
-      margin-left: 30px;
-    }
+    // .swiper-button-next {
+    //   margin-left: 30px;
+    // }
 
-    .swiper-button-prev {
-      margin-right: 30px;
-    }
-    .swiper-pagination-bullets {
-      @include xs {
-        bottom: 17px;
-      }
-      @include sm {
-      }
-      @include md {
-        bottom: 13px;
-      }
-      @include lg {
-      }
-      @include xl {
-      }
-    }
+    // .swiper-button-prev {
+    //   margin-right: 30px;
+    // }
+    // .swiper-pagination-bullets {
+    //   @include xs {
+    //     bottom: 17px;
+    //   }
+    //   @include sm {
+    //   }
+    //   @include md {
+    //     bottom: 13px;
+    //   }
+    //   @include lg {
+    //   }
+    //   @include xl {
+    //   }
+    // }
   }
 
   .swiper-wrapper {
@@ -240,17 +251,17 @@
   }
 
   .swiper-button-next {
-    background-image: url(../../assets/images/grey_angle_right.png);
+    //background-image: url(../../assets/images/grey_angle_right.png);
     right: auto;
-    left: 50%;
-    margin-left: 30px;
+    //left: 50%;
+    //margin-left: 30px;
   }
 
   .swiper-button-prev {
-    background-image: url(../../assets/images/grey_angle_left.png);
+    //background-image: url(../../assets/images/grey_angle_left.png);
     left: auto;
-    right: 50%;
-    margin-right: 30px;
+    //right: 50%;
+    //margin-right: 30px;
   }
 
   .swiper-button-prev::after {
@@ -263,20 +274,33 @@
 
   .swiper-button-next,
   .swiper-button-prev {
+    width: auto;
+    position: inherit;
     top: inherit;
-    bottom: 1%;
+    margin-top: 0px;
+    //bottom: 1%;
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: center;
     z-index: 11;
     opacity: 1;
+
+    .backText {
+      padding-right: 10px;
+    }
+    .nextText {
+      padding-left: 10px;
+    }
   }
 
   .swiper-pagination-bullets {
-    bottom: 12px;
+    //bottom: 12px;
   }
 
   .swiper-pagination {
+    position: inherit;
+    margin: 0px 5px;
+    display: flex;
     .swiper-pagination-bullet {
       width: 15px;
       height: 15px;

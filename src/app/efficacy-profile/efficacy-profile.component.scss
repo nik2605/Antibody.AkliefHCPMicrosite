@@ -12,6 +12,7 @@
     font-size: $title_h1_font_size;
     color: $font_white;
     font-family: $Oregon;
+    font-weight: 400;
   }
   @include xs {
     height: 50%;
@@ -35,6 +36,7 @@
   h1 {
     color: $font_blue;
     font-family: $Oregon;
+    font-weight: 400;
   }
   h2 {
     color: $font_darkGrey;
@@ -54,32 +56,89 @@
     border-radius: 25px;
     padding: 10px;
     img {
-      width: 100px;
+      max-width: 100px;
+      width: 100%;
     }
     h2 {
       color: $font_white;
       font-family: $Oregon;
       font-weight: 400;
       padding: 0px 10px;
+      margin-bottom: 0;
     }
     h1 {
       color: $font_white;
       font-family: $Oregon;
       font-size: 56px;
+      text-align: left;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    h5 {
+      color: $font_white;
+      font-family: $Oregon;
+      font-weight: 400;
+      text-align: left;
+      padding-bottom: 5px;
+      @include xs {
+        padding-top: 10px;
+      }
+      @include md {
+        padding-top: 0px;
+      }
     }
   }
   .subhead2 {
     color: $font_grey;
+    font-family: $Univers;
   }
 
   h5 {
-    font-family: $Univers_Bold;
+    font-family: $Univers;
+    font-weight: 200;
     margin: 0;
   }
   .age_name_Box {
     min-width: 190px;
     p {
       font-size: 12px;
+      font-family: $Univers;
+      font-weight: 200;
     }
+  }
+}
+
+.faceImageSwiper,
+.chestImageSwiper {
+  background-image: url("../../assets/images/wallpaper_4.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: left;
+  background-size: cover;
+  width: 100%;
+  padding: 30px 20px;
+  h2 {
+    color: $font_white;
+    font-family: $Univers;
+    font-weight: bold;
+    padding: 0px 0px 30px 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.faceImageSwiper {
+  @include xs {
+    height: auto;
+  }
+  @include lg {
+    height: 715px;
+  }
+}
+.chestImageSwiper {
+  @include xs {
+    height: auto;
+  }
+  @include lg {
+    height: 780px;
   }
 }

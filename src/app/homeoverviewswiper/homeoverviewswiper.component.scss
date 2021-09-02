@@ -1,6 +1,14 @@
 @import "../../styles/style.scss";
 
 .whiteSwiper {
+  .toggleBox {
+    p {
+      font-family: $Univers;
+      color: $font_white;
+      line-height: 0;
+      margin-top: 2px;
+    }
+  }
   .overviewContainer {
     min-height: 300px;
     @include xs {
@@ -11,11 +19,12 @@
     }
     h5 {
       font-family: $Univers;
+      line-height: 1.5;
     }
     .li_font {
       font-size: $h5_font_size;
       font-family: $Univers;
-      font-weight: 300;
+      font-weight: 200;
       padding-left: 50px !important;
       line-height: 2;
       @include xs {
@@ -28,7 +37,7 @@
     .li_font_2 {
       font-size: $h5_font_size;
       font-family: $Univers;
-      font-weight: 300;
+      font-weight: 200;
       padding-left: 20px !important;
       list-style-type: none;
       @include xs {
@@ -85,17 +94,17 @@
   }
 
   .swiper-button-next {
-    background-image: url(../../assets/images/white_angle_right.png);
+    //background-image: url(../../assets/images/white_angle_right.png);
     right: auto;
-    left: 50%;
-    margin-left: 50px;
+    //left: 50%;
+    //margin-left: 50px;
   }
 
   .swiper-button-prev {
-    background-image: url(../../assets/images/white_angle_left.png);
+    //background-image: url(../../assets/images/white_angle_left.png);
     left: auto;
-    right: 50%;
-    margin-right: 50px;
+    //right: 50%;
+    //margin-right: 50px;
   }
 
   .swiper-button-prev::after {
@@ -108,20 +117,32 @@
 
   .swiper-button-next,
   .swiper-button-prev {
+    width: auto;
+    position: inherit;
     top: inherit;
-    bottom: -9px;
+    margin-top: 0px;
+    //bottom: -9px;
     background-repeat: no-repeat;
     background-size: 60% auto;
     background-position: center;
     z-index: 11;
     opacity: 1;
+
+    .backText {
+      padding-right: 10px;
+    }
+    .nextText {
+      padding-left: 10px;
+    }
   }
 
   .swiper-pagination-bullets {
-    bottom: 0px;
+    //bottom: 0px;
   }
 
   .swiper-pagination {
+    position: inherit;
+    display: flex;
     .swiper-pagination-bullet {
       width: 15px;
       height: 15px;
@@ -136,3 +157,5 @@
     }
   }
 }
+
+
