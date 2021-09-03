@@ -46,7 +46,7 @@ export class AuthService {
     if (number.length > 4 && province.length > 0) {
       localStorage.setItem('currentUser', JSON.stringify(province + number));
       this.currentUserSubject.next(province + number);
-      this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083,'','',true);
+      this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083,'','',true,"None");
       return true;
     }
     else {

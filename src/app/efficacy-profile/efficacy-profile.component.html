@@ -21,9 +21,9 @@
       <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face_icon_fr.png" alt="french face icon"
         class="image-icon">
     </div>
-    <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+    <div class="col-12 col-md-3 px-0">
       <div>
-        <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase">
+        <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase" style="margin-top: 10px;">
         </h5>
 
         <h1>
@@ -32,9 +32,13 @@
       </div>
 
     </div>
-    <div class="col-12 col-md-7 d-flex align-items-center">
-      <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
-      </h2>
+    <div class="col-12 col-md-7">
+      <div>
+        <h5 class="blankSpace">&nbsp;</h5>
+        <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
+        </h2>
+      </div>
+
     </div>
   </div>
   <div class="text-center my-4">
@@ -58,10 +62,9 @@
       <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/trunk_icon_fr.png" alt="french truck icon"
         class="image-icon">
     </div>
-    <div class="col-12 col-md-3  d-flex align-items-center justify-content-center">
+    <div class="col-12 col-md-3 px-0">
       <div>
-        <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase"
-          style="text-align: left;margin-top: 10px;">
+        <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase" style="margin-top: 10px;">
         </h5>
         <h1>
           {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
@@ -69,10 +72,14 @@
       </div>
 
     </div>
-    <div class="col-12 col-md-7  d-flex align-items-center">
-      <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase"
-        style="text-align: left;">
-      </h2>
+    <div class="col-12 col-md-7">
+      <div>
+        <h5 class="blankSpace">&nbsp;</h5>
+        <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase"
+          style="text-align: left;">
+        </h2>
+      </div>
+
     </div>
   </div>
   <div class="text-center my-4">

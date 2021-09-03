@@ -32,13 +32,40 @@ export class HomeComponent implements OnInit {
   }
 
   checkaccess() {
-    if (localStorage.getItem('access') != 'true') {
-      localStorage.setItem('access', 'true');
-      this.accessed = false;
+    var time = new Date();
+    var currentTime = time.toString();
+    var lastAccessTime = localStorage.getItem('accessTime');
+
+    if (lastAccessTime != null && lastAccessTime!.length > 0) {
+      var currentTimeInTime = new Date(currentTime);
+      var lastAccessTimeInTime = new Date(lastAccessTime!)
+      var diff = currentTimeInTime.getTime() - lastAccessTimeInTime.getTime();
+      // var days = Math.floor(diff / (60 * 60 * 24 * 1000));
+      // var hours = Math.floor(diff / (60 * 60 * 1000)) - (days * 24);
+      // var seconds = Math.floor(diff / 1000) - ((days * 24 * 60 * 60) + (hours * 60 * 60) + (minutes * 60));
+      var minutes = Math.floor(diff / (60 * 1000));
+
+      if (minutes >= 30) {
+        this.accessed = false;
+        localStorage.setItem('accessTime', currentTime);
+      }
+      else {
+        this.accessed = true;
+
+      }
     }
     else {
-      this.accessed = true;
+      localStorage.setItem('accessTime', currentTime);
     }
+
+
+    // if (localStorage.getItem('access') != 'true') {
+    //   localStorage.setItem('access', 'true');
+    //   this.accessed = false;
+    // }
+    // else {
+    //   this.accessed = true;
+    // }
   }
 
 }

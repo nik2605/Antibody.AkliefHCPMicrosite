@@ -7,10 +7,12 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-top: 200px;
-
   @include xs {
+    padding-top: 100px;
     height: 50%;
+  }
+  @include sm {
+    padding-top: 200px;
   }
   @include md {
     height: 660px;
@@ -46,44 +48,111 @@
   h5 {
     color: $font_middleGrey;
     font-family: $Univers;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-weight: bold;
   }
+  .CetaphilBoxDesktop {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
 
-  .combinedBox {
     @include xs {
-      align-items: center;
+      display: none;
+    }
+    @include sm {
+    }
+    @include md {
+      background-image: url("../../assets/images/Cetaphil_group_lg.png");
+      height: 28vw;
+      padding-right: 10px;
+      display: flex;
+    }
+    @include lg {
+      height: 22vw;
     }
     @include xl {
-      align-items: baseline;
+      background-image: url("../../assets/images/Cetaphil_group_xl.png");
     }
-    .combinedImage {
-      @include xs {
-        width: 200px;
-      }
+    h2 {
+      color: $font_white;
       @include md {
+        font-size: 18px;
+        width: 66%;
+        padding-top: 8%;
+      }
+      @include lg {
+      }
+      @include xl {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .CetaphilBoxMobile {
+    @include xs {
+      display: block;
+    }
+    @include md {
+      display: none;
+    }
+    .imgBox {
+      text-align: center;
+      img {
+        max-width: 500px;
+        min-width: 200px;
         width: 100%;
       }
     }
-
     .calloutBar {
       background-image: url("../../assets/images/Rectangle_4.png");
       background-repeat: no-repeat;
       background-position-x: right;
       background-position-y: top;
       background-size: cover;
-      border-radius: 0px 10px 10px 0px;
+      border-radius: 10px 10px 10px 10px;
       padding: 10px 1rem;
-      @include xs {
-        border-radius: 10px;
-      }
-      @include md {
-        border-radius: 0px 10px 10px 0px;
-      }
       h2 {
-        font-family: $Oregon;
         color: $font_white;
-        font-weight: 400;
       }
     }
   }
+
+  // .combinedBox {
+  //   @include xs {
+  //     align-items: center;
+  //   }
+  //   @include xl {
+  //     align-items: baseline;
+  //   }
+  //   .combinedImage {
+  //     @include xs {
+  //       width: 200px;
+  //     }
+  //     @include md {
+  //       width: 100%;
+  //     }
+  //   }
+
+  //   .calloutBar {
+  //     background-image: url("../../assets/images/Rectangle_4.png");
+  //     background-repeat: no-repeat;
+  //     background-position-x: right;
+  //     background-position-y: top;
+  //     background-size: cover;
+  //     border-radius: 0px 10px 10px 0px;
+  //     padding: 10px 1rem;
+  //     @include xs {
+  //       border-radius: 10px;
+  //     }
+  //     @include md {
+  //       border-radius: 0px 10px 10px 0px;
+  //     }
+  //     h2 {
+  //       font-family: $Oregon;
+  //       color: $font_white;
+  //       font-weight: 400;
+  //     }
+  //   }
+  // }
 }

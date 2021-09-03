@@ -14,51 +14,61 @@ section {
   min-height: 90vh;
   padding-bottom: 1.5rem;
   color: $font_white;
+  padding-right: 5%;
   .textBox {
-    padding: 0 5%;
+    @include xs{
+      width: 270px;
+    }
+    @include sm{
+      width: 465px;
+    }
+    @include md{
+      width: 343px;
+    }
+    @include lg{
+      width: 465px;
+    }
     .title_h1 {
       text-align: right;
       font-weight: 400;
       @include xs {
         font-size: 40px;
-        padding-left: 25%;
         padding-top: 110px;
         padding-bottom: 25px;
       }
       @include sm {
         font-size: $title_h1_font_size;
-        padding-left: 41%;
         padding-top: 70px;
         padding-bottom: 80px;
       }
       @include md {
-        padding-left: 48%;
       }
       @include lg {
-        padding-left: 52%;
       }
     }
     .title_h2 {
       font-weight: bold;
+      @include xs {
+      }
       @include sm {
-        padding-left: 10%;
       }
       @include md {
       }
       @include lg {
-        padding-left: 10%;
+        font-size: $title_h2_font_size;
       }
     }
 
     .title_p {
       padding-top: 20px;
+      @include xs {
+      }
       @include sm {
-        padding-left: 10%;
       }
       @include md {
       }
       @include lg {
-        padding-left: 10%;
+        font-size: $title_p_font_size;
       }
     }
   }
@@ -156,6 +166,7 @@ section {
       color: $font_white;
       font-family: $Oregon;
       margin-bottom: 0;
+      font-weight: 400;
     }
     h5 {
       color: $font_white;
@@ -224,6 +235,7 @@ section {
 
   h1 {
     font-family: $Oregon;
+    font-weight: 400;
     @include xs {
       font-size: 30px;
       padding-top: 20px;
@@ -495,7 +507,7 @@ section {
     margin: 10%;
     .downloadBox {
       img {
-        width: 100px;
+        width: 150px;
       }
       h5 {
         font-family: $Univers;

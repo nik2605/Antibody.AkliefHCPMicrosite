@@ -7,7 +7,7 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-top: 200px;
+
   h1 {
     font-size: $title_h1_font_size;
     color: $font_white;
@@ -15,7 +15,11 @@
     font-weight: 400;
   }
   @include xs {
+    padding-top: 100px;
     height: 50%;
+  }
+  @include sm{
+    padding-top: 200px;
   }
   @include md {
     height: 660px;
@@ -73,6 +77,12 @@
       text-align: left;
       margin-bottom: 0;
       line-height: 1;
+      @include xs {
+        text-align: center;
+      }
+      @include md {
+        text-align: left;
+      }
     }
     h5 {
       color: $font_white;
@@ -82,9 +92,21 @@
       padding-bottom: 5px;
       @include xs {
         padding-top: 10px;
+        text-align: center;
       }
       @include md {
         padding-top: 0px;
+        text-align: left;
+      }
+    }
+    .blankSpace {
+      @include xs {
+        margin-top: 0px;
+        height: 0;
+      }
+      @include md {
+        margin-top: 10px;
+        height: auto;
       }
     }
   }

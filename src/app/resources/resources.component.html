@@ -23,7 +23,12 @@
         <h5 [innerHTML]="'RESOURCES.download1_copy' | translate">
         </h5>
         <div class="blue_button">
-          <a href="#" class="button">
+          <a *ngIf="currentLanguage=='en'" href="../../assets/documents/HR_GAL20TR021554_PatientTearpad_E6 [CLEAN].pdf"
+            class="button">
+            {{'BUTTON.download' | translate | uppercase}}
+          </a>
+          <a *ngIf="currentLanguage=='fr'" href="../../assets/documents/HR_GAL20TR021554_PatientTearpad_F5 [CLEAN].pdf"
+            class="button">
             {{'BUTTON.download' | translate | uppercase}}
           </a>
         </div>
@@ -41,7 +46,12 @@
         <h5 [innerHTML]="'RESOURCES.download2_copy' | translate">
         </h5>
         <div class="blue_button">
-          <a href="#" class="button">
+          <a *ngIf="currentLanguage=='en'" href="../../assets/documents/HR_GAL20TR021554_PatientTearpad_E6 [CLEAN].pdf"
+            class="button">
+            {{'BUTTON.download' | translate | uppercase}}
+          </a>
+          <a *ngIf="currentLanguage=='fr'"
+            href="../../assets/documents/GAL21TR022519_Acne Assessment Tool_F3_Interactive.pdf" class="button">
             {{'BUTTON.download' | translate | uppercase}}
           </a>
         </div>
@@ -59,7 +69,12 @@
         <h5 [innerHTML]="'RESOURCES.download3_copy' | translate">
         </h5>
         <div class="blue_button">
-          <a href="#" class="button">
+          <a *ngIf="currentLanguage=='en'"
+            href="../../assets/documents/GAL19TR021129_Aklief Patient Brochure_BIL7_EN.pdf" class="button">
+            {{'BUTTON.download' | translate | uppercase}}
+          </a>
+          <a *ngIf="currentLanguage=='fr'"
+            href="../../assets/documents/GAL19TR021129_Aklief Patient Brochure_BIL7_FR.pdf.pdf" class="button">
             {{'BUTTON.download' | translate | uppercase}}
           </a>
         </div>
@@ -75,7 +90,14 @@
       <div class="textBox col-12 col-sm-8 col-md-9">
         <h3>{{'RESOURCES.download4_headline' | translate | uppercase}}</h3>
         <div class="blue_button">
-          <a href="#" class="button">
+          <a *ngIf="currentLanguage=='en'"
+            href="https://www.galderma.com/sites/default/files/inline-files/Aklief%20PM-E-Nov-25.pdf" class="button"
+            target="_blank">
+            {{'BUTTON.download' | translate | uppercase}}
+          </a>
+          <a *ngIf="currentLanguage=='fr'"
+            href="https://www.galderma.com/sites/default/files/inline-files/Aklief%20PM-F-Nov-25.pdf" class="button"
+            target="_blank">
             {{'BUTTON.download' | translate | uppercase}}
           </a>
         </div>
@@ -116,11 +138,12 @@
       </div>
     </div>
   </div>
+
+  <div class="mb-5">
+    <img src="../../assets/images/reference_bottom.png" alt="patients in group" style="width: 100%;">
+  </div>
   <div class="blueLine">
 
-  </div>
-  <div>
-    <img src="../../assets/images/reference_bottom.png" alt="patients in group" style="width: 100%;">
   </div>
   <div class="reference">
     <p class="reference_text">

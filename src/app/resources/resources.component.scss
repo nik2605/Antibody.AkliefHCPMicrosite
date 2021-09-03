@@ -7,9 +7,13 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-top: 200px;
+
   @include xs {
+    padding-top: 100px;
     height: 50%;
+  }
+  @include sm{
+    padding-top: 200px;
   }
   @include md {
     height: 660px;

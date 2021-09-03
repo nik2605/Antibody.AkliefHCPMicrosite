@@ -7,10 +7,14 @@
   background-position-x: center;
   background-size: cover;
   width: 100%;
-  padding-top: 200px;
+
   font-weight: 400;
   @include xs {
     height: 50%;
+    padding-top: 100px;
+  }
+  @include sm {
+    padding-top: 200px;
   }
   @include md {
     height: 660px;
@@ -102,6 +106,7 @@
         color: $font_white;
         font-weight: 200;
         margin-bottom: 0px;
+        text-align: center;
         @include xs {
           font-size: $h2_font_size;
         }

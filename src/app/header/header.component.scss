@@ -107,13 +107,14 @@ header {
         display: block;
         padding: 5px;
         height: 100%;
-        font-weight: bold;
+        font-weight: 400;
         &:hover {
           background-image: url("../../assets/images/select_rectangle.png");
           background-size: cover;
           background-repeat: no-repeat;
           background-position: right;
           color: $font_white !important;
+          font-weight: bold;
         }
         @include xs {
           font-size: 11px;
@@ -128,6 +129,7 @@ header {
         background-repeat: no-repeat;
         background-position: right;
         color: $font_white !important;
+        font-weight: bold;
       }
     }
   }
