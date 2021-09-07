@@ -18,7 +18,7 @@
     padding-top: 100px;
     height: 50%;
   }
-  @include sm{
+  @include sm {
     padding-top: 200px;
   }
   @include md {
@@ -42,9 +42,6 @@
     font-family: $Oregon;
     font-weight: 400;
   }
-  h2 {
-    color: $font_darkGrey;
-  }
   .chartImage {
     max-width: 900px;
     width: 100%;
@@ -63,25 +60,40 @@
       max-width: 100px;
       width: 100%;
     }
-    h2 {
-      color: $font_white;
-      font-family: $Oregon;
-      font-weight: 400;
-      padding: 0px 10px;
-      margin-bottom: 0;
-    }
-    h1 {
-      color: $font_white;
-      font-family: $Oregon;
-      font-size: 56px;
-      text-align: left;
-      margin-bottom: 0;
-      line-height: 1;
-      @include xs {
-        text-align: center;
+    .textBox {
+      h2 {
+        color: $font_white;
+        font-family: $Oregon;
+        font-weight: 400;
+
+        margin-bottom: 0;
+        flex: 1;
+        @include xs {
+          text-align: center;
+          width: 100%;
+          padding: 5px 10px 10px 10px;
+        }
+        @include md {
+          text-align: left;
+          width: auto;
+          padding:0px 10px 0px 0px;
+        }
       }
-      @include md {
+      h1 {
+        color: $font_white;
+        font-family: $Oregon;
+        font-size: 56px;
         text-align: left;
+        margin-bottom: 0;
+        line-height: 1;
+        @include xs {
+          text-align: center;
+          width: 100%;
+        }
+        @include md {
+          text-align: left;
+          width: auto;
+        }
       }
     }
     h5 {

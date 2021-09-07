@@ -54,7 +54,7 @@
   },
   "HOME":{
     "headline":"Don’t let their acne be the focus",
-    "subhead":"Help change their story—treat acne on the face and beyond",
+    "subhead":"Help change their <span class=\"text-nowrap\">story—treat</span> acne on the face and beyond",
     "subhead_copy":"AKLIEF (trifarotene 50 mcg/g) topical cream is indicated for the topical treatment of <span class=\"text_itals\">acne vulgaris</span> of the face and/or trunk in patients 12 years of age and older.<sup>1</sup>",
     "prevalence_of_acne_panel1_headline":"Prevalence of Acne",
     "prevalence_of_acne_panel1_over":"OVER",

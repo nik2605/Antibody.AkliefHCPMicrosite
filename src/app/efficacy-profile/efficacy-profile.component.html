@@ -11,9 +11,6 @@
   <h1 class="text-center">
     {{'EFFICACY_PROFILE.headline' | translate | uppercase}}
   </h1>
-  <h2 class="text-center">
-    {{'EFFICACY_PROFILE.subhead_1' | translate | uppercase}}
-  </h2>
   <div class="row calloutBar py-2 m-4">
     <div class="col-12 col-md-2 align-self-center text-center">
       <img *ngIf="currentLanguage == 'en'" src="../../assets/images/face_icon_en.png" alt="english face icon"
@@ -21,24 +18,18 @@
       <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/face_icon_fr.png" alt="french face icon"
         class="image-icon">
     </div>
-    <div class="col-12 col-md-3 px-0">
+    <div class="col-12 col-md-10 px-0">
       <div>
         <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase" style="margin-top: 10px;">
         </h5>
-
+      </div>
+      <div class="textBox row">
         <h1>
           {{'EFFICACY_PROFILE.54_4' | translate | uppercase}}
         </h1>
-      </div>
-
-    </div>
-    <div class="col-12 col-md-7">
-      <div>
-        <h5 class="blankSpace">&nbsp;</h5>
         <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_44' | translate | uppercase">
         </h2>
       </div>
-
     </div>
   </div>
   <div class="text-center my-4">
@@ -62,24 +53,20 @@
       <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/trunk_icon_fr.png" alt="french truck icon"
         class="image-icon">
     </div>
-    <div class="col-12 col-md-3 px-0">
+    <div class="col-12 col-md-10 px-0">
       <div>
         <h5 [innerHTML]="'EFFICACY_PROFILE.in_the_Pivotal_1_Study' | translate | uppercase" style="margin-top: 10px;">
         </h5>
+
+      </div>
+      <div class="textBox row">
         <h1>
           {{'EFFICACY_PROFILE.57_4' | translate | uppercase}}
         </h1>
-      </div>
-
-    </div>
-    <div class="col-12 col-md-7">
-      <div>
-        <h5 class="blankSpace">&nbsp;</h5>
         <h2 [innerHTML]="'EFFICACY_PROFILE.fewer_inflammatory_lesions_50' | translate | uppercase"
-          style="text-align: left;">
-        </h2>
+        style="text-align: left;">
+      </h2>
       </div>
-
     </div>
   </div>
   <div class="text-center my-4">

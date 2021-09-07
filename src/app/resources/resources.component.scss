@@ -59,7 +59,8 @@
       border-bottom: 1px solid $site_blue;
       .imgBox {
         img {
-          width: 150px;
+          max-width: 250px;
+          width: 100%;
         }
       }
       .textBox {

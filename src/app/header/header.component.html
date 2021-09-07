@@ -70,13 +70,14 @@
         <img src="../../assets/images/GALDERMA_LOGO_WHITE_RGB_SMALL.png" alt="Galderma logo"
           style="max-width: 200px;width:100%;height:auto;">
       </div>
-      <div class="col-3 col-sm-2 col-md-1 col-lg-1 d-flex justify-content-center align-items-center">
+      <div class="col-sm-2 col-md-1 col-lg-1 d-flex justify-content-center align-items-center"
+        [ngClass]="isGate?'col-3':'col-2 px-0'">
         <div id="language_icon" (click)="switchLanguage(language_icon_text)">
           {{ language_icon_text | uppercase}}
         </div>
       </div>
       <div class=" col-md-1 col-lg-0 justify-content-center align-items-center togglerIcon" [hidden]="isGate"
-        [ngClass]="isGate?'col-sm-0 col-0':'col-1 col-sm-1'">
+        [ngClass]="isGate?'col-sm-0 col-0':'col-2 col-sm-1'">
         <div>
           <button class="navbar-toggler" type="button" (click)="ShowMoilbeMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"

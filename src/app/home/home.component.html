@@ -13,20 +13,6 @@
       </p>
     </div>
   </div>
-  <div class="policy_bar" hidden>
-    <a href="{{currentLanguage}}/privacypolicy">{{'POLICY_BAR.privacy_policy'|
-      translate}}
-    </a>
-    |
-    <a href="{{currentLanguage}}/cookiepolicy">{{'POLICY_BAR.cookie_policy'|
-      translate}}
-    </a>
-    |
-    <a href="{{currentLanguage}}/safetyinformation">{{'POLICY_BAR.safety_information'|
-      translate}}
-    </a>
-  </div>
-
 </section>
 <section id="prevalence_of_acne">
   <div class="prevalence_of_acne">
@@ -197,7 +183,7 @@
 </section>
 <section>
   <div class="safetyprofile d-flex align-items-center justify-content-center">
-    <div class="main px-5 pt-5 pb-3">
+    <div class="main">
       <div class="row">
         <div class="col mb-3 mb-md-0">
           <div class="scheduleBox text-center">
@@ -328,21 +314,24 @@
   <div class="resources d-flex align-items-center justify-content-center">
     <div class="main px-5 pt-5 pb-3">
       <div class="row">
-        <div class="col-12 col-md-6 text-center textBox">
-          <h1>
-            {{'HOME.resources_headline'|translate|uppercase}}
-          </h1>
-          <h2 [innerHTML]="'HOME.resources_subhead'|translate|uppercase">
-          </h2>
-          <p [innerHTML]="'HOME.resources_copy'|translate|uppercase">
-          </p>
-          <div class="blue_button">
-            <a href="{{currentLanguage}}/resources" class="button">
-              {{'BUTTON.download' | translate | uppercase}}
-            </a>
+        <div class="col-12 col-lg-5 col-xl-6 textBox d-flex align-items-center justify-content-center">
+          <div class="text-center">
+            <h1>
+              {{'HOME.resources_headline'|translate|uppercase}}
+            </h1>
+            <h2 [innerHTML]="'HOME.resources_subhead'|translate|uppercase">
+            </h2>
+            <p [innerHTML]="'HOME.resources_copy'|translate|uppercase">
+            </p>
+            <div class="blue_button">
+              <a href="{{currentLanguage}}/resources" class="button">
+                {{'BUTTON.download' | translate | uppercase}}
+              </a>
+            </div>
           </div>
+
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-7 col-xl-6">
           <div class="downloadBox row">
             <div class="col-12 col-sm-6 text-center">
               <div>

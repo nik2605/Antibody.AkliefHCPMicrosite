@@ -7,6 +7,12 @@
       color: $font_darkGrey;
       line-height: 0;
       margin-top: 2px;
+      @include xs{
+        font-size: 10px;
+      }
+      @include sm{
+        font-size: 12px;
+      }
     }
   }
   .slide1 {
