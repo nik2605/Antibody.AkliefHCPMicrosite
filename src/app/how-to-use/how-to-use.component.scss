@@ -66,6 +66,7 @@
   }
   h2 {
     color: $font_darkGrey;
+    font-family: $Roboto;
   }
   .routineBox {
     border-top: 1px solid $site_blue;
@@ -90,12 +91,12 @@
       }
       h5 {
         color: $font_middleGrey;
-        font-family: $Univers;
+        font-family: $Roboto;
         font-size: 18px;
       }
       .li_font {
-        font-family: $Univers;
-        font-weight: 200;
+        font-family: $Roboto;
+        font-weight: 300;
         font-size: 18px;
       }
     }

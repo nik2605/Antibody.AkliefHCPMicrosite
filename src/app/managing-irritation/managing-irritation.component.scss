@@ -47,7 +47,7 @@
 
   h5 {
     color: $font_middleGrey;
-    font-family: $Univers;
+    font-family: $Roboto;
     padding-top: 10px;
     font-weight: bold;
     font-size: 18px;
@@ -118,42 +118,4 @@
       }
     }
   }
-
-  // .combinedBox {
-  //   @include xs {
-  //     align-items: center;
-  //   }
-  //   @include xl {
-  //     align-items: baseline;
-  //   }
-  //   .combinedImage {
-  //     @include xs {
-  //       width: 200px;
-  //     }
-  //     @include md {
-  //       width: 100%;
-  //     }
-  //   }
-
-  //   .calloutBar {
-  //     background-image: url("../../assets/images/Rectangle_4.png");
-  //     background-repeat: no-repeat;
-  //     background-position-x: right;
-  //     background-position-y: top;
-  //     background-size: cover;
-  //     border-radius: 0px 10px 10px 0px;
-  //     padding: 10px 1rem;
-  //     @include xs {
-  //       border-radius: 10px;
-  //     }
-  //     @include md {
-  //       border-radius: 0px 10px 10px 0px;
-  //     }
-  //     h2 {
-  //       font-family: $Oregon;
-  //       color: $font_white;
-  //       font-weight: 400;
-  //     }
-  //   }
-  // }
 }

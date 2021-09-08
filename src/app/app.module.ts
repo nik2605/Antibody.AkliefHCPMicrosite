@@ -58,7 +58,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HomeoverviewswiperComponent,
     SafetyinformationComponent,
     FaceSwiperComponent,
-    ChestSwiperComponent
+    ChestSwiperComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

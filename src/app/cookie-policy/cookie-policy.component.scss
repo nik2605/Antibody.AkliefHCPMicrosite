@@ -10,21 +10,37 @@
   h5 {
     font-weight: bold;
     color: $font_middleGrey;
-    font-family: $Univers;
+    font-family: $Roboto;
     padding: 15px 0px 10px 0px;
+    @include xs{
+      font-size: 15px;
+    }
+    @include md{
+      font-size: 18px;
+    }
   }
   p {
-    font-size: 16px;
-    font-family: $Univers;
+    font-family: $Roboto;
     color: $font_middleGrey;
-    font-weight: 200;
+    font-weight: 300;
+    @include xs{
+      font-size: 12px;
+    }
+    @include md{
+      font-size: 18px;
+    }
   }
   ul {
     li {
-      font-size: 16px;
-      font-family: $Univers;
+      font-family: $Roboto;
       color: $font_middleGrey;
-      font-weight: 200;
+      font-weight: 300;
+      @include xs{
+        font-size: 12px;
+      }
+      @include md{
+        font-size: 18px;
+      }
     }
   }
 }

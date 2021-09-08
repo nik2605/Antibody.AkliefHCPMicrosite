@@ -64,7 +64,7 @@ header {
           padding: 20px 0px 20px 20px;
           width: 100%;
           display: block;
-          font-family: $Univers;
+          font-family: $Roboto;
           font-weight: bold;
           &:hover {
             background-color: $site_blue;
@@ -107,7 +107,7 @@ header {
         text-transform: uppercase;
         color: $font_blue;
         text-decoration: none;
-        font-family: $Univers;
+        font-family: $Roboto;
         display: block;
         padding: 5px;
         height: 100%;
@@ -160,9 +160,7 @@ header {
     height: 30px;
   }
   @include md {
-    font-size: 16px;
-    width: 40px;
-    height: 40px;
+    // font-size: 16px;
   }
   &:hover {
     border-color: #a8d5ba;

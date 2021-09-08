@@ -26,7 +26,7 @@ section {
       //width: 343px;
     }
     @include lg {
-      width: 335px;
+      width: 500px;
     }
     .title_h1 {
       font-weight: 400;
@@ -43,6 +43,7 @@ section {
       @include md {
       }
       @include lg {
+        font-size: 60px;
       }
     }
     .title_h2 {
@@ -171,7 +172,7 @@ section {
     }
     h5 {
       color: $font_white;
-      font-family: $Univers;
+      font-family: $Roboto;
       line-height: 1.5;
       margin-bottom: 0;
     }
@@ -190,7 +191,7 @@ section {
   .row {
     h5 {
       line-height: 1.5;
-      font-family: $Univers;
+      font-family: $Roboto;
       font-size: 18px;
     }
   }
@@ -228,7 +229,7 @@ section {
     }
     .micetype {
       font-size: 10px;
-      font-family: $Univers;
+      font-family: $Roboto;
       @include xs {
         font-size: 8px;
       }
@@ -305,14 +306,14 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Univers;
+        font-family: $Roboto;
         color: $font_grey;
         font-weight: bold;
       }
       p {
         font-size: 14px;
         color: $font_grey;
-        font-family: $Univers;
+        font-family: $Roboto;
         padding: 10px 0px;
         font-weight: bold;
       }
@@ -348,7 +349,7 @@ section {
     p {
       font-size: 14px;
       color: $font_grey;
-      font-family: $Univers;
+      font-family: $Roboto;
       padding: 10px 0px;
     }
     .scheduleBox {
@@ -382,7 +383,7 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Univers;
+        font-family: $Roboto;
         color: $font_grey;
         padding-bottom: 20px;
       }
@@ -402,7 +403,7 @@ section {
     font-weight: 400;
   }
   h2 {
-    font-family: $Univers;
+    font-family: $Roboto;
     color: $font_darkGrey;
     padding: 20px 0px;
   }
@@ -410,7 +411,7 @@ section {
   .row {
     h4 {
       font-weight: bold;
-      font-family: $Univers;
+      font-family: $Roboto;
       color: $font_grey;
       padding: 30px;
     }
@@ -502,7 +503,7 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Univers;
+        font-family: $Roboto;
         color: $font_grey;
         padding-top: 20px;
         padding-bottom: 40px;
@@ -541,7 +542,7 @@ section {
         }
       }
       h5 {
-        font-family: $Univers;
+        font-family: $Roboto;
         color: $font_middleGrey;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -556,14 +557,14 @@ section {
         font-weight: 400;
       }
       h2 {
-        font-family: $Univers;
+        font-family: $Roboto;
         color: $font_grey;
         padding-bottom: 20px;
       }
       p {
         font-size: 14px;
         color: $font_grey;
-        font-family: $Univers;
+        font-family: $Roboto;
         padding: 0px 0px 40px;
         font-weight: bold;
       }

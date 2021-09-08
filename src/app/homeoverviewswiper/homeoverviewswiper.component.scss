@@ -3,7 +3,7 @@
 .whiteSwiper {
   .toggleBox {
     p {
-      font-family: $Univers;
+      font-family: $Roboto;
       color: $font_white;
       line-height: 0;
       margin-top: 2px;
@@ -24,13 +24,13 @@
       height: 100%;
     }
     h5 {
-      font-family: $Univers;
+      font-family: $Roboto;
       line-height: 1.5;
     }
     .li_font {
       font-size: $h5_font_size;
-      font-family: $Univers;
-      font-weight: 200;
+      font-family: $Roboto;
+      font-weight: 300;
       padding-left: 50px !important;
       line-height: 2;
       @include xs {
@@ -42,8 +42,8 @@
     }
     .li_font_2 {
 
-      font-family: $Univers;
-      font-weight: 200;
+      font-family: $Roboto;
+      font-weight: 300;
       padding-left: 20px !important;
       list-style-type: none;
       @include xs {

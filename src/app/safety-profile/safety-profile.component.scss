@@ -59,8 +59,8 @@
   }
   h5 {
     color: $font_middleGrey;
-    font-family: $Univers;
-    font-weight: 200;
+    font-family: $Roboto;
+    font-weight: 300;
     padding: 40px 0px;
     font-size: 18px;
   }
@@ -105,7 +105,7 @@
       h2 {
         font-family: $Oregon;
         color: $font_white;
-        font-weight: 200;
+        font-weight: 300;
         margin-bottom: 0px;
         text-align: center;
         @include xs {
@@ -118,27 +118,7 @@
           font-size: $h2_font_size;
         }
       }
-      .li_font {
-        font-family: $Oregon;
-        color: $font_white;
-        font-weight: 200;
-        font-size: $h2_font_size;
-        padding-top: 20px;
-        @include xs {
-          font-size: $h2_font_size;
-        }
-        @include lg {
-          font-size: 19px;
-        }
-        @include xl {
-          font-size: $h2_font_size;
-        }
-        li {
-          &:before {
-            color: #ffffff;
-          }
-        }
-      }
+
       img {
         width: 60px;
       }

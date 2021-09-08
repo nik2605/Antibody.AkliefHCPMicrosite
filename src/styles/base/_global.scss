@@ -64,16 +64,16 @@ h3 {
 }
 h4 {
   font-size: $h4_font_size;
-  font-weight: 200;
+  font-weight: 300;
 }
 h5 {
   font-size: $h5_font_size;
-  font-weight: 200;
+  font-weight: 300;
 }
 p {
   font-size: $p_12_font_size;
   line-height: 1.3;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -83,11 +83,11 @@ p {
 }
 .title_h2 {
   font-size: $title_h2_font_size;
-  font-family: $Univers;
+  font-family: $Roboto;
 }
 .title_p {
   font-size: $title_p_font_size;
-  font-family: $Univers;
+  font-family: $Roboto;
 }
 
 ul {
@@ -116,10 +116,14 @@ ul {
   font-style: italic;
 }
 .TEXT_ARIAL {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $Roboto
 }
 .text_bold {
   font-weight: 700;
+}
+.li_bold {
+  font-weight: 700;
+  font-family: $Roboto;
 }
 
 /* a tag style */

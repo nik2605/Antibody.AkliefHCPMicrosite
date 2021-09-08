@@ -45,14 +45,14 @@
               <div class="chest" (mouseover)="moveArrow($event)" (mouseup)="turnOffMove($event)">
                 <div class="baselineBox" [ngStyle]="{'width':baselineWidth}">
                   <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest2_baseline_en.png"
-                    alt="chest 2 baseline">
+                    alt="chest 2 baseline english">
                   <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest2_baseline_fr.png"
-                    alt="chest 2 baseline">
+                    alt="chest 2 baseline french">
                 </div>
                 <img *ngIf="currentLanguage == 'en'" src="../../assets/images/chest2_week12_en.png"
-                  alt="chest 2 week12">
+                  alt="chest 2 week12 english">
                 <img *ngIf="currentLanguage == 'fr'" src="../../assets/images/chest2_week12_fr.png"
-                  alt="chest 2 week12">
+                  alt="chest 2 week12 french">
                 <span class="chest_drag" (mousedown)="turnOnMove()" [ngStyle]="{'left':baselineWidth}"></span>
               </div>
             </div>

@@ -5,8 +5,8 @@
     p {
       font-size: 16px;
       color: $font_middleGrey;
-      font-family: $Univers;
-      font-weight: 200;
+      font-family: $Roboto;
+      font-weight: 300;
       margin-top: 20px;
       text-align: center;
     }
@@ -97,13 +97,13 @@
       .textBox {
         text-align: left;
         h5 {
-          font-weight: 200;
-          font-family: $Univers;
+          font-weight: 300;
+          font-family: $Roboto;
           color: $font_white;
         }
         p {
           font-size: 12px;
-          font-family: $Univers;
+          font-family: $Roboto;
           color: $font_white;
         }
         .copy {

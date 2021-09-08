@@ -8,22 +8,38 @@
     padding-top: 50px;
   }
   h5 {
-    font-size: 12px;
     font-weight: bold;
-    font-family: $Univers;
+    font-family: $Roboto;
     color: $font_middleGrey;
     padding: 15px 0px 0px 0px;
+
+    @include xs{
+      font-size: 15px;
+    }
+    @include md{
+      font-size: 18px;
+    }
   }
   p {
-    font-size: 12px;
-    font-family: $Univers;
+    font-family: $Roboto;
     color: $font_middleGrey;
-    font-weight: 200;
+    font-weight: 300;
+    @include xs{
+      font-size: 12px;
+    }
+    @include md{
+      font-size: 18px;
+    }
   }
   .li_font {
-    font-size: 12px;
     color: $font_middleGrey;
-    font-weight: 200;
-    font-family: $Univers;
+    font-weight: 300;
+    font-family: $Roboto;
+    @include xs{
+      font-size: 12px;
+    }
+    @include md{
+      font-size: 18px;
+    }
   }
 }
