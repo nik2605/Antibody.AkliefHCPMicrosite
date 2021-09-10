@@ -164,6 +164,12 @@ section {
   .roundedblueBox {
     background-color: $site_ligtblue;
     border-radius: 60px;
+    @include xs{
+      display: block;
+    }
+    @include md{
+      display: flex;
+    }
     h3 {
       color: $font_white;
       font-family: $Oregon;
@@ -185,6 +191,16 @@ section {
     .imgColInBox {
       @include md {
         text-align: left;
+      }
+    }
+    .textColInBox{
+
+      width: 100%;
+      @include xs{
+        padding: 20px 30px;
+      }
+      @include md{
+        padding: 10px 30px;
       }
     }
   }

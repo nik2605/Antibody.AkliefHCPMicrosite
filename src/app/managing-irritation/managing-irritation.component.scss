@@ -44,14 +44,16 @@
     font-family: $Oregon;
     font-weight: 400;
   }
-
-  h5 {
-    color: $font_middleGrey;
-    font-family: $Roboto;
-    padding-top: 10px;
-    font-weight: bold;
-    font-size: 18px;
+  .tips {
+    h5 {
+      color: $font_middleGrey;
+      font-family: $Roboto;
+      padding-top: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
   }
+
   .CetaphilBoxDesktop {
     background-repeat: no-repeat;
     background-position-x: center;

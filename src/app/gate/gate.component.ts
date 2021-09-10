@@ -52,9 +52,6 @@ export class GateComponent implements OnInit {
     if (event.id == 'language_icon') {
       this.currentLanguage = event.innerText == 'EN' ? 'fr' : "en";
     }
-    // else if (event.parentNode.id != 'prvinceList' && this.isShow && event.id != 'arrowBox' && event.id != 'selectedBox') {
-    //   this.isShow = false;
-    // }
   }
 
   ngOnInit(): void {

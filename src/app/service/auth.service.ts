@@ -43,15 +43,83 @@ export class AuthService {
 
     //if(username == "test" && password == "test"){
     //if(province == environment.province && number == environment.licence_number){
-    if (number.length > 4 && province.length > 0) {
+    if (number.length >= 3 && number.length <= 9 && province.length > 0 && this.checkSameChar(number)) {
+      switch (province) {
+        case 'Alberta':
+          if (number.length < 4 || number.length > 6) {
+            return false;
+          }
+          break;
+        case 'British Columbia':
+        case 'Colombie-Britannique':
+          break;
+        case 'New Brunswick':
+        case 'Nouveau-Brunswick':
+          if (number.length < 4 || number.length > 7) {
+            return false;
+          }
+          break;
+        case 'Newfoundland and Labrador':
+        case 'Terre-Neuve-et-Labrador':
+          if (number.length < 5 || number.length > 6) {
+            return false;
+          }
+          break;
+        case 'Northwest Territories':
+        case 'Territoires du Nord-Ouest':
+          break;
+        case 'Nova Scotia':
+        case 'Nouvelle-Écosse':
+          if (number.length < 3 || number.length > 6) {
+            return false;
+          }
+          break;
+        case 'Nunavut':
+          break;
+        case 'Ontario':
+          if (number.length < 5 || number.length > 6) {
+            return false;
+          }
+          break;
+        case 'Prince Edward Island':
+        case 'Île-du-Prince-Édouard':
+          break;
+        case 'Quebec':
+        case 'Québec':
+          if (number.length < 5 || number.length > 6) {
+            return false;
+          }
+          break;
+        case 'Saskatchewan':
+          break;
+        case 'Yukon':
+          break;
+        default:
+          break;
+      }
       localStorage.setItem('currentUser', JSON.stringify(province + number));
       this.currentUserSubject.next(province + number);
-      this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083,'','',true,"None");
+      this.cookieService.set(this.authcookie, Guid.create().toString(), 0.02083, '', '', true, "None");
       return true;
     }
     else {
       return false;
     }
+  }
+
+  checkSameChar(number: string) {
+    var isDifferent = true;
+    for (let i = 0; i < number.length; i++) {
+      if (number[i] == number[0]) {
+        isDifferent = false
+      }
+      else {
+        isDifferent = true;
+        break;
+      }
+
+    }
+    return isDifferent;
   }
 
   tryLogin(returnUrl: string) {
