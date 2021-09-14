@@ -127,7 +127,7 @@ export class AuthService {
     const currentUser = this.currentUserSubject.value;
     const authCookie = this.isAuthCookieExists;
 
-    if (authCookie && currentUser === environment.province) {
+    if (authCookie) {
       this.router.navigate([returnUrl]);
       return;
     }
